@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bathurst Driver Network</title>
+
+<style>
+body{
+    font-family:Arial,sans-serif;
+    max-width:900px;
+    margin:40px auto;
+    padding:20px;
+    background:#f5f5f5;
+}
+
+h1{
+    color:#003366;
+}
+
+.controls{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-bottom:20px;
+}
+
+select,button{
+    padding:10px;
+    font-size:16px;
+}
+
+button{
+    cursor:pointer;
+    background:#003366;
+    color:white;
+    border:none;
+    border-radius:5px;
+}
+
+button:hover{
+    background:#00509e;
+}
+
+#result{
+    background:white;
+    padding:20px;
+    border-radius:8px;
+    min-height:80px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+.driver-step{
+    margin:10px 0;
+    padding:10px;
+    background:#eaf3ff;
+    border-left:5px solid #00509e;
+}
+
+.arrow{
+    text-align:center;
+    font-size:24px;
+    color:#666;
+}
+</style>
+</head>
+<body>
+
+<h1>Bathurst Driver Network</h1>
+
+<p>
+Find the shortest Bathurst connection between two drivers.
+</p>
+
+<div class="controls">
+
+    <select id="driverA"></select>
+
+    <select id="driverB"></select>
+
+    <button onclick="showConnection()">
+        Find Connection
+    </button>
+
+</div>
+
+<div id="result">
+Select two drivers and click Find Connection.
+</div>
+
+<script>
+
+// SAMPLE DATA
+
+const relationships = [
+
+    {
+        source:"Peter Brock",
+        target:"Larry Perkins",
+        year:1984,
+        type:"Co-driver"
+    },
+
+    {
+        source:"Larry Perkins",
+        target:"Greg Murphy",
+        year:1997,
+        type:"Teammate"
+    },
+
+    {
+        source:"Greg Murphy",
+        target:"Craig Lowndes",
+        year:2001,
+        type:"Co-driver"
+    },
+
+    {
+        source:"Craig Lowndes",
+        target:"Jamie Whincup",
+        year:2006,
+        type:"Teammate"
+    },
+
+    {
+        source:"Jamie Whincup",
+        target:"Chaz Mostert",
+        year:2014,
+        type:"Teammate"
+    },
+
+    {
+        source:"Dick Johnson",
+        target:"John Bowe",
+        year:1989,
+        type:"Co-driver"
+    },
+
+    {
+        source:"John Bowe",
+        target:"Craig Lowndes",
+        year:1994,
+        type:"Teammate"
+    }
+
+];
+
+let graph = {};
+
+function buildGraph(){
+
+    graph = {};
+
+    relationships.forEach(rel => {
+
+        if(!graph[rel.source]){
+            graph[rel.source] = [];
+        }
+
+        if(!graph[rel.target]){
+            graph[rel.target] = [];
+        }
+
+        graph[rel.source].push({
+            driver:rel.target,
+            info:rel
+        });
+
+        graph[rel.target].push({
+            driver:rel.source,
+            info:rel
+        });
+
+    });
+}
+
+function getAllDrivers(){
+
+    const drivers = new Set();
+
+    relationships.forEach(rel => {
+
+        drivers.add(rel.source);
+        drivers.add(rel.target);
+
+    });
+
+    return [...drivers].sort();
+
+}
+
+function populateDrivers() {
+const drivers = getAllDrivers();
+const selectA = document.getElementById("driverA");
+const selectB = document.getElementById("driverB");
+selectA.innerHTML = "";
+selectB.innerHTML = "";
+drivers.forEach(driver => {
+selectA.add(
+new Option(driver, driver)
+);
+selectB.add(
+new Option(driver, driver)
+);
+});
+}
+
+function findShortestPath(start,end){
+
+    if(start===end){
+        return [start];
+    }
+
+    const queue = [{
+        driver:start,
+        path:[start]
+    }];
+
+    const visited = new Set([start]);
+
+    while(queue.length){
+
+        const current = queue.shift();
+
+        const neighbours = graph[current.driver] || [];
+
+        for(const neighbour of neighbours){
+
+            if(visited.has(neighbour.driver)){
+                continue;
+            }
+
+            const newPath = [
+                ...current.path,
+                neighbour.driver
+            ];
+
+            if(neighbour.driver === end){
+                return newPath;
+            }
+
+            visited.add(neighbour.driver);
+
+            queue.push({
+                driver:neighbour.driver,
+                path:newPath
+            });
+
+        }
+    }
+
+    return null;
+}
+
+function findRelationship(a,b){
+
+    return relationships.find(rel =>
+
+        (rel.source===a && rel.target===b)
+        ||
+        (rel.source===b && rel.target===a)
+
+    );
+
+}
+
+function showConnection(){
+
+    const start =
+        document.getElementById("driverA").value;
+
+    const end =
+        document.getElementById("driverB").value;
+
+    const path =
+        findShortestPath(start,end);
+
+    const result =
+        document.getElementById("result");
+
+    if(!path){
+
+        result.innerHTML =
+            "<strong>No connection found</strong>";
+
+        return;
+    }
+
+    let html = "";
+
+    for(let i = 0; i < path.length; i++){
+
+        html += `
+        <div class="driver-step">
+            ${path[i]}
+        </div>
+        `;
+
+        if(i < path.length - 1){
+
+            const rel =
+                findRelationship(path[i], path[i+1]);
+
+            html += `
+            <div class="arrow">
+                ↓<br>
+                ${rel.type} (${rel.year})
+            </div>
+            `;
+        }
+    }
+
+    result.innerHTML = html;
+}
+
+window.onload = function(){
+
+    buildGraph();
+    populateDrivers();
+
+    console.log("Loaded");
+};
+</script>
+</body>
+</html>
