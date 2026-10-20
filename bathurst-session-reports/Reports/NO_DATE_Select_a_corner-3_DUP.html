@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Circuit Evolution — Coloured + Better Typography</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#111318; --panel:#171a22; --panel2:#12151d; --border:#252a36; --border2:#2a2f40; --text:#e8ecf3; --muted:#9aa5bd; --accent:#2a5bd7; --gold:#ffd400; --red:#e53935; --green:#4caf50; --orange:#ff9800; --purple:#9c27b0}
+*{box-sizing:border-box} body{margin:0; background:var(--bg); color:var(--text); font-family:'Inter',system-ui,sans-serif; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility}
+header{max-width:1280px; margin:0 auto; padding:32px 20px 12px} header h1{margin:0; font-size:clamp(28px,3.5vw,42px); font-weight:900; letter-spacing:-.03em; line-height:1.05} header h1 span{color:var(--muted); font-weight:700} header p{color:var(--muted); max-width:760px; line-height:1.65; font-size:14px; margin-top:10px}
+.wrap{max-width:1280px; margin:0 auto; padding:0 20px 60px}
+.controls{display:flex; gap:12px; flex-wrap:wrap; align-items:center; background:rgba(23,26,34,0.94); border:1px solid var(--border); border-radius:14px; padding:12px 14px; margin:16px 0; position:sticky; top:0; z-index:20; backdrop-filter:blur(12px)}
+.controls button{padding:9px 14px; border-radius:999px; border:1px solid var(--border2); background:var(--panel2); color:#fff; font-weight:800; font-size:12px; letter-spacing:.04em; text-transform:uppercase; cursor:pointer; transition:.15s}
+.controls button.active{background:var(--accent); border-color:var(--accent); box-shadow:0 0 0 3px rgba(42,91,215,.25)}
+.badge{display:inline-flex; align-items:center; gap:8px; padding:6px 12px; border-radius:999px; background:var(--panel2); border:1px solid var(--border); font-size:12px; font-weight:800; font-family:'JetBrains Mono',monospace}
+.grid{display:grid; grid-template-columns:1.4fr .6fr; gap:20px} @media(max-width:1020px){.grid{grid-template-columns:1fr}}
+.map-card{background:linear-gradient(180deg,#171a22 0%, #11141b 100%); border:1px solid var(--border); border-radius:20px; padding:18px; position:relative; overflow:hidden}
+.map-card::before{content:''; position:absolute; top:0; left:0; right:0; height:4px; background:linear-gradient(90deg,var(--red),var(--gold),var(--accent),var(--green)); opacity:.9}
+.map-header{display:flex; justify-content:space-between; align-items:start; gap:12px; margin-bottom:14px}
+.map-header h2{margin:0; font-size:18px; font-weight:900; letter-spacing:-.02em} .map-header small{display:block; color:var(--muted); font-size:12px; font-weight:600; margin-top:3px; letter-spacing:.02em}
+.legend{display:flex; gap:8px; flex-wrap:wrap; margin-top:8px} .leg{font-size:10px; font-weight:800; letter-spacing:.06em; text-transform:uppercase; padding:4px 8px; border-radius:999px; border:1px solid var(--border2); background:var(--panel2); display:inline-flex; align-items:center; gap:6px} .leg i{width:10px; height:4px; border-radius:999px; display:inline-block}
+.stage{position:relative; background:#0a0d14; border-radius:16px; overflow:hidden; border:1px solid #1a1e2a; min-height:560px}
+svg.track{width:100%; height:100%; display:block}
+.track-bg{fill:none; stroke:#1e2638; stroke-width:18; stroke-linecap:round; stroke-linejoin:round; opacity:.9}
+.track-main{fill:none; stroke-width:7.5; stroke-linecap:round; stroke-linejoin:round}
+.sector-pit{stroke:var(--red)} .sector-mountain{stroke:var(--accent)} .sector-cutting{stroke:var(--orange)} .sector-top{stroke:#7c9cff} .sector-skyline{stroke:var(--green)} .sector-conrod{stroke:var(--red)} .sector-chase{stroke:var(--gold); stroke-width:9; filter:drop-shadow(0 0 6px rgba(255,212,0,.5))}
+.corner-group{cursor:pointer}
+.corner-dot{fill:#0e1016; stroke-width:2.5; transition:.15s; r:7} .corner-dot:hover{ r:9; filter:drop-shadow(0 0 8px currentColor)}
+.corner-dot.active{r:10; fill:#fff; stroke:#fff}
+.corner-label{font-family:'Inter',sans-serif; font-weight:800; font-size:11px; letter-spacing:.04em; fill:#fff; paint-order:stroke; stroke:#0a0d14; stroke-width:4px; stroke-linejoin:round; pointer-events:none; text-transform:uppercase}
+.corner-year{font-family:'JetBrains Mono',monospace; font-weight:700; font-size:9px; fill:var(--muted); paint-order:stroke; stroke:#0a0d14; stroke-width:3px}
+.tooltip{position:absolute; left:0; top:0; width:320px; background:#111318; border:1px solid var(--border2); border-radius:14px; padding:14px; box-shadow:0 16px 40px rgba(0,0,0,.6); display:none; z-index:30}
+.tooltip h3{margin:0 0 4px; font-size:14px; font-weight:900; letter-spacing:-.01em; color:#fff} .tooltip .meta{font-family:'JetBrains Mono',monospace; font-size:10px; color:var(--gold); letter-spacing:.06em; text-transform:uppercase; margin-bottom:8px; font-weight:700} .tooltip p{margin:0; font-size:12.5px; line-height:1.55; color:#cbd5e1}
+.side{background:var(--panel); border:1px solid var(--border); border-radius:20px; padding:18px; height:fit-content; position:sticky; top:76px}
+.side h3{margin:0; font-size:12px; font-weight:900; letter-spacing:.1em; text-transform:uppercase; color:var(--muted)}
+.detail{background:linear-gradient(145deg,#12151d,#0e1016); border:1px solid var(--border); border-radius:14px; padding:16px; margin-top:12px}
+.detail h4{margin:0; font-size:16px; font-weight:900; letter-spacing:-.02em; color:#fff}
+.detail .era-pill{display:inline-flex; margin-top:8px; padding:4px 8px; border-radius:999px; font-size:10px; font-weight:800; letter-spacing:.06em; text-transform:uppercase; background:var(--panel2); border:1px solid var(--border2); color:var(--muted)}
+.timeline{list-style:none; padding:0; margin:16px 0 0} .timeline li{display:grid; grid-template-columns:60px 1fr; gap:12px; padding:12px 0; border-bottom:1px solid #1a1e2a} .yr{font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:800; color:var(--gold); background:#1a1d25; border:1px solid var(--border2); border-radius:999px; padding:4px 8px; text-align:center; height:fit-content}
+.timeline h4{margin:0 0 2px; font-size:13px; font-weight:800} .timeline p{margin:0; font-size:11px; color:var(--muted); line-height:1.4}
+</style>
+</head>
+<body>
+<header>
+<h1>Circuit Evolution <span>— Coloured Sectors, Pro Typography</span></h1>
+<p>Track now colour-coded by sector to match your archive: <b style="color:#e53935">Red = Pit / Hell / Conrod</b>, <b style="color:#2a5bd7">Blue = Mountain Straight</b>, <b style="color:#ff9800">Orange = Cutting complex</b>, <b style="color:#7c9cff">Light Blue = Top / Parks</b>, <b style="color:#4caf50">Green = Skyline → Elbow descent</b>, <b style="color:#ffd400">Gold = The Chase (1987)</b>. Typography upgraded to Inter 800/900 + JetBrains Mono for years, with proper stroke for legibility on dark.</p>
+</header>
+<div class="wrap">
+<div class="controls">
+  <div style="display:flex; gap:10px; align-items:center"><input id="yearSlider" type="range" min="1960" max="2025" value="1972" style="width:220px"><span class="badge"><span style="width:8px; height:8px; border-radius:50%; background:var(--accent); display:inline-block"></span><span id="yearBadge">1972 — Pre-Chase</span></span></div>
+  <div style="display:flex; gap:8px; margin-left:auto"><button data-era="phillip" class="eraBtn">Phillip Island 1960-62</button><button data-era="pre" class="eraBtn active">Bathurst 1938-86</button><button data-era="post" class="eraBtn">Bathurst 1987-now</button></div>
+</div>
+
+<div class="grid">
+<div class="map-card">
+  <div class="map-header"><div><h2 id="mapTitle">Mount Panorama — 1938-1986 (Pre-Chase)</h2><small id="mapSub">6.172 km — Conrod unbroken, two humps. Coloured sectors.</small><div class="legend"><span class="leg"><i style="background:#e53935"></i>Pit / Conrod</span><span class="leg"><i style="background:#2a5bd7"></i>Mountain</span><span class="leg"><i style="background:#ff9800"></i>Cutting</span><span class="leg"><i style="background:#7c9cff"></i>Parks Top</span><span class="leg"><i style="background:#4caf50"></i>Descent</span><span class="leg"><i style="background:#ffd400"></i>Chase</span></div></div></div>
+  <div class="stage" id="stage"><div class="tooltip" id="tooltip"></div>
+    <!-- SVGs injected by JS -->
+    <svg id="svg-phillip" class="track" viewBox="0 0 1000 600" style="display:none"></svg>
+    <svg id="svg-pre" class="track" viewBox="0 0 1000 620" style="display:block"></svg>
+    <svg id="svg-post" class="track" viewBox="0 0 1000 680" style="display:none"></svg>
+  </div>
+</div>
+<div class="side">
+  <h3>Corner Origin</h3>
+  <div class="detail"><h4 id="detailName">Select a corner</h4><div id="detailMeta" style="font-family:'JetBrains Mono',monospace; font-size:11px; color:#9aa5bd; margin:4px 0"></div><p id="detailText" style="margin:8px 0 0; font-size:13px; line-height:1.6; color:#cbd5e1">Click any dot — typography now uses Inter 900 for names, Mono for years, with stroke for contrast.</p><span class="era-pill" id="detailEra">Pre-Chase 1938-86</span></div>
+  <ul class="timeline" id="timeline"></ul>
+</div>
+</div>
+</div>
+
+<script>
+const prePath = {
+  bg: "M 880,440 C 880,430 870,420 840,410 L 620,300 C 580,280 560,260 560,220 C 560,200 570,180 585,170 C 600,160 620,165 625,180 C 630,195 625,210 615,225 L 545,350 C 530,370 515,400 500,430 L 450,520 C 430,550 410,580 380,590 L 180,590 C 150,590 130,570 135,540 C 140,510 160,480 180,450 L 230,360 C 245,330 240,310 250,290 L 280,180 C 290,150 310,130 340,110 L 420,50 C 440,35 470,30 500,40 L 580,90 C 600,105 620,130 640,150 C 660,170 680,190 710,195 L 830,210 C 860,215 885,230 888,260 C 890,290 885,310 870,330 L 810,420 C 800,435 790,445 770,450 L 680,470 C 660,475 640,485 625,505 L 600,540 C 590,555 575,565 555,565 L 520,565",
+  sectors: [
+    {id:'pit', d:"M 520,565 L 555,565 C 575,565 590,555 600,540", cls:'sector-pit'},
+    {id:'hell', d:"M 600,540 L 625,505 C 640,485 660,475 680,470", cls:'sector-pit'},
+    {id:'mountain', d:"M 680,470 L 770,450 C 790,445 800,435 810,420", cls:'sector-mountain'},
+    {id:'quarry', d:"M 810,420 L 870,330 C 885,310 890,290 888,260", cls:'sector-mountain'},
+    {id:'cutting', d:"M 888,260 C 885,230 860,215 830,210", cls:'sector-cutting'},
+    {id:'reid', d:"M 830,210 L 710,195 C 680,190 660,170 640,150", cls:'sector-cutting'},
+    {id:'top', d:"M 640,150 C 620,130 600,105 580,90 L 500,40 C 470,30 440,35 420,50", cls:'sector-top'},
+    {id:'skyline', d:"M 420,50 L 340,110 C 310,130 290,150 280,180 L 250,290", cls:'sector-skyline'},
+    {id:'esses', d:"M 250,290 C 240,310 245,330 230,360 L 180,450", cls:'sector-skyline'},
+    {id:'elbow', d:"M 180,450 C 160,480 140,510 135,540 C 130,570 150,590 180,590", cls:'sector-skyline'},
+    {id:'conrod', d:"M 180,590 L 380,590 C 410,580 430,550 450,520 L 500,430 C 515,400 530,370 545,350 L 615,225", cls:'sector-conrod'},
+  ]
+};
+
+const postPath = {
+  bg: "M 880,520 C 880,510 870,500 840,490 L 620,380 C 580,360 560,340 560,300 C 560,280 570,260 585,250 C 600,240 620,245 625,260 C 630,275 625,290 615,305 L 545,430 C 530,450 515,480 500,510 L 470,560 L 600,600 L 650,580 L 680,520 L 700,480 L 620,460 L 580,420 L 540,380",
+  // Simplified post with Chase loop
+  sectors: [
+    {id:'pit', d:"M 520,565 L 560,565 L 600,560", cls:'sector-pit'},
+    {id:'mountain', d:"M 600,560 L 700,540 L 800,500", cls:'sector-mountain'},
+    {id:'cutting', d:"M 800,500 L 830,420 L 820,300", cls:'sector-cutting'},
+    {id:'top', d:"M 820,300 L 700,220 L 580,120 L 400,60 L 300,120", cls:'sector-top'},
+    {id:'descent', d:"M 300,120 L 220,260 L 180,380 L 140,480 L 200,540", cls:'sector-skyline'},
+    {id:'conrod1', d:"M 200,540 L 400,600 L 540,640", cls:'sector-conrod'},
+    {id:'chase', d:"M 540,640 L 600,600 L 650,580 L 620,460", cls:'sector-chase'},
+    {id:'conrod2', d:"M 620,460 L 700,480 L 780,520 L 880,520", cls:'sector-conrod'},
+  ]
+};
+
+const phillipPath = {
+  bg: "M 750,520 C 780,540 820,530 840,500 C 860,470 850,430 820,400 L 720,280 C 700,250 680,230 650,220 L 450,180 C 420,170 380,150 350,120 L 300,80 C 270,50 220,40 180,60 L 120,100 C 90,130 80,170 100,210 L 140,300 L 120,380 L 180,420 L 350,420",
+  sectors: [
+    {d:"M 350,420 L 450,180 C 420,170 380,150 350,120", cls:'sector-mountain'},
+    {d:"M 350,120 L 300,80 C 270,50 220,40 180,60", cls:'sector-top'},
+    {d:"M 180,60 L 120,100 C 90,130 80,170 100,210", cls:'sector-skyline'},
+    {d:"M 100,210 L 140,300 L 120,380", cls:'sector-cutting'},
+    {d:"M 120,380 L 180,420 L 350,420", cls:'sector-pit'},
+    {d:"M 350,420 L 650,220 L 720,280 L 820,400 C 850,430 860,470 840,500 C 820,530 780,540 750,520", cls:'sector-conrod'},
+  ]
+};
+
+const cornersPre = [
+  {id:'hell', name:'Hell Corner', x:620, y:545, year:'c.1938 — tree stump', story:'90° left to start. Named after stump on apex in early bike days.', color:'#e53935'},
+  {id:'mountain', name:'Mountain Straight', x:760, y:455, year:'1938', story:'Uphill straight after Hell Corner.', color:'#2a5bd7'},
+  {id:'quarry', name:"Quarry / Griffin's Mount", x:845, y:345, year:'Mayor Martin Griffin', story:"Fast right kink. Griffin pushed tourist drive.", color:'#2a5bd7'},
+  {id:'cutting', name:'The Cutting', x:855, y:250, year:'1938 — 1:6', story:'Road cut into hill, steepest gradient.', color:'#ff9800'},
+  {id:'reid', name:'Reid Park', x:770, y:205, year:'Engineer Hughie Reid', story:'Council engineer who designed layout.', color:'#ff9800'},
+  {id:'sulman', name:'Sulman Park', x:485, y:45, year:'1970 — Tom Sulman', story:'Racer died on Conrod March 1970, Lotus Eleven.', color:'#7c9cff'},
+  {id:'mcphillamy', name:'McPhillamy Park', x:310, y:110, year:'Walter McPhillamy', story:'Donated land for parking, died June 1938.', color:'#7c9cff'},
+  {id:'skyline', name:"Brock's Skyline", x:260, y:210, year:'1938 / 1997 Brock', story:'Plunge begins. Brock tribute added 1997 for 9 wins.', color:'#4caf50'},
+  {id:'esses', name:'The Esses', x:240, y:310, year:'1938', story:'Snakes down mountain.', color:'#4caf50'},
+  {id:'dipper', name:'The Dipper', x:195, y:395, year:'1938', story:'Significant dip, often three wheels off.', color:'#4caf50'},
+  {id:'forrests', name:"Forrest's Elbow", x:145, y:545, year:'1947 — Jack Forrest', story:'Was Devil\'s Elbow until Forrest crashed Norton Oct 1947.', color:'#4caf50'},
+  {id:'conrod', name:'Conrod Straight', x:380, y:545, year:'1939 — Frank Kleinig', story:'Was Main Straight until con-rod failure Easter 1939.', color:'#e53935'},
+  {id:'murray', name:"Murray's Corner", x:540, y:555, year:'1946 — Bill Murray', story:'Was Pit Corner until Murray crash 1946 NSW GP, graffiti by Najar.', color:'#e53935'},
+];
+
+const cornersPost = [
+  {id:'hell', name:'Hell Corner', x:580, y:560, year:'c.1938', story:'Start lap.'},
+  {id:'mountain', name:'Mountain Straight', x:700, y:520, year:'1938', story:'Uphill.'},
+  {id:'cutting', name:'The Cutting', x:820, y:320, year:'1938', story:'Cut.'},
+  {id:'reid', name:'Reid Park', x:720, y:230, year:'1938', story:'Engineer.'},
+  {id:'mcphillamy', name:'McPhillamy Park', x:320, y:90, year:'1938', story:'Donated land.'},
+  {id:'skyline', name:"Brock's Skyline", x:250, y:160, year:'1997', story:'Brock tribute.'},
+  {id:'chase', name:'The Chase', x:610, y:520, year:'1987 — Caltex Chase', story:'Right-left-right added 1987 for WTCC, after Mike Burgmann fatal 1986. First layout change in 50y.', color:'#ffd400'},
+  {id:'conrod', name:'Conrod Straight', x:380, y:590, year:'1939', story:'Now split by Chase.'},
+  {id:'murray', name:"Murray's Corner", x:540, y:640, year:'1946', story:'Final turn.'},
+];
+
+const cornersPhillip = [
+  {id:'southern', name:'Southern Loop', x:810, y:480, year:'1956-88', story:'Big 180° loop, signature.'},
+  {id:'lukey', name:'Lukey Heights', x:330, y:100, year:'1956-88', story:'Famous blind crest.'},
+  {id:'mg', name:'MG Corner', x:160, y:90, year:'1956-88', story:'Tight left after drop.'},
+  {id:'siberia', name:'Siberia', x:680, y:250, year:'1956-88', story:'Fast right kink.'},
+];
+
+function drawSVG(svgEl, pathData, corners){
+  svgEl.innerHTML='';
+  // bg
+  const bg = document.createElementNS('http://www.w3.org/2000/svg','path');
+  bg.setAttribute('d', pathData.bg);
+  bg.setAttribute('class','track-bg');
+  svgEl.appendChild(bg);
+  // sectors
+  (pathData.sectors||[]).forEach(sec=>{
+    const p=document.createElementNS('http://www.w3.org/2000/svg','path');
+    p.setAttribute('d', sec.d);
+    p.setAttribute('class','track-main '+sec.cls);
+    svgEl.appendChild(p);
+  });
+  // corners
+  corners.forEach(c=>{
+    const g=document.createElementNS('http://www.w3.org/2000/svg','g');
+    g.setAttribute('class','corner-group');
+    const dot=document.createElementNS('http://www.w3.org/2000/svg','circle');
+    dot.setAttribute('cx', c.x); dot.setAttribute('cy', c.y);
+    dot.setAttribute('class','corner-dot');
+    dot.setAttribute('stroke', c.color||'#2a5bd7');
+    dot.dataset.id=c.id;
+    const label=document.createElementNS('http://www.w3.org/2000/svg','text');
+    label.setAttribute('x', c.x); label.setAttribute('y', c.y-18);
+    label.setAttribute('class','corner-label');
+    label.setAttribute('text-anchor','middle');
+    label.textContent=c.name;
+    const year=document.createElementNS('http://www.w3.org/2000/svg','text');
+    year.setAttribute('x', c.x); year.setAttribute('y', c.y-30);
+    year.setAttribute('class','corner-year');
+    year.setAttribute('text-anchor','middle');
+    year.textContent=c.year.split(' — ')[0];
+    g.appendChild(dot); g.appendChild(year); g.appendChild(label);
+    g.addEventListener('mouseenter', e=> showTip(e,c));
+    g.addEventListener('mouseleave', hideTip);
+    g.addEventListener('click', ()=> lockCorner(c));
+    svgEl.appendChild(g);
+  });
+}
+
+const tooltip=document.getElementById('tooltip');
+function showTip(evt,c){
+  const rect=document.getElementById('stage').getBoundingClientRect();
+  tooltip.style.left=(evt.clientX-rect.left+14)+'px';
+  tooltip.style.top=(evt.clientY-rect.top+14)+'px';
+  tooltip.style.display='block';
+  tooltip.innerHTML=`<h3>${c.name}</h3><div class="meta">${c.year}</div><p>${c.story}</p>`;
+}
+function hideTip(){ tooltip.style.display='none'; }
+function lockCorner(c){
+  document.getElementById('detailName').textContent=c.name;
+  document.getElementById('detailMeta').textContent=c.year;
+  document.getElementById('detailText').textContent=c.story;
+  document.querySelectorAll('.corner-dot').forEach(d=> d.classList.toggle('active', d.dataset.id===c.id));
+}
+
+function renderEra(era){
+  document.getElementById('svg-phillip').style.display=era==='phillip'?'block':'none';
+  document.getElementById('svg-pre').style.display=era==='pre'?'block':'none';
+  document.getElementById('svg-post').style.display=era==='post'?'block':'none';
+  document.getElementById('mapTitle').textContent= era==='phillip'?'Phillip Island — 1956-88 (3.0mi / 4.8km) — Coloured':'Mount Panorama — 1938-1986 (Pre-Chase) — 6.172km — Coloured';
+  if(era==='post') document.getElementById('mapTitle').textContent='Mount Panorama — 1987 to date (with The Chase) — 6.213km — Coloured';
+  document.querySelectorAll('.eraBtn').forEach(b=> b.classList.toggle('active', b.dataset.era===era));
+}
+
+drawSVG(document.getElementById('svg-pre'), prePath, cornersPre);
+drawSVG(document.getElementById('svg-post'), postPath, cornersPost);
+drawSVG(document.getElementById('svg-phillip'), phillipPath, cornersPhillip);
+
+document.querySelectorAll('.eraBtn').forEach(b=> b.addEventListener('click', ()=> renderEra(b.dataset.era)));
+document.getElementById('yearSlider').addEventListener('input', e=>{
+  const y=+e.target.value; const era=y<=1962?'phillip':y<=1986?'pre':'post';
+  document.getElementById('yearBadge').textContent=`${y} — ${era==='phillip'?'Phillip Island':era==='pre'?'Pre-Chase':'Post-Chase'}`;
+  renderEra(era);
+});
+document.getElementById('timeline').innerHTML=[
+  {yr:'1938', h:'Circuit opens', p:'Tourist drive, Mayor Griffin'},
+  {yr:'1939', h:'Main → Conrod', p:'Kleinig con-rod'},
+  {yr:'1946', h:'Pit → Murray', p:'Bill Murray + Najar graffiti'},
+  {yr:'1947', h:'Elbow → Forrest', p:'Forrest crash'},
+  {yr:'1956', h:'Phillip Island', p:'Hosts 500 1960-62'},
+  {yr:'1970', h:'Sulman Park', p:'Tom Sulman death'},
+  {yr:'1987', h:'The Chase', p:'First change in 50y'},
+  {yr:'1997', h:"Brock's Skyline", p:'9-win tribute'},
+].map(d=>`<li><div class="yr">${d.yr}</div><div><h4>${d.h}</h4><p>${d.p}</p></div></li>`).join('');
+renderEra('pre');
+</script>
+</body>
+</html>

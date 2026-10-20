@@ -1,0 +1,1105 @@
+year,pos,pos_in_class,car_number,team_entrant,car_model,drivers,engine_cc,engine_type,group_class,distance_time,qual_pos,qual_time,fastest_lap,reason_out
+1975,1,1,5,Gown-Hindhaugh Racing,Holden Torana LH L34,"Peter Brock, AUS; Brian Sampson, AUS",5044,V8,Class D,"163 laps, 7:10.11,3",3,"2.28,6",,
+1975,2,2,7,Ron Hodgson Racing,Holden Torana LH L34,"Bob Morris, AUS; Frank Gardner, AUS; (Graeme Lawrence, NZ)",5044,V8,Class D,161,4,"2.31,8",,
+1975,3,3,2,Holden Dealer Team,Holden Torana LH L34,"Colin Bond, AUS; Johnnie Walker, AUS",5044,V8,Class D,154,1,"2.27,4",,
+1975,4,4,3,Max Wright Motors,Holden Torana LH L34,"Bob Skelton, AUS; Ron Dickson, AUS",5044,V8,Class D,152,5,"2.32,0",,
+1975,5,1,26,,Mazda Savanna RX-3,"Don Holland, AUS; Hiroshi Fushida, J",2292 eq,R2,Class C,151,19,"2.45,5",,
+1975,6,1,27,Alfa Romeo Dealers Australia,Alfa Romeo 2000 GTV,"Marie-Claude Charmasson (""Beaumont""), F; John Leffler, AUS",1962,L4,Class B,150,29,"2.49,4",,
+1975,7,2,50,,Ford Escort RS 2000,"John Basset, AUS; Eric Boord, AUS",1993,L4,Class B,149,20,"2.45,8",,
+1975,8,5,15,,Holden Torana LH L34,"Rod Coppins, AUS; Jim Richards, NZ",5044,V8,Class D,147,8,"2.33,4",,
+1975,9,6,11,Garry and Warren Smith Holden,Holden Torana LH L34,"John Pollard, AUS; Bryan Thomson, AUS",5044,V8,Class D,147,14,"2.39,2",,
+1975,10,3,37,Ron Hodgson Racing,Triumph Dolomite Sprint,"James Laing-Peach, AUS; Graham Moore, AUS",1998,L4,Class B,145,33,"2.50,1",,
+1975,11,4,45,,Ford Escort RS 2000,"Bill Brown, AUS; Sue Ransom, AUS",1993,L4,Class B,144,34,"2.50,3",,
+1975,12,5,36,,Ford Escort RS 2000,"Mike Stillwell, AUS; Geoff Brabham, AUS",1993,L4,Class B,141,27,"2.47,4",,
+1975,13,6,46,,Ford Escort RS 2000,"Bruce Hodgson, AUS; Dave Morrow, AUS",1993,L4,Class B,140,37,"2.51,1",,
+1975,14,1,58,Orange City Motors,Morris Mini Cooper S,"Peter Lander, AUS; Bob Martin, AUS",1275,L4,Class A,140,45,"2.59,2",,
+1975,15,2,68,,Datsun 1200,"Bill Evans, AUS; Bruce Stewart, AUS",1171,L4,Class A,139,48,"3.01,4",,
+1975,16,2,22,,Mazda Savanna RX-3,"Ray Harrison, AUS; Craig Bradtke, AUS",2292 eq,R2,Class C,139,18,"2.45,4",,
+1975,17,3,28,,Ford Capri 3000 GT,"Barry Seton, AUS; Don Smith, AUS",2993,V6,Class C,138,17,"2.42,1",,
+1975,18,3,65,,Morris Mini Cooper S,"Terry Wade, AUS; John Dellaca, AUS",1275,L4,Class A,136,52,"3.02,5",,
+1975,19,7,42,,Alfa Romeo 2000 GTV,"Ray Gulson, AUS; Paul Gulson, AUS",1962,L4,Class B,135,30,"2.49,6",,
+1975,20,7,4,,Holden Torana LH L34,"Bob Forbes, AUS; Wayne Negus, AUS",5044,V8,Class D,135,9,"2.33,6",,
+1975,21,8,35,,Mazda Savanna RX-3,"David Clement, AUS; Brian Wheeler, AUS",2292 eq,R2,Class C,135,39,"2.51,9",,
+1975,22,4,62,,Alfa Romeo 1300 GT Junior,"David Crowther, AUS; Gordon Rich, AUS",1290,L4,Class A,135,56,"3.07,4",,
+1975,23,4,29,,Ford Capri 3000 GT,"Geoff Moran, AUS; Eugene McLoughlin, AUS",2993,V6,Class C,134,50,"3.01,7",,
+1975,24,5,69,,Mazda 1300,"Brian Porter, AUS; John Ainsley, AUS",1272,L4,Class A,132,59,"3.11,7",,
+1975,25,8,20,,Holden Torana LJ XU1,"Kevin Kennedy, AUS; Steve Land, AUS",3330,L6,Class D,130,62,no time,,
+1975,26,5,51,,Mazda Savanna RX-3,"John Wharton, AUS; Kerry Horgan, AUS",2292 eq,R2,Class C,129,41,"2.53,3",,
+1975,27,6,59,Orange City Motors,Morris Mini Cooper S,"Caroline O'Shanesy, AUS; David Booth, AUS",1275,L4,Class A,128,57,"3.09,3",,
+1975,28,7,55,,Alfa Romeo 1300 GT Junior,"Robin Dudfield, AUS; Lance De Luca, AUS",1290,L4,Class A,128,55,"3.06,5",,
+1975,29,8,53,,Honda Civic,"Ian Wells, AUS; Neil West, AUS",1231,L4,Class A,127,51,"3.02,0",,
+1975,30,9,60,,Ford Escort 1300,"Geoff Wade, AUS; Robert Bride, AUS",1298,L4,Class A,125,60,"3.15,6",,
+1975,31,9,40,,Alfa Romeo 2000 GTV,"Warren Thompson, AUS; Rod Morris, AUS",1962,L4,Class B,119,36,"2.51,1",,
+1975,32,10,49,,Alfa Romeo 2000 GTV,"Mal Robertson, AUS; Frank Porter, AUS",1962,L4,Class B,119,28,"2.49,3",,
+1975,33,6,10,,Mazda Savanna RX-3,"Lakis Manticas, AUS; Mel Mollison, AUS",2292 eq,R2,Class C,116,22,"2.46,4",,
+1975,34,11,39,,Ford Escort TC,"Geoff Morrell, AUS; Alan Cant, AUS",1594?,L4,Class B,113,38,"2.51,2",,
+1975,DNF,,,,Holden Torana LH L34,"Peter Janson, GB; John Harvey, AUS",5044,V8,Class D,143,12,"2.37,0",,Differential
+1975,DNF,,26,Alfa Romeo Dealers Australia,Alfa Romeo 2000 GTV,"Tim Schenken, AUS; Paul Bernasconi, AUS",1962,L4,Class B,140,24,"2.46,6",,Accident
+1975,DNF,,,,Morris Mini 1275 GT,"Ray Molloy, AUS; Alan Braszell, AUS",1275,L4,Class A,118,54,"3.04,5",,Suspension
+1975,DNF,,,,Holden Torana LJ XU1,"John Stoopman, AUS; Stuart Saker, AUS",3330,L6,Class D,113,16,"2.41,4",,Engine
+1975,DNF,,25,Allan Moffat Racing,Ford Falcon XB GT,"Allan Moffat, AUS; Ian Geoghegan, AUS",5760,V8,Class D,109,2,"2.27,5",,Suspension
+1975,DNF,,,,Mazda Savanna RX-3,"Bernie Haehnle, AUS; Terry Finnigan, AUS",2292 eq,R2,Class C,97,21,"2.46,0",,Gearbox
+1975,DNF,,70,NSW BMW Dealers,BMW 2000 TII,"Peter Williamson, AUS; John MacDonald, HK",1990,L4,Class B,89,23,"2.46,5",,Engine
+1975,DNF,,,,Holden Torana LH L34,"Tim Slako, AUS; Tony Wilkinson, NZ",5044,V8,Class D,87,15,"2.39,9",,Engine
+1975,DNF,,,Brian Wood Ford,Ford Escort RS 2000,"Jim Murcott, AUS; Rod Stevens, AUS",1993,L4,Class B,82,31,"2.49,8",,Engine
+1975,DNF,,,,Morris Mini Cooper S,"John Lord, AUS; John Harris, AUS",1275,L4,Class A,75,46,"3.00,2",,Oil seal
+1975,DNF,,,Dustings of Burwood,Holden Torana LH L34,"Rod McRae, AUS; Russ McRae, AUS",5044,V8,Class D,67,13,"2.37,2",,Engine
+1975,DNF,,,,Mazda Savanna RX-3,"Nick Louis, AUS; Ted Brewster, AUS",2292 eq,R2,Class C,64,32,"2.49,9",,Overheating
+1975,DNF,,,,VW Passat 1300,"Chris Heyer, AUS; Barry Allen, AUS",1297,L4,Class A,57,49,"3.01,6",,Camshaft
+1975,DNF,,18,Brian Wood Ford,Ford Falcon XB GT,"Murray Carter, AUS; Ray Winter, AUS",5760,V8,Class D,53,7,"2.32,9",,Engine
+1975,DNF,,,,Toyota Corolla,"Richard Stiegler, AUS; Greg Toepfer, AUS",1166,L4,Class A,46,58,"3.11,5",,Oil pump
+1975,DNF,,12,Craven Mild Racing,Holden Torana LH L34,"Allan Grice, AUS; Jim Hunter, AUS",5044,V8,Class D,41,6,"2.32,1",,Accident
+1975,DNF,,,,Ford Capri 3000 GT,"Geoff Newton, AUS; Paul Feltham, AUS; (Cam Richardson, AUS)",2993,V6,Class C,41,43,"2.56,5",,
+1975,DNF,,66,Hobson White Motors,Mercedes 280 E,"Tom Naughton, AUS; Ross Wemyss, AUS",2778,L6,Class C,23,47,"3.00,6",,Valve
+1975,DNF,,,,Holden Torana LH L34,"Charlie O'Brien, AUS; Graham Ryan, AUS",5044,V8,Class D,22,11,"2.36,6",,Engine
+1975,DNF,,,,Ford Capri 3000 GT,"Lawrie Nelson, AUS; Bob Watson, AUS",2993,V6,Class C,16,35,"2.50,3",,Electrics
+1975,DNF,,,Alfa Romeo Dealers Australia,Alfa Romeo 2000 GTV,"John Fitzpatrick, GB; Fred Gibson, AUS",1962,L4,Class B,12,26,"2.47,3",,Engine
+1975,DNF,,1,John Goss Racing Pty Ltd.,Ford Falcon XB GT,"John Goss, AUS; Kevin Bartlett, AUS",5760,V8,Class D,10,10,"2.33,6",,Engine
+1975,DNF,,,,Ford Escort RS 2000,"Bob Holden, AUS; Lyndon Arnel, AUS",1993,L4,Class B,3,40,"2.52,9",,Bearings
+1975,DNF,,,,Datsun 260Z,"Doug Whiteford, AUS; Geoff Perry, AUS",2526,L6,Class C,3,42,"2.53,9",,Overheating
+1975,DNS,,,,Alfa Romeo Alfasud Ti,"Peter Brown, AUS; Des West, AUS",1299,B4,Class A,,,,,
+1975,DNS,,,,BMW 2002,"Peter Granger, AUS; Gerry Murphy, AUS",1990,L4,Class B,,,,,
+1975,DNS,,,Datsun Racing Team,Datsun 1200,"John Leighton, AUS; Roger Bonhomme, AUS",1171,L4,Class A,,,,,
+1975,DNS,,,,Ford Escort RS 2000,"Geoff Leeds, AUS; John English, AUS",1993,L4,Class B,,,,,
+1975,DNS,,,,Holden Torana LH L34,"Les Grose, AUS; Doug Chivas, AUS",5044,V8,Class D,,,,,
+1975,DNS,,,,Mazda Savanna RX-3,"Gary Cooke, AUS; Neil Manson, AUS",2292 eq,R2,Class C,,,,,
+1975,DNQ,,,Datsun Racing Team,Datsun 240Z,Unknown; Unknown,ca. 2400,L6,Class C,,,,,
+1975,NC,,19,,Holden Torana LJ XU1,"Graeme Adams, AUS; Bob Stevens, AUS",3330,L6,Class D,118,61,no time,,Insufficient laps completed
+1975,NC,,52,,Honda Civic,"Max McGinley, AUS; Paul King, AUS",1231,L4,Class A,92,53,"3.03,7",,Insufficient laps completed
+1975,NC,,57,Orange City Motors,Morris Mini Cooper S,"Gary Leggatt, AUS; David Seldon, AUS",1275,L4,Class A,83,44,"2.57,9",,Insufficient laps completed
+1975,DSQ,,,,Mazda Savanna RX-3,"Lynn Brown, AUS; Ron Gillard, AUS",2292 eq,R2,Class C,149,25,"2.46,7",,
+1976,1,1,7,Ron Hodgson Racing,Holden Torana LH L34,"Bob Morris, AUS; John Fitzpatrick, GB",5044,V8,Class D,"163 laps, 7:07.12,0",4,"2.26,4",,
+1976,2,2,1,Holden Dealer Team,Holden Torana LH L34,"Colin Bond, AUS; John Harvey, AUS",5044,V8,Class D,"163 laps, 7:08.00,3",3,"2.26,2",,
+1976,3,3,5,Bill Patterson Holden,Holden Torana LH L34,"Peter Brock, AUS; Phil Brock, AUS",5044,V8,Class D,160,2,"2.25,1",,
+1976,4,4,8,Holden Dealer Team,Holden Torana LH L34,"Charlie O'Brien, AUS; Wayne Negus, AUS",5044,V8,Class D,160,7,"2.28,3",,
+1976,5,5,15,Cadbury Schweppes Pty Ltd,Holden Torana LH L34,"Peter Janson, GB; Kevin Bartlett, AUS",5044,V8,Class D,158,9,"2.29,5",,
+1976,6,6,,,Holden Torana LH L34,"Bob Forbes, AUS; Russ McRae, AUS",5044,V8,Class D,157,15,"2.35,2",,
+1976,7,7,,,Holden Torana LH L34,"Bob Skelton, AUS; Alan Hamilton, AUS",5044,V8,Class D,157,13,"2.33,1",,
+1976,8,1,,,Ford Capri 3000,"Barry Seton, AUS; Don Smith, AUS",2993,V6,Class C,156,18,"2.38,1",,
+1976,9,2,23,,Mazda Savanna RX-3,"Don Holland, AUS; Lynn Brown, AUS",2292 eq.,R2,Class C,155,28,"2.43,3",,
+1976,10,3,,,Ford Capri 3000,"Graham Moore, AUS; Dick Johnson, AUS",2993,V6,Class C,154,19,"2.41,3",,
+1976,11,4,21,,Mazda Savanna RX-3,"Geoff Leeds, AUS; Jim McKeown, AUS",2292 eq.,R2,Class C,154,25,"2.42,4",,
+1976,12,1,,,Ford Escort II RS 2000,"Eric Boord, AUS; Tom Tymons, AUS",1993,L4,Class B,152,30,"2.43,8",,
+1976,13,5,,,Ford Capri 3000,"Russell Skaife, AUS; Brian Potts, AUS",2993,V6,Class C,151,26,"2.42,6",,
+1976,14,2,,,Alfa Romeo 2000 GTV,"Phil McDonnell, AUS; Jim Hunter, AUS",1962,L4,Class B,151,39,"2.47,4",,
+1976,15,3,,,Ford Escort II RS 2000,"Lyndon Arnel, AUS; Peter Hopwood, AUS",1993,L4,Class B,150,38,"2.46,6",,
+1976,16,4,,,Alfa Romeo Alfetta GTV,"Frank Porter, AUS; Tony Roberts, AUS",1985,L4,Class B,149,34,"2.45,4",,
+1976,17,5,,,Alfa Romeo Alfetta GTV,"John Leffler, AUS; Richard Carter, AUS",1985,L4,Class B,148,33,"2.45,3",,
+1976,18,6,40,,Alfa Romeo 2000 GTV,"Peter Wherrett, AUS; David Jones, AUS",1962,L4,Class B,148,35,"2.45,5",,
+1976,19,8,18,Brian Wood Ford,Ford Falcon XB GT,"Murray Carter, AUS; Ray Winter, AUS",5760,V8,Class D,148,14,"2.33,9",,
+1976,20,6,,Craven Mild Racing,BMW 3.0 Si,"Paul Older, AUS; Barry Lake, AUS",2985,L6,Class C,147,31,"2.44,6",,
+1976,21,7,,,Ford Escort II RS 2000,"Terry Daly, AUS; Barry Jones, AUS",1993,L4,Class B,146,42,"2.48,4",,
+1976,22,7,,,Mazda Savanna RX-3,"Brian Wheeler, AUS; Neil Mason, AUS",2292 eq.,R2,Class C,143,32,"2.44,7",,
+1976,23,8,,,Ford Escort II RS 2000,"Bruce Hodgson, AUS; Dave Morrow, AUS",1993,L4,Class B,142,37,"2.45,9",,
+1976,24,1,,,Datsun 1200,"Bill Evans, AUS; Bruce Stewart, AUS",1171,L4,Class A,139,49,"2.58,7",,
+1976,25,8,24,,Mazda Savanna RX-3,"John Duggan, AUS; Doug Angus, AUS",2292 eq.,R2,Class C,139,29,"2.43,7",,
+1976,26,2,,,Honda Civic,"Brian Reed, AUS; Ian Chilman, AUS",1231,L4,Class A,137,55,"3.03,2",,
+1976,27,9,,,Holden Torana LH L34,"Tim Slako, AUS; Brian Rhodes, AUS",5044,V8,Class D,137,17,"2.35,3",,
+1976,28,3,,,Honda Civic,"Roger Bonhomme, AUS; Paul Older, AUS",1231,L4,Class A,137,53,"3.02,9",,
+1976,29,4,,,Morris Mini 1275 GT,"Jeff Harris, AUS; Arthur Hardwick, AUS",1275,L4,Class A,136,56,"3.03,9",,
+1976,30,5,,,Mazda 1300,"Brian Porter, AUS; John Ainsley, AUS",1272,L4,Class A,130,61,"3.07,7",,
+1976,31,10,,,Ford Falcon XB GT,"John Goss, AUS; Jim Richards, NZ",5760,V8,Class D,129,5,"2.27,5",,
+1976,32,6,,,Toyota Corolla,"Greg Toepfer, AUS; Greville Arnel, AUS",1166,L4,Class A,127,57,"3.03,7",,
+1976,33,7,,,Morris Mini 1275 GT,"Ray Molloy, AUS; Alan Braszell, AUS",1275,L4,Class A,125,51,"3.02,5",,
+1976,34,8,,,Alfa Romeo 1300 ?GTJ,"Robin Dudfield, AUS; Tony Niovanni, AUS",1290,L4,Class A,116,59,"3.04,9",,
+1976,DNF,,,,Alfa Romeo 2000 GTV,"Ron Gillard, AUS; Graham Harrison, AUS",1962,L4,Class B,120,41,"2.48,1",,Accident
+1976,DNF,,,,Ford Capri 3000,"Alan Cant, AUS; George Morrell, AUS",2993,V6,Class C,111,20,"2.41,4",,Oil line
+1976,DNF,,,,Triumph Dolomite Sprint,"Ron Dickson, AUS; Graeme Lawrence, NZ",1998,L4,Class B,103,22,"2.41,5",,Accident
+1976,DNF,,,,Holden Torana LH L34,"Warren Cullen, AUS; Max Stewart, AUS",5044,V8,Class D,95,11,"2.31,6",,Oil leak
+1976,DNF,,9,Moffat Ford Dealers,Ford Falcon XB GT,"Allan Moffat, AUS; Vern Schuppan, AUS",5760,V8,Class D,87,1,"2.25,0",,Head gasket
+1976,DNF,,,,Mazda Savanna RX-3,"Peter Williamson, AUS; Gary Cooke, AUS",2292 eq.,R2,Class C,83,62,"2.51,3",,Fan belt
+1976,DNF,,,,Triumph Dolomite Sprint,"James Laing-Peach, AUS; Paul Gulson, AUS",1998,L4,Class B,82,23,"2.41,9",,Bearing
+1976,DNF,,12,Craven Mild Racing,Holden Torana LH L34,"Allan Grice, AUS; Frank Gardner, AUS",5044,V8,Class D,72,8,"2.29,1",,Rocker nut
+1976,DNF,,,,Morris Mini 1275 GT,"Hugh Donaldson, AUS; Mike Quinn, AUS",1275,L4,Class A,58,52,"3.02,0",,
+1976,DNF,,,,Holden Torana LH L34,"Bruce Hindhaugh, AUS; Garth Wigston, AUS",5044,V8,Class D,56,12,"2.32,1",,Cam drive
+1976,DNF,,,,Alfa Romeo Alfetta GTV,"Marie-Claude Charmasson (""Beaumont""), F; Christine Gibson, AUS",1985,L4,Class B,52,48,"2.53,8",,Fuel injection
+1976,DNF,,,,Fiat 124 Sport Coupé,"Allan Nuttall, AUS; Richard Bailey, AUS",1796,L4,Class B,51,46,"2.50,4",,Clutch
+1976,DNF,,,Lennox motors,VW Golf,"Chris Heyer, AUS; Peter Lander, AUS",1588,L4,Class B,38,45,"2.49,7",,Cam belt
+1976,DNF,,17,,Holden Torana LH L34,"Stirling Moss, GB; Jack Brabham, AUS",5044,V8,Class D,37,10,"2.30,0",,Valve
+1976,DNF,,,,Ford Capri 3000,"Lawrie Nelson, AUS; Nick Louis, AUS; (Barry Nelson, AUS)",2993,V6,Class C,32,24,"2.42,3",,Accident
+1976,DNF,,,,Ford Escort II RS 2000,"Jim Murcott, AUS; Rod Stevens, AUS",1993,L4,Class B,28,44,"2.49,4",,Engine
+1976,DNF,,72,,Fiat 128 Berlinetta 3P,"Charlie O'Shanesy, AUS; Gary Leggatt, AUS",1290,L4,Class A,27,60,"3.05,0",,Manifold
+1976,DNF,,,,Ford Escort II RS 2000,"Bob Holden, AUS; Ray Cutchie, AUS",1993,L4,Class B,23,43,"2.49,2",,Gearbox
+1976,DNF,,,,Ford Escort 1300,"Ken Harrison, AUS; David Turnbull, AUS",1298,L4,Class A,22,54,"3.03,0",,Manifold
+1976,DNF,,,,VW Passat 1300,"Bernie Stack, AUS; Keith Poole, AUS",1297,L4,Class A,19,50,"3.02,5",,Wishbone
+1976,DNF,,,,BMW 2002 TII,"Ralph Radburn, AUS; Peter Williamson, AUS",1990,L4,Class B,14,27,"2.42,8",,Rocker arm
+1976,DNF,,,,Ford Capri 3000,"Lakis Manticas, AUS; Doug Chivas, AUS",2993,V6,Class C,3,21,"2.41,5",,Engine
+1976,DNF,,,,Triumph Dolomite Sprint,"David Seldon, AUS; Bob Martin, AUS",1998,L4,Class B,,40,"2.47,7",,Engine
+1976,DNS,,,Craven Mild Racing,Holden Torana LH L34,"Frank Gardner, AUS; Allan Grice, AUS",5044,V8,Class D,,6,"2.28,1",,Withdrawn
+1976,DNS,,,,Holden Torana LH L34,"Ray Kaleda, AUS; Bob Stevens, AUS",5044,V8,Class D,,16,"2.35,3",,
+1976,DNQ,,,,Alfa Romeo 1300 ?GTJ,"David Crowther, AUS; Gordon Rich, AUS",1290,L4,Class A,,,,,
+1976,NC,,,,Honda Civic,"Ken Brian, AUS; Noel Riley, AUS",1231,L4,Class A,104,58,"3.04,7",,Insufficient laps
+1976,NC,,,,BMW 2002 TII,"Peter Granger, AUS; Gerry Murphy, AUS",1990,L4,Class B,97,47,"2.50,5",,Insufficient laps
+1976,NC,,,,Triumph Dolomite Sprint,"John Dellaca, AUS; Terry Wade, AUS",1998,L4,Class B,67,36,"2.45,6",,Insufficient laps
+1977,1,1,1,Moffat Ford Dealers,Ford Falcon XC,"Allan Moffat, AUS; Jacky Ickx, B",5760,V8,Class A,"163 laps, 6:59.07,8",3,"2.25,6",,
+1977,2,2,2,Moffat Ford Dealers,Ford Falcon XC,"Colin Bond, AUS; Alan Hamilton, AUS; (Gregg Hansford, AUS)",5760,V8,Class A,"163 laps, 6:59.07,9",2,"2.25,2",,
+1977,3,3,,Cadbury Schweppes Pty Ltd,Holden Torana LX A9X,"Peter Janson, GB; Larry Perkins, AUS",5044,V8,Class A,162,13,"2.29,2",,
+1977,4,4,25,Bill Patterson Holden,Holden Torana LX A9X,"Peter Brock, AUS; Phil Brock, AUS",5044,V8,Class A,162,1,"2.24,1",,
+1977,5,5,,Marlboro Holden Dealer Team,Holden Torana LX A9X,"Charlie O'Brien, AUS; Ron Harrop, AUS",5044,V8,Class A,162,10,"2.27,2",,
+1977,6,1,33,,Ford Capri 3000,"Barry Seton, AUS; Don Smith, AUS",2993,V6,Class B,154,27,"2.37,3",,
+1977,7,6,,Bill Patterson Holden,Holden Torana LX A9X,"Tony Roberts, AUS; Doug Chivas, AUS",5044,V8,Class A,154,21,"2.32,2",,
+1977,8,1,58,Brian Foley Alfa Romeo,Alfa Romeo 2000 GTV,"Derek Bell, GB; Gary Leggatt, AUS",1962,L4,Class C,150,37,"2.42,4",,
+1977,9,2,,Brian Wood Ford,Ford Escort II RS 2000,"Rod Stevens, AUS; Tony Farrell, AUS",1993,L4,Class C,150,41,"2.44,2",,
+1977,10,9,7,,Ford Falcon XB GT,"Ron Dickson, AUS; Fred Gibson, AUS",5760,V8,Class A,147,22,"2.32,3",,
+1977,11,3,3,,Alfa Romeo Alfetta GTV,"Frank Porter, AUS; Jim Murcott, AUS",1985,L4,Class C,146,47,"2.46,8",,
+1977,12,4,,,Alfa Romeo 2000 GTV,"Ray Gulson, AUS; David Growther, AUS",1962,L4,Class C,145,48,"2.46,8",,
+1977,13,2,,,Mazda Savanna RX-3,"Nick Louis, AUS; Ted Brewster, AUS",2292 eq.,R2,Class B,145,45,"2.45,1",,
+1977,14,3,,,BMW 3.0 Si,"Phil McDonnell, AUS; Jim Hunter, AUS",2985,L6,Class B,144,35,"2.42,3",,
+1977,15,4,45,,Mazda Savanna RX-3,"Gary Cooke, AUS; Ben Penhall, AUS",2292 eq.,R2,Class B,143,51,"2.47,7",,
+1977,16,5,46,,Mazda Savanna RX-3,"Bill Shiels, AUS; Frank Radisich, NZ",2292 eq.,R2,Class B,142,58,"2.52,9",,
+1977,17,8,,Scotty Taylor Holden,Holden Torana LX A9X,"Alan ""Scotty"" Taylor, AUS; Kevin Kennedy, AUS",5044,V8,Class A,141,25,"2.34,6",,
+1977,18,9,4,Goss Garages,Ford Falcon XC,"Jack Brabham, AUS; Geoff Brabham, AUS",5760,V8,Class A,141,9,"2.26,9",,
+1977,19,5,,,Ford Escort II RS 2000,"Eric Boord, AUS; Keith Poole, AUS",1993,L4,Class C,138,42,"2.44,8",,
+1977,20,6,,,Ford Escort II RS 2000,"Terry Daly, AUS; Barry Jones, AUS",1993,L4,Class C,137,43,"2.44,9",,
+1977,21,7,,,Alfa Romeo 2000 GTV,"Robin Dudfield, AUS; Tony Niovanni, AUS",1962,L4,Class C,131,56,"2.50,7",,
+1977,22,6,,,Mazda Savanna RX-3,"Lynn Brown, AUS; Bruce Stewart, AUS",2292 eq.,R2,Class B,129,40,"2.43,7",,
+1977,DNF,,,,Holden Torana LX A9X,"Bob Forbes, AUS; Kevin Bartlett, AUS",5044,V8,Class A,147,11,"2.27,5",,Engine
+1977,DNF,,,,Holden Torana LX A9X,"Garth Wigston, AUS; Bruce Hindhaugh, AUS",5044,V8,Class A,144,14,"2.29,5",,Accident
+1977,DNF,,16,Craven Mild Racing,Holden Torana LX A9X,"Allan Grice, AUS; Frank Gardner, AUS",5044,V8,Class A,140,4,"2.25,8",,Engine
+1977,DNF,,13,Bryan Byrt Ford,Ford Falcon XB GT,"Dick Johnson, AUS; Vern Schuppan, AUS",5760,V8,Class A,124,15,"2.30,0",,Oil pressure
+1977,DNF,,7,Ron Hodgson Racing,Holden Torana LX A9X,"Bob Morris, AUS; John Fitzpatrick, GB",5044,V8,Class A,111,7,"2.26,6",,Oil seal
+1977,DNF,,24,Bill Patterson Holden,Holden Torana LX A9X,"Gerry Marshall, GB; Basil van Rooyen, ZA",5044,V8,Class A,107,18,"2.30,9",,Engine
+1977,DNF,,,,BMW 2002 TII,"Phil Ward, AUS; Phil Lucas, AUS",1990,L4,Class C,106,55,"2.49,2",,
+1977,DNF,,,,Mazda Savanna RX-3,"Yoshimi Katayama, J; Geoff Leeds, AUS",2292 eq.,R2,Class B,103,38,"2.43,0",,Accident
+1977,DNF,,,,BMW 2002 TII,"Peter Granger, AUS; Ian Richards, AUS",1990,L4,Class C,96,57,"2.51,2",,
+1977,DNF,,,Marlboro Holden Dealer Team,Holden Torana LX A9X,"John Harvey, AUS; Wayne Negus, AUS",5044,V8,Class A,91,8,"2.26,8",,Differential
+1977,DNF,,19,,Holden Torana LX A9X,"Ian Diffen, AUS; Tim Slako, AUS",5044,V8,Class A,90,19,"2.31,6",,Differential
+1977,DNF,,49,Bob Holden,Ford Escort II RS 2000,"Lyndon Arnel, AUS; Richard Carter, AUS",1993,L4,Class C,88,46,"2.46,7",,
+1977,DNF,,60,,Toyota Celica,"Peter Williamson, AUS; Gary Scott, AUS",1968,L4,Class C,76,34,"2.41,6",,Engine
+1977,DNF,,,,Mazda Savanna RX-3,"John Duggan, AUS; Brian Wheeler, AUS",2292 eq.,R2,Class B,72,44,"2.44,9",,Transmission
+1977,DNF,,,,Alfa Romeo Alfetta GTV,"Peter Hopwood, AUS; Warwick Henderson, AUS",1985,L4,Class C,65,53,"2.48,5",,
+1977,DNF,,53,Lennox Motors,VW Golf,"Chris Heyer, AUS; Rüdiger Dahlhäuser, D",1588,L4,Class C,62,50,"2.47,5",,
+1977,DNF,,,,Holden Torana LX A9X,"Graham Ryan, AUS; Phillip Arnull, AUS",5044,V8,Class A,57,23,"2.32,9",,Camshaft
+1977,DNF,,,,Ford Falcon XB GT,"Jim Richards, NZ; Rod Coppins, AUS",5760,V8,Class A,53,6,"2.26,0",,Engine
+1977,DNF,,,,Ford Capri 3000,"Bill Stanley, AUS; Les Grose, AUS",2993,V6,Class B,46,33,"2.44,5",,Transmission
+1977,DNF,,,,Ford Capri 3000,"Lakis Manticas, AUS; Graham Moore, AUS",2993,V6,Class B,46,28,"2.38,4",,Electrics
+1977,DNF,,,,Holden Torana LX A9X,"Warren Cullen, AUS; Brian Sampson, AUS",5044,V8,Class A,39,24,"2.34,6",,Fuel pump
+1977,DNF,,,Brian Wood Ford,Ford Falcon XC,"Murray Carter, AUS; Bob Stevens, AUS",5760,V8,Class A,38,12,"2.27,9",,Engine
+1977,DNF,,,Bob Jane T-Marts,Holden Torana LX A9X,"Bob Jane, AUS; Ian Geoghegan, AUS",5044,V8,Class A,35,5,"2.25,9",,Oil filter
+1977,DNF,,,,Ford Falcon XB GT,"Rod Donovan, AUS; Ron Lindau, AUS",5760,V8,Class A,31,29,"2.38,5",,Engine
+1977,DNF,,17,Ron Hodgson Racing,Holden Torana LX A9X,"Johnny Rutherford, USA; Janet Guthrie, USA",5044,V8,Class A,13,26,"2.34,8",,Accident
+1977,DNF,,,,Triumph Dolomite Sprint,"James Laing-Peach, AUS; Bill Evans, AUS",1998,L4,Class C,12,39,"2.43,4",,Axle
+1977,DNF,,,,Holden Gemini,"Allan Gough, AUS; Kel Gough, AUS",1584,L4,Class C,7,59,"2.53,8",,Piston
+1977,DNF,,,,Ford Capri 3000,"Lawrie Nelson, AUS; Brian Reed, AUS",2993,V6,Class B,6,30,"2.38,5",,Gearbox
+1977,DNQ,,,,Alfa Romeo 2000 GTV,"Gordon Rich, AUS; Unknown",1962,L4,Class C,,,,,Accident
+1977,NC,,5,Goss Garages,Ford Falcon XC,"John Goss, AUS; Henri Pescarolo, F",5760,V8,Class A,113,16,"2.30,2",,Insufficient laps
+1977,NC,,,,Ford Escort II RS 2000,"Bruce Hodgson, AUS; Dave Morrow, AUS",1993,L4,Class C,107,52,"2.48,4",,Insufficient laps
+1977,NC,,,,Ford Falcon XC,"Rusty French, AUS; Leo Leonard, NZ",5760,V8,Class A,99,17,"2.30,3",,Insufficient laps
+1977,NC,,,,Ford Capri 3000,"Russell Skaife, AUS; Sue Ransom, AUS",2993,V6,Class B,98,36,"2.42,3",,Insufficient laps
+1977,NC,,,,Ford Capri 3000,"Alan Cant, AUS; Satoru Nakajima, J",2993,V6,Class B,95,32,"2.40,2",,Insufficient laps
+1977,NC,,,,Ford Capri 3000,"Ray Farrar, AUS; Geoff Wade, AUS",2993,V6,Class B,93,60,"2.55,2",,Insufficient laps
+1977,NC,,50,Bob Holden,Ford Escort II RS 2000,"Bob Holden, AUS; Ian Messner, AUS",1993,L4,Class C,84,49,"2.47,1",,Insufficient laps
+1977,NC,,,,Ford Falcon XB GT,"Graham Ritter, AUS; Jim Keogh, AUS",5760,V8,Class A,82,20,"2.31,6",,Insufficient laps
+1977,NC,,,,Ford Escort II RS 2000,"Rod Morris, AUS; Paul Gulson, AUS",1993,L4,Class C,46,54,"2.49,0",,Insufficient laps
+1977,DSQ,,,,Mazda Savanna RX-3,"Terry Shiel, AUS; Don Holland, AUS",2292 eq.,R2,Class B,152,31,"2.39,8",,
+1978,1,1,05,Marlboro Holden Dealer Team,Holden Torana LX A9X,"Peter Brock, AUS; Jim Richards, NZ",5044,V8,Class A,"163 laps, 6:45.53,9",HH1,"2.20,006",,
+1978,2,2,6,Craven Mild Racing,Holden Torana LX A9X,"Allan Grice, AUS; John Leffler, AUS",5044,V8,Class A,162,HH7,"2.25,950",,
+1978,3,3,18,Brian Wood Ford,Ford Falcon XC,"Murray Carter, AUS; Graeme Lawrence, NZ",5760,V8,Class A,160,31,"2.50,9",,
+1978,4,4,,,Holden Torana LX A9X,"Gary Cooke, AUS; Doug Chivas, AUS",5044,V8,Class A,158,27,"2.39,0",,
+1978,5,5,17,Bryan Byrt Ford,Ford Falcon XC,"Dick Johnson, AUS; Vern Schuppan, AUS",5760,V8,Class A,153,HH6,"2.25,632",,
+1978,6,6,8,,Holden Torana LX A9X,"Jack Brabham, AUS; Brian Muir, AUS",5044,V8,Class A,153,HH8,"2.25,988",,
+1978,7,7,,,Holden Torana LX A9X,"Warren Cullen, AUS; Johnnie Walker, AUS",5044,V8,Class A,152,13,"2.27,5",,
+1978,8,8,,,Holden Torana LX A9X,"Barry Seton, AUS; Don Smith, AUS",5044,V8,Class A,152,15,"2.28,3",,
+1978,9,1,32,Brian Wood Ford,Ford Escort II RS 2000,"Rod Stevens, AUS; Bill Evans, AUS",1993,L4,Class C,149,38,"2.55,5",,
+1978,10,1,,Masterton Homes Pty Ltd,Ford Capri 3000,"Phil Lucas, AUS; Steve Masterton, AUS",2993,V6,Class B,149,40,"2.56,1",,
+1978,11,2,70,Peter Williamson Toyota,Toyota Celica,"Peter Williamson, AUS; Mike Quinn, AUS",1968,L4,Class C,149,36,"2.54,7",,
+1978,12,2,,,Mazda Savanna RX-3,"Terry Shiel, AUS; Ross Burbidge, AUS",2292 eq.,R2,Class B,148,37,"2.55,4",,
+1978,13,3,,,Ford Capri 3000,"Terry Daly, AUS; Eric Boord, AUS",2993,V6,Class B,148,30,"2.50,0",,
+1978,14,4,37,,Ford Capri 3000,"Peter Hopwood, AUS; Jim Davidson, AUS",2993,V6,Class B,147,35,"2.54,6",,
+1978,15,5,33,,Ford Capri 3000,"Don Holland, AUS; Lawrie Nelson, AUS",2993,V6,Class B,145,29,"2.48,4",,
+1978,16,3,,,Alfa Romeo 2000 GTV,"Ray Gulson, AUS; Paul Gulson, AUS",1962,L4,Class B,143,55,"3.03,6",,
+1978,17,6,38,,Mazda Savanna RX-3,"Barry Jones, AUS; Brian Potts, AUS",2292 eq.,R2,Class B,142,63,no time,,
+1978,18,4,,,Ford Escort II RS 2000,"Ian Messner, AUS; Bill Stanley, AUS",1993,L4,Class C,142,52,"3.01,0",,
+1978,19,9,25,Marlboro Holden Dealer Team,Holden Torana LX A9X,"John Harvey, AUS; Charlie O'Brien, AUS",5044,V8,Class A,139,11,"2.22,9",,
+1978,20,7,,,Mazda Savanna RX-3,"John Duggan, AUS; Brian Wheeler, AUS",2292 eq.,R2,Class B,137,45,"2.59,1",,
+1978,21,8,,,Mazda Savanna RX-3,"Arthur Hardwick, AUS; Greg McCombie, AUS",2292 eq.,R2,Class B,136,34,"2.53,9",,
+1978,22,10,10,,Holden Torana LX A9X,"Bob Forbes, AUS; Kevin Bartlett, AUS",5044,V8,Class A,136,12,"2.27,3",,
+1978,23,11,,,Ford Falcon XC,"Garry Willmington, AUS; Jeff Barnes, AUS",5760,V8,Class A,136,23,"2.36,2",,
+1978,24,12,,,Holden Torana LX A9X,"Graham Ryan, AUS; Phillip Arnull, AUS",5044,V8,Class A,135,20,"2.31,5",,
+1978,25,5,,,Triumph Dolomite Sprint,"Terry Wade, AUS; John Myers, AUS",1998,L4,Class C,134,47,"2.59,7",,
+1978,26,6,,,Alfa Romeo 2000 GTV,"Peter Brown, AUS; Graham Ritter, AUS",1962,L4,Class B,133,41,"2.58,0",,
+1978,27,9,,,Mazda Savanna RX-3,"Nick Louis, AUS; Stephen Stockdale, AUS",2292 eq.,R2,Class B,132,43,"2.58,6",,
+1978,28,7,,,Ford Escort II RS 2000,"Bruce Hodgson, AUS; Dave Morrow, AUS",1993,L4,Class C,130,46,"2.59,5",,
+1978,29,8,,,Toyota Celica,"Jeff Harris, AUS; Doug Clark, AUS",1968,L4,Class C,128,58,"3.07,6",,
+1978,30,13,,Rod Donovan Ford,Ford Falcon XC,"Rod Donovan, AUS; Craig McAllister, AUS",5760,V8,Class A,136,23,"2.36,2",,
+1978,31,9,,,Ford Escort II RS 2000,"Ian Sonneman, AUS; John English, AUS",1993,L4,Class C,121,50,"3.00,3",,
+1978,DNF,,,,Holden Torana LX A9X,"Ralph Radburn, AUS; Robyn Hamilton, AUS",5044,V8,Class A,148,21,"2.31,7",,Electrics
+1978,DNF,,,,Ford Capri 3000,"Sue Ransom, AUS; Bill Brown, AUS",2993,V6,Class B,144,33,"2.52,6",,Tire
+1978,DNF,,,,Holden Torana LX A9X,"Garth Wigston, AUS; Wayne Negus, AUS",5044,V8,Class A,118,HH9,"2.26,144",,Engine
+1978,DNF,,,,Ford Escort II RS 2000,"Rod Morris, AUS; Terry Finnigan, AUS",1993,L4,Class C,115,56,"3.04,7",,Axle
+1978,DNF,,,Cadbury Schweppes Pty Ltd,Holden Torana LX A9X,"Peter Janson, GB; Phil Brock, AUS",5044,V8,Class A,110,14,"2.27,6",,Engine
+1978,DNF,,14,Thomson Ford,Ford Falcon XC,"Ron Dickson, AUS; John McCormack, AUS",5760,V8,Class A,100,16,"2.29,0",,Distributor
+1978,DNF,,,,Triumph Dolomite Sprint,"Paul Berthier, AUS; Dick Johnson, AUS",1998,L4,Class C,95,49,"3.00,1",,Gearbox
+1978,DNF,,,,Ford Escort II RS 2000,"Bob Holden, AUS; Lyndon Arnel, AUS",1993,L4,Class C,93,48,"2.59,7",,Transmission
+1978,DNF,,,,Holden Torana LX A9X,"Tim Slako, AUS; Colin Hall, AUS",5044,V8,Class A,92,26,"2.38,2",,
+1978,DNF,,39,,Mazda Savanna RX-3,"David Clement, AUS; Barry Lee, AUS",2292 eq.,R2,Class B,82,44,"2.59,0",,Engine
+1978,DNF,,1,Moffat Ford Dealers,Ford Falcon XC,"Allan Moffat, AUS; Jacky Ickx, B",5760,V8,Class A,81,HH3,"2.21,597",,Engine
+1978,DNF,,,,Ford Falcon XC,"Jim Keogh, AUS; Grant Walker, AUS",5760,V8,Class A,74,19,"2.31,5",,Engine
+1978,DNF,,7,Ron Hodgson Racing,Holden Torana LX A9X,"Bob Morris, AUS; John Fitzpatrick, GB",5044,V8,Class A,73,HH4,"2.21,766",,Engine
+1978,DNF,,,Scotty Taylor Holden,Holden Torana LX A9X,"Alan ""Scotty"" Taylor, AUS; Kevin Kennedy, AUS",5044,V8,Class A,68,22,"2.32,3",,
+1978,DNF,,,,Ford Falcon XC,"John Goss, AUS; Henri Pescarolo, F",5760,V8,Class A,67,28,"2.48,4",,
+1978,DNF,,,,Ford Capri 3000,"Ray Farrar, AUS; Gerry Wittenden, AUS",2993,V6,Class B,66,62,no time,,Engine
+1978,DNF,,,,Mazda Savanna RX-3,"Dean Gall, AUS; Allan Bryant, AUS",2292 eq.,R2,Class B,61,54,"3.03,2",,Engine
+1978,DNF,,2,Moffat Ford Dealers,Ford Falcon XC,"Colin Bond, AUS; Fred Gibson, AUS",5760,V8,Class A,59,HH2,"2.20,871",,Engine
+1978,DNF,,34,Bryan Byrt Ford,Ford Falcon XC,"John French, AUS; Warwick Brown, AUS",5760,V8,Class A,57,HH10,"2.30,244",,Distributor
+1978,DNF,,53,Lennox Motors,VW Golf,"Chris Heyer, AUS; Rüdiger Dahlhäuser, D",1588,L4,Class C,35,60,"3.16,5",,Throttle
+1978,DNF,,,,Ford Capri 3000,"Cam Worner, AUS; Geoff Leeds, AUS",2993,V6,Class B,29,32,"2.51,9",,Accident
+1978,DNF,,,,Holden Torana LX A9X,"Ian Geoghegan, AUS; Garry Rogers, AUS",5044,V8,Class A,29,17,"2.29,5",,Engine
+1978,DNF,,,,BMW 3.0 Si,"Jim Hunter, AUS; Barry Lake, AUS",2985,L6,Class B,27,53,"3.01,1",,Engine
+1978,DNF,,,,BMW 3.0 Si,"Phil McDonnell, AUS; Lynn Brown, AUS",2985,L6,Class B,21,39,"2.55,7",,Engine
+1978,DNF,,72,,Alfa Romeo 2000 GTV,"Alf Grant, AUS; Geoff Russell, AUS",1962,L4,Class C,21,57,"3.06,0",,Rocker
+1978,DNF,,27,Ron Hodgson Racing,Holden Torana LX A9X,"Derek Bell, GB; Dieter Quester, A",5044,V8,Class A,5,HH5,"2.24,602",,Accident
+1978,DNF,,,,Alfa Romeo Alfetta GTV,"Patrick Nève, B; Gary Leggatt, AUS",1985,L4,Class C,3,42,"2.58,2",,Oil filter
+1978,NC,,,,Ford Falcon XC,"Leo Leonard, NZ; Gary Sprague, AUS",5760,V8,Class A,119,18,"2.30,7",,Insufficient laps
+1978,NC,,,,Holden Gemini,"Allan Gough, AUS; Kel Gough, AUS",1584,L4,Class C,109,59,"3.10,7",,Insufficient laps
+1978,NC,,,,Ford Capri 3000,"Alan Cant, AUS; Bruce Stewart, AUS",2993,V6,Class B,91,61,no time,,Insufficient laps
+1978,NC,,,,Ford Falcon XC,"Rusty French, AUS; Graham Moore, AUS",5760,V8,Class A,90,25,"2.37,3",,Insufficient laps
+1978,NC,,,,Ford Escort II RS 2000,"Greville Arnel, AUS; Greg Toepfer, AUS",1993,L4,Class C,89,51,"3.00,4",,Insufficient laps
+1979,1,1,05,Marlboro Holden Dealer Team,Holden Torana LX A9X,"Peter Brock, AUS; Jim Richards, NZ",5044,V8,Class A,"163 laps, 6:38.15,8",HH1,"2.20,500",,
+1979,2,2,19,Cadbury Schweppes Pty Ltd,Holden Torana LX A9X,"Peter Janson, GB; Larry Perkins, AUS",5044,V8,Class A,157,HH7,"2.26,212",,
+1979,3,3,14,,Holden Torana LX A9X,"Ralph Radburn, AUS; John Smith, AUS",5044,V8,Class A,155,17,"2.42,1",,
+1979,4,4,6,Craven Mild Racing,Holden Torana LX A9X,"Allan Grice, AUS; Alf Costanzo, AUS",5044,V8,Class A,155,HH3,"2.23,539",,
+1979,5,5,34,,Holden Torana LX A9X,"Garry Rogers, AUS; Bob Stevens, AUS",5044,V8,Class A,152,HH6,"2.25,918",,
+1979,6,6,15,Scotty Taylor Holden,Holden Torana LX A9X,"Alan ""Scotty"" Taylor, AUS; Kevin Kennedy, AUS",5044,V8,Class A,151,15,"2.41,0",,
+1979,7,7,8,,Holden Torana LX A9X,"Barry Seton, AUS; Don Smith, AUS",5044,V8,Class A,148,16,"2.41,9",,
+1979,8,8,21,,Holden Torana LX A9X,"Charlie O'Brien, AUS; Garth Wigston, AUS",5044,V8,Class A,147,HH5,"2.24,579",,
+1979,9,1,66,Toyota Dealer Team,Toyota Celica,"Peter Williamson, AUS; Mike Quinn, AUS",1968,L4,Class C,146,33,"2.58,2",,
+1979,10,2,58,,Alfa Romeo Alfetta GTV,"Phil McDonnell, AUS; Derek Bell, GB",1985,L4,Class C,145,27,"2.53,6",,
+1979,11,3,59,,Alfa Romeo Alfetta GTV,"Frank Porter, AUS; Tony Niovanni, AUS",1985,L4,Class C,142,39,"3.03,1",,
+1979,12,4,64,,Alfa Romeo 2000 GTV,"Ray Gulson, AUS; Paul Gulson, AUS",1962,L4,Class C,140,37,"3.02,4",,
+1979,13,1,48,,Mazda Savanna RX-3,"Barry Lee, AUS; John Gates, AUS",2292 eq,R2,Class B,139,29,"2.54,2",,
+1979,14,9,12,,Ford Falcon XC,"Jim Keogh, AUS; John Mann, AUS",5760,V8,Class A,138,22,"2.45,2",,
+1979,15,5,65,,Toyota Celica,"Wally Scott, AUS; Peter Walton, AUS",1968,L4,Class C,133,50,"3.14,7",,
+1979,16,2,4,,Ford Capri 3000,"Terry Daly, AUS; Eric Boord, AUS",2993,V6,Class B,133,30,"2.55,2",,
+1979,17,10,24,,Holden Torana LX A9X,"Brian Sampson, AUS; Alan Browne, AUS",5044,V8,Class A,133,20,"2.43,1",,
+1979,18,3,41,,Ford Capri 3000,"Peter Hopwood, AUS; Alan Cant, AUS",2993,V6,Class B,130,32,"2.56,7",,
+1979,19,4,39,,Mazda Savanna RX-3,"Stephen Stockdale, AUS; John Duggan, AUS",2292 eq,R2,Class B,130,31,"2.55,2",,
+1979,20,5,44,Scuderia Veloce,Volvo 242 GT,"Spencer Martin, AUS; David McKay, AUS",2320,L4,Class B,129,47,"3.12,6",,
+1979,21,1,70,,Isuzu Gemini,"David Seldon, AUS; Gary Leggatt, AUS",1584,L4,Class D,129,43,"3.07,0",,
+1979,22,2,71,,Holden Gemini,"Bernie McClure, AUS; David Langman, AUS",1584,L4,Class D,128,52,"3.16,9",,
+1979,23,3,75,,Holden Gemini,"Jim Faneco, AUS; Gary Rowe, AUS",1584,L4,Class D,126,48,"3.13,0",,
+1979,24,4,74,,Holden Gemini,"Ken Price, AUS; Ian Wells, AUS",1584,L4,Class D,124,55,"3.22,2",,
+1979,25,6,56,,Triumph Dolomite Sprint,"Terry Wade, AUS; Gerald Kay, AUS",1998,L4,Class C,120,40,"3.03,9",,
+1979,26,5,68,Bob Holden Motors Manly Vale,Ford Escort 1.6,"Bob Holden, AUS; David Earle, AUS",1599,L4,Class D,116,61,no time,,
+1979,27,7,62,,Triumph Dolomite Sprint,"Martin Power, AUS; Peter Kuebler, AUS",1998,L4,Class C,114,46,"3.11,0",,
+1979,28,6,73,Lennox Motors,VW Golf,"Chris Heyer, AUS; Peter Lander, AUS; (Rüdiger Dahlhäuser, D)",1588,L4,Class D,111,49,"3.14,7",,
+1979,DNF,,25,,Ford Falcon XC,"Allan Moffat, AUS; John Fitzpatrick, GB",5760,V8,Class A,136,HH4,"2.24,270",,Engine
+1979,DNF,,52,Masterton Homes Pty Ltd,Ford Capri 3000,"Steve Masterton, AUS; Phil Lucas, AUS",2993,V6,Class B,130,28,"2.54,1",,Gearbox
+1979,DNF,,32,,Holden Torana LX A9X,"Fred Gibson, AUS; Joe Moore, AUS",5044,V8,Class A,125,18,"2.42,7",,Gearbox
+1979,DNF,,13,,Holden Torana LX A9X,"Tim Slako, AUS; Colin Hall, AUS",5044,V8,Class A,111,19,"2.42,8",,Engine
+1979,DNF,,47,,Mazda Savanna RX-3,"Barry Jones, AUS; Terry Finnigan, AUS",2292 eq,R2,Class B,106,26,"2.50,8",,Engine
+1979,DNF,,33,,Holden Torana LX A9X,"Bob Skelton, AUS; Don Holland, AUS",5044,V8,Class A,105,44,"3.09,2",,Distributor
+1979,DNF,,50,Masterton Homes Pty Ltd,Ford Capri III 3.0S,"Lawrie Nelson, AUS; Tony Farrell, AUS",2993,V6,Class B,105,53,"3.17,0",,Differential
+1979,DNF,,7,Ron Hodgson Racing,Holden Torana LX A9X,"Bob Morris, AUS; Dieter Quester, A",5044,V8,Class A,95,HH2,"2.22,466",,Gearbox
+1979,DNF,,29,Willmington Performance,Ford Falcon XC,"Garry Willmington, AUS; John Wright, AUS",5760,V8,Class A,95,24,"2.45,7",,Battery
+1979,DNF,,18,,Ford Falcon XC,"Murray Carter, AUS; Graeme Lawrence, NZ",5760,V8,Class A,74,14,"2.38,7",,Engine
+1979,DNF,,40,,Mazda RX-7,"Terry Shiel, AUS; Ross Burbidge, AUS",2292 eq,R2,Class B,72,36,"3.00,9",,Engine
+1979,DNF,,43,,Ford Capri 3000,"Lakis Manticas, AUS; Geoff Leeds, AUS",2993,V6,Class B,69,34,"2.58,3",,Engine
+1979,DNF,,9,Nine Network Racing Team,Chevrolet Camaro,"John McCormack, AUS; Bob Forbes, AUS",5736,V8,Class A,62,60,No time,,Engine
+1979,DNF,,30,,Ford Falcon XC,"Bill O'Brien, AUS; Ray Winter, AUS",5760,V8,Class A,62,21,"2.44,2",,Engine
+1979,DNF,,26,Marlboro Holden Dealer Team,Holden Torana LX A9X,"John Harvey, AUS; Ron Harrop, AUS",5044,V8,Class A,57,11,"2.33,9",,Accident
+1979,DNF,,11,,Holden Torana LX A9X,"Gary Cooke, AUS; Warwick Brown, AUS",5044,V8,Class A,57,HH8,"2.27,043",,Engine
+1979,DNF,,69,,Holden Gemini,"Mel Smith, AUS; Mel Owen, AUS",1584,L4,Class D,51,56,"3.30,9",,Engine
+1979,DNF,,61,,Toyota Celica,"Graeme Bailey, AUS; Doug Clark, AUS",1968,L4,Class C,46,35,"2.59,7",,Engine
+1979,DNF,,77,Toyota Dealer Team,Toyota Corolla,"Mark Thatcher, GB; Kiyoshi Misaki, J",1587,L4,Class C,41,54,"3.20,1",,Oil pump
+1979,DNF,,22,,Holden Torana LX A9X,"Warren Cullen, AUS; Graham McRae, NZ",5044,V8,Class A,30,13,"2.38,2",,Engine
+1979,DNF,,17,Bryan Byrt Ford,Ford Falcon XC,"Dick Johnson, AUS; Gary Scott, AUS",5760,V8,Class A,24,HH9,"2.27,655",,Engine
+1979,DNF,,4,Bryan Byrt Ford,Ford Falcon XC,"Colin Bond, AUS; John French, AUS",5760,V8,Class A,23,HH10,"2.30,018",,Engine
+1979,DNF,,60,,Ford Escort II RS 2000,"Bill Stanley, AUS; Ian Messner, AUS",1993,L4,Class C,23,45,"3.09,4",,Gearbox
+1979,DNF,,2,Ron Dickson,Chevrolet Camaro,"Ron Dickson, AUS; Dick Barbour, USA",5736,V8,Class A,16,59,No time,,Oil pump
+1979,DNF,,45,,Mazda RX-7,"Dean Gall, AUS; Allan Bryant, AUS",2292 eq,R2,Class B,16,57,"3.32,4",,Gearbox
+1979,DNF,,,,Ford Escort II RS 2000,"Ken Harrison, AUS; Ray Cutchie, AUS",1993,L4,Class C,,51,"3.16,1",,
+1979,NC,,3,,Ford Falcon XC,"John Goss, AUS; Henri Pescarolo, F",5760,V8,Class A,118,58,no time,,Insufficient laps
+1979,NC,,55,,Ford Escort II RS 2000,"Graham Mein, AUS; Geoff Russell, AUS",1993,L4,Class C,105,41,"3.05,8",,Insufficient laps
+1979,NC,,35,,Ford Falcon XC,"Barry Parsons, AUS; Tom Rabold, AUS",5760,V8,Class A,38,63,No time,,Insufficient laps
+1979,NC,,36,,Ford Falcon XC,"Rod Stevens, AUS; Bill Evans, AUS",5760,V8,Class A,24,25,"2.47,6",,Gearbox
+1979,NC,,54,,Ford Escort II RS 2000,"Roger Cartwright, AUS; Greg Toepfer, AUS",1993,L4,Class C,24,62,No time,,Accident
+1979,NC,,27,,Ford Falcon XC,"Ron Wanless, AUS; Leo Leonard, NZ",5760,V8,Class A,21,12,"2.35,1",,Engine
+1979,NC,,10,,Ford Falcon XC,"Rusty French, AUS; Graham Moore, AUS",5760,V8,Class A,9,23,"2.45,6",,Electrical
+1979,DNP,6,,Lennox Motors,VW Golf,"Peter Lander, AUS; Paul Bernasconi, AUS",1588,L4,Class D,,,,,Withdrawn
+1979,DSQ,,42,,BMW 3.0 Si,"Lynn Brown, AUS; Brian Boyd, AUS",2985,L6,Class B,138,38,"3.02,9",,
+1979,DSQ,,76,,Holden Gemini,"Allan Gough, AUS; Kel Gough, AUS",1584,L4,Class D,135,42,"3.07,0",,
+1980,1,1,05,Marlboro Holden Dealer Team,Holden VC Commodore,"Peter Brock, AUS; Jim Richards, NZ",5044,V8,Class A,"163 laps, 6:47.52,7",HH3,"2.21,815",,
+1980,2,2,4,Cadbury Schweppes Pty Ltd,Holden VC Commodore,"Peter Janson, GB; Larry Perkins, AUS",5044,V8,Class A,162,HH8,"2.25,505",,
+1980,3,3,21,Paul Gulson,Holden VB Commodore,"Ian Geoghegan, AUS; Paul Gulson, AUS",5044,V8,Class A,159,13,"2.28,9",,
+1980,4,4,15,Re-Car Consolidated Industries,Holden VC Commodore,"Alan Browne, AUS; Brian Sampson, AUS",5044,V8,Class A,158,15,"2.29,9",,
+1980,5,5,10,,Holden VC Commodore,"Charlie O'Brien, AUS; Garth Wigston, AUS",5044,V8,Class A,157,HH7,"2.24,038",,
+1980,6,6,16,,Holden VC Commodore,"Garry Rogers, AUS; Fred Geissler, AUS",5044,V8,Class A,157,HH10,"2.27,452",,
+1980,7,7,6,Craven Mild Racing,Holden VC Commodore,"Allan Grice, AUS; John Smith, AUS",5044,V8,Class A,156,HH5,"2.23,650",,
+1980,8,1,35,,Ford Capri 3000,"Barry Seton, AUS; Don Smith, AUS",2993,V6,Class B,156,22,"2.32,4",,
+1980,9,8,26,Re-Car Consolidated Industries,Holden VC Commodore,"Ron Wanless, AUS; Greg Wright, AUS",5044,V8,Class A,154,26,"2.33,8",,
+1980,10,9,14,,Holden VC Commodore,"Wayne Negus, AUS; Trevor Hine, AUS",5044,V8,Class A,153,19,"2.32,0",,
+1980,11,10,9,Nine Network Racing Team,Chevrolet Camaro,"Kevin Bartlett, AUS; Bob Forbes, AUS",5736,V8,Class A,152,HH1,"2.20,972",,
+1980,12,1,51,Chickadee Chicken,Toyota Celica,"Graeme Bailey, AUS; Doug Clark, AUS",1968,L4,Class C,148,30,"2.37,6",,
+1980,13,2,32,Masterton Homes Pty Ltd,Ford Capri 3000,"Steve Masterton, AUS; Colin Bond, AUS",2993,V6,Class B,147,16,"2.31,0",,
+1980,14,2,45,,Ford Escort II RS 2000,"Graham Mein, AUS; Geoff Russell, AUS",1993,L4,Class C,142,41,"2.51,0",,
+1980,15,1,54,,Isuzu Gemini,"Terry Finnigan, AUS; Peter Dane, AUS",1584,L4,Class D,140,46,"2.53,5",,
+1980,16,2,57,,Mitsubishi Lancer,"Ian Burrell, AUS; Rob Shute, AUS",1600,L4,Class D,139,45,"2.53,3",,
+1980,17,3,37,Masterton Homes Pty Ltd,Ford Capri 3000,"Peter Hopwood, AUS; Terry Daly, AUS",2993,V6,Class B,138,24,"2.33,3",,
+1980,18,11,2,Ron Dickson,Chevrolet Camaro,"Ron Dickson, AUS; Bob Stevens, AUS",5736,V8,Class A,138,12,"2.28,8",,
+1980,19,3,40,,Ford Escort II RS 2000,"Ray Cutchie, AUS; Ray Farrar, AUS",1993,L4,Class C,135,32,"2.41,1",,
+1980,20,3,65,Bob Holden Motors Manly Vale,Ford Escort 1.6,"Bob Holden, AUS; David Earle, AUS",1599,L4,Class D,135,51,"2.59,1",,
+1980,21,4,42,,Alfa Romeo Alfetta GTV,"Warwick Henderson, AUS; Graham Harrison, AUS",1985,L4,Class C,135,44,"2.52,8",,
+1980,22,12,19,,Holden VB Commodore,"Neville Bridges, AUS; Sue Ransom, AUS",5044,V8,Class A,134,40,"2.49,5",,
+1980,23,4,64,,Alfa Romeo Alfasud TI 1.5,"Ray Gulson, AUS; Paul Jones, AUS",1498,B4,Class D,134,51,"3.01,5",,
+1980,24,5,52,,Triumph Dolomite Sprint,"Terry Wade, AUS; Brian Reed, AUS",1998,L4,Class C,131,37,"2.45,7",,
+1980,25,5,58,,Holden Gemini,"Bernie McClure, AUS; David Langman, AUS",1584,L4,Class D,130,53,"3.00,7",,
+1980,26,6,43,,Ford Escort II RS 2000,"John Faulkner, AUS; Gary Dumbrell, AUS",1993,L4,Class C,129,36,"2.45,1",,
+1980,27,4,34,Scotty Taylor Holden,Holden VB Commodore,"Alan ""Scotty"" Taylor, AUS; Kevin Kennedy, AUS",5044,V8,Class A,128,48,"2.56,9",,
+1980,28,6,62,,Toyota Corolla,"John Gates, AUS; Alexandra Surplice, AUS",1587,L4,Class D,127,57,no time,,
+1980,29,7,61,,Ford Escort 1.6,"Ken Harrison, AUS; Ian Wells, AUS",1599,L4,Class D,126,55,"3.02,8",,
+1980,30,5,29,Capri Components,Ford Capri III 3.0S,"Lawrie Nelson, AUS; Tony Farrell, AUS",2993,V6,Class B,121,29,"2.36,5",,
+1980,31,7,53,,Ford Escort II RS 2000,"Tony Mulvihill, AUS; Brian Nightingale, AUS",1993,L4,Class C,120,56,"3.16,8",,
+1980,32,6,33,,Ford Capri 3000,"Bruce Stewart, AUS; Cam Worner, AUS",2993,V6,Class B,120,28,"2.36,4",,
+1980,33,8,55,,Isuzu Gemini,"Ken Price, AUS; Steve Jonas, AUS",1584,L4,Class D,116,50,"2.57,2",,
+1980,34,9,56,,Isuzu Gemini,"Allan Gough, AUS; Colin Spencer, AUS",1584,L4,Class D,111,43,"2.51,8",,
+1980,DNF,,11,,Holden VB Commodore,"Gary Cooke, AUS; Warwick Brown, AUS",5044,V8,Class A,155,11,"2.28,6",,Engine
+1980,DNF,,44,Toyota Dealer Team,Toyota Celica,"Peter Williamson, AUS; Mike Quinn, AUS",1968,L4,Class C,129,27,"2.34,9",,Electrics
+1980,DNF,,49,Jagparts Racing,Triumph Dolomite Sprint,"Gerald Kay, AUS; Martin Power, AUS",1998,L4,Class C,116,39,"2.48,1",,Throttle
+1980,DNF,,41,,Ford Escort II RS 2000,"Roger Cartwright, AUS; Rod Stevens, AUS",1993,L4,Class C,112,31,"2.38,5",,Clutch
+1980,DNF,,60,Isuzu Dealer Team,Isuzu Gemini,"Jim Faneco, AUS; Peter Boston, AUS",1584,L4,Class D,111,52,"2.59,9",,Accident
+1980,DNF,,12,Ron Dickson,Chevrolet Camaro,"Dick Barbour, USA; Sam Posey, USA; (Paul Newman, USA)",5736,V8,Class A,91,18,"2.31,5",,Gearbox
+1980,DNF,,7,,Ford Falcon XD,"Bill O'Brien, AUS; Bob Morris, AUS; Allan Moffat, AUS; (John Fitzpatrick, GB)",5044,V8,Class A,88,HH6,"2.23,850",,Engine
+1980,DNF,,25,Marlboro Holden Dealer Team,Holden VC Commodore,"John Harvey, AUS; Ron Harrop, AUS",5044,V8,Class A,78,HH4,"2.23,005",,Engine
+1980,DNF,,39,,Mazda RX-7,"Peter McLeod, AUS; Mal Brewster, AUS",2292 eq,R2,Class B,65,33,"2.41,7",,Differential
+1980,DNF,,63,Lennox Motors,VW Golf,"Chris Heyer, AUS; Peter Lander, AUS",1588,L4,Class D,63,42,"2.51,2",,Differential
+1980,DNF,,7,,Ford Falcon XD,"Joe Moore, AUS; Fred Gibson, AUS",5044,V8,Class A,88,HH6,"2.23,850",,Engine
+1980,DNF,,46,,Ford Escort II RS 2000,"Stephen Brook, AUS; Wally Storey, AUS",1993,L4,Class C,45,34,"2.43,3",,Electrics
+1980,DNF,,22,,Ford Falcon XD,"Jim Keogh, AUS; Ross Mathiesen, AUS",5044,V8,Class A,42,21,"2.32,1",,Oil pump
+1980,DNF,,8,,Ford Falcon XD,"Garry Willmington, AUS; Rod Donovan, AUS",5044,V8,Class A,24,23,"2.32,6",,Engine
+1980,DNF,,23,,Holden VB Commodore,"Phil Lyon, AUS; Bill Stanley, AUS",5044,V8,Class A,23,59,no time,,Oil leak
+1980,DNF,,28,,Mazda RX-7,"Allan Bryant, AUS; Terry Shiel, AUS",2292 eq,R2,Class B,19,38,"2.46,0",,Gearbox
+1980,DNF,,50,,Isuzu Gemini,"Gary Leggatt, AUS; David Seldon, AUS",1584,L4,Class D,18,60,no time,,Fuel pump
+1980,DNF,,17,Palmer Tube Mills,Ford Falcon XD,"Dick Johnson, AUS; John French, AUS",5044,V8,Class A,17,HH2,"2.21,117",,Accident
+1980,DNF,,48,,Alfa Romeo Alfetta GTV,"Phil McDonnell, AUS; Derek Bell, GB",1985,L4,Class C,16,35,"2.43,8",,Wheel failure
+1980,DNF,,3,,Jaguar XJ-S,"John Goss, AUS; Ron Gillard, AUS",5344,V12,Class A,14,HH2,"2.21,117",,Accident
+1980,DNF,,59,Country Dealer Team,Isuzu Gemini,"Gary Rowe, AUS; Geoff Wade, AUS",1584,L4,Class D,12,58,no time,,Gaerbox
+1980,DNF,,24,Army Reserve Racing Team,Ford Falcon XD,"Bob Muir, AUS; Kingsley Hibbard, AUS",5044,V8,Class A,7,17,"2.31,1",,Head gasket
+1980,DNF,,1,,Ford Falcon XD,"Allan Moffat, AUS; John Fitzpatrick, GB; (Bob Morris, AUS); (Bill O'Brien, AUS)",5044,V8,Class A,3,HH9,"2.26,596",,Piston rings
+1980,DNF,,47,,Toyota Celica,"Wally Scott, AUS; Peter Walton, AUS",1968,L4,Class C,3,47,"2.54,3",,Flywheel
+1980,NC,,18,Murray Carter,Ford Falcon XD,"Murray Carter, AUS; Graeme Lawrence, NZ",5044,V8,Class A,106,14,"2.29,0",,Insufficient laps
+1980,NC,,39,,Mazda RX-7,"Barry Jones, AUS; Geoff Leeds, AUS",2292 eq,R2,Class B,105,25,"2.33,4",,Insufficient laps
+1981,1,1,17,Palmer Tube Mills,Ford Falcon XD,"Dick Johnson, AUS; John French, AUS",5760,V8,Class A,"120 laps, 4:53.52,7",HH2,"2.38,813",,
+1981,2,2,7,Bob Morris Motor Sport,Ford Falcon XD,"Bob Morris, AUS; John Fitzpatrick, GB",5760,V8,Class A,"120 laps, 4:54.37,6",HH4,"2.39,339",,
+1981,3,1,43,Peter Stuyvesant International Racing,Mazda RX-7,"Allan Moffat, AUS; Derek Bell, GB",2292 eq,R2,Class B,119,HH5,"2.39,443",,
+1981,4,3,11,The Launceston Hotel Pty Ltd,Holden VC Commodore,"Garry Rogers, AUS; Clive Benson-Browne, AUS",5044,V8,Class A,118,HH6,"2.41,315",,
+1981,5,4,4,Re-Car Consolidated Industries,Holden VC Commodore,"Alan Browne, AUS; Tony Edmonsson, AUS",5044,V8,Class A,117,11,"2.25,1",,
+1981,6,5,20,King George Tavern,Ford Falcon XD,"Joe Moore, AUS; Christine Gibson, AUS",5760,V8,Class A,115,25,"2.29,9",,
+1981,7,2,44,JPS Team BMW,BMW 635 CSi,"Allan Grice, AUS; David Hobbs, GB",3475,L6,Class B,113,12,"2.26,2",,
+1981,8,3,32,Masterton Homes Pty Ltd,Ford Capri 3.0S,"Colin Bond, AUS; Don Smith, AUS",2993,V6,Class B,113,32,"2.33,0",,
+1981,9,6,8,Garry Wllmington,Ford Falcon XD,"Garry Willmington, AUS; Mike Griffin, AUS",5760,V8,Class A,113,18,"2.27,3",,
+1981,10,7,15,Valley Meat Hall,Ford Falcon XD,"John English, AUS; John Donnelly, AUS",5760,V8,Class A,112,22,"2.29,0",,
+1981,11,4,33,Masterton Homes Pty Ltd,Ford Capri 3.0S,"Steve Masterton, AUS; Bruce Stewart, AUS",2993,V6,Class B,111,34,"2.33,7",,
+1981,12,1,77,Toyota Dealer Team,Toyota Celica,"Peter Williamson, AUS; John Smith, AUS",1968,L4,Class C,111,36,"2.34,9",,
+1981,13,8,9,Nine Network Racing Team,Chevrolet Camaro,"Kevin Bartlett, AUS; Bob Forbes, AUS",5736,V8,Class A,111,HH1,"2.36,432",,
+1981,14,9,29,Brian Callaghan Racing P/L,Ford Falcon XD,"Brian Callaghan, AUS; Peter MacKay, AUS",5760,V8,Class A,111,24,"2.29,4",,
+1981,15,10,26,Scotty Taylor Holden,Holden VC Commodore,"Alan ""Scotty"" Taylor, AUS; Kevin Kennedy, AUS",5044,V8,Class A,109,29,"2.32,2",,
+1981,16,11,21,Ron Dickson,Chevrolet Camaro,"Ron Dickson, AUS; Bob Stevens, AUS",5736,V8,Class A,108,HH9,"2.44,505",,
+1981,17,5,39,Capri Components,Ford Capri 3.0S,"Lawrie Nelson, AUS; Peter Jones, AUS",2993,V6,Class B,108,41,"2.36,6",,
+1981,18,6,46,Hulcraft Autos,Ford Capri 3.0S,"John Gates, AUS; John Craft, AUS",2993,V6,Class B,108,40,"2.35,7",,
+1981,19,2,50,Cinzano Team,Alfa Romeo Alfetta GTV,"Gary Leggatt, AUS; Phil McDonnell, AUS",1962,L4,Class C,107,45,"2.42,1",,
+1981,20,3,60,Isuzu Dealer Team,Isuzu Gemini,"Jim Faneco, AUS; Allan Gough, AUS",1584,L4,Class C,103,52,"2.47,9",,
+1981,21,12,05,Marlboro Holden Dealer Team,Holden VC Commodore,"Peter Brock, AUS; Jim Richards, NZ",5044,V8,Class A,103,HH3,"2.39,043",,
+1981,22,13,6,John Sands 3MP Racing,Ford Falcon XD,"Rusty French, AUS; Leo Leonard, NZ",5760,V8,Class A,100,30,"2.32,4",,
+1981,23,4,68,Dandenong Mitsubishi,Mitsubishi Lancer,"Rod Stevens, AUS; Craig Bradtke, AUS",1600,L4,Class C,100,53,"2.49,3",,
+1981,24,5,59,Bathurst Light Car Club,Ford Escort RS 2000,"Tony Mulvihill, AUS; Brian Nightingale, AUS",1993,L4,Class C,97,56,"2.53,0",,
+1981,25,14,31,Ron Dickson,Chevrolet Camaro,"Graham Moore, AUS; Steve Dymand, USA",5736,V8,Class A,96,28,"2.30,7",,
+1981,26,7,40,Peter McLeod,Mazda RX-7,"Peter McLeod, AUS; Peter Dane, AUS",2292 eq,R2,Class B,96,33,"2.33,2",,
+1981,27,6,64,Bob Holden Motors Manly Vale,Ford Escort 1.6,"Phillip Revell, AUS; Ron Barnacle, AUS",1599,L4,Class C,93,59,"2.55,7",,
+1981,28,15,24,Army Reserve Racing Team,Ford Falcon XD,"Bob Muir, AUS; Ian Geoghegan, AUS",5760,V8,Class A,92,13,"2.26,4",,
+1981,DNF,,18,Murray Carter,Ford Falcon XD,"Murray Carter, AUS; Graeme Lawrence, NZ",5760,V8,Class A,109,16,"2.26,7",,Stub axle
+1981,DNF,,62,Alexandra Surplice,Toyota Corolla Levin,"Alexandra Surplice, AUS; Doug Clark, AUS",1587,L4,Class C,88,47,"2.43,1",,Alternator
+1981,DNF,,16,Re-Car Consolidated Industries,Holden VC Commodore,"Ron Wanless, AUS; Ralph Radburn, AUS",5044,V8,Class A,79,15,"2.26,7",,Engine
+1981,DNF,,30,Everlast Battery Service,Ford Falcon XD,"Bill O'Brien, AUS; Gary Cooke, AUS",5760,V8,Class A,74,17,"2.27,0",,Piston
+1981,DNF,,41,Darrell Lea Chocolate Shops P/L West End Mazda,Mazda RX-7,"Barry Jones, AUS; Geoff Leeds, AUS",2292 eq,R2,Class B,74,26,"2.30,2",,Apex seal
+1981,DNF,,61,Rex Monaghan,Ford Escort 1.6,"Ray Cutchie, AUS; Ray Farrar, AUS",1599,L4,Class C,73,58,"2.54,4",,Engine
+1981,DNF,,3,Cadbury Schweppes Pty Ltd,Holden VC Commodore,"Peter Janson, GB; Larry Perkins, AUS",5044,V8,Class A,67,HH7,"2.42,621",,Engine
+1981,DNF,,56,Nissan Motor Company,Nissan Bluebird Turbo,"Masahiro Hasemi, J; Kazuyoshi Hoshino, J",1770 tc,L4,Class C,66,31,"2.32,8",,Gearbox
+1981,DNF,,37,Trend Windows Pty Ltd,Ford Capri 3.0S,"Terry Daly, AUS; Peter Hopwood, AUS",2993,V6,Class B,56,37,"2.35,2",,Engine
+1981,DNF,,45,Precinct Performance Pty Ltd,Mazda RX-7,"Allan Bryant, AUS; Dean Gall, AUS",2292 eq,R2,Class B,54,39,"2.35,6",,Tailshaft
+1981,DNF,,27,Roadways/Gown-Hindhaugh,Holden VC Commodore,"Garth Wigston, AUS; Steve Harrington, AUS",5044,V8,Class A,53,HH10,"2.46,248",,Valve
+1981,DNF,,47,W.J. Scott,Toyota Celica,"Wally Scott, AUS; Peter Walton, AUS",1968,L4,Class C,50,48,"2.43,8",,Engine
+1981,DNF,,12,Cullen Automotive Industries,Holden VC Commodore,"Warren Cullen, AUS; Alan Jones, AUS",5044,V8,Class A,48,20,"2.28,5",,Oil pump
+1981,DNF,,35,Alexander Rotary Engines,Mazda RX-7,"Phil Alexander, AUS; Ron Gillard, AUS; (Makato Kamazuka, J)",2292 eq,R2,Class B,46,38,"2.35,6",,Tailshaft
+1981,DNF,,52,Bob Holden Motors Manly Vale,Ford Escort 2.0 GL,"Bob Holden, AUS; Wally Storey, AUS",1993,L4,Class C,44,49,"2.44,0",,Engine
+1981,DNF,,23,Great Eastland Television,Holden VB Commodore,"Paul Gulson, AUS; Rodney Combs, AUS",5044,V8,Class A,42,21,"2.28,5",,Piston
+1981,DNF,,25,Marlboro Holden Dealer Team,Holden VC Commodore,"John Harvey, AUS; Vern Schuppan, AUS",5044,V8,Class A,37,HH8,"2.43,018",,Accident
+1981,DNF,,65,Holden Dealer Team Special Vehicles Pty Ltd,Isuzu Gemini ZZ,"Phil Brock, AUS; Gary Scott, AUS",1817,L4,Class C,36,44,"2.41,3",,Differential
+1981,DNF,,51,Chickadee Chicken,Toyota Celica,"Graeme Bailey, AUS; Steve Land, AUS",1968,L4,Class C,34,42,"2.37,1",,Accident
+1981,DNF,,58,Graham Mein,Ford Escort RS 2000,"Graham Mein, AUS; Geoff Russell, AUS",1993,L4,Class C,34,50,"2.45,7",,Accident
+1981,DNF,,55,Nissan Motor Company,Nissan Bluebird Turbo,"Fred Gibson, AUS; George Fury, AUS",1770 tc,L4,Class C,30,43,"2.37,4",,Suspension
+1981,DNF,,54,Terry Finnigan,Isuzu Gemini,"Terry Finnigan, AUS; Ross Wittig, AUS",1584,L4,Class C,29,54,"2.49,9",,
+1981,DNF,,2,Citizen Watches Australia Pty Ltd,Holden VC Commodore,"Charlie O'Brien, AUS; Mike Quinn, AUS",5044,V8,Class A,16,23,"2.29,2",,Engine
+1981,DNF,,34,Penrith Mazda Centre Pty Ltd,Mazda RX-7,"Terry Shiel, AUS; Don Holland, AUS",2292 eq,R2,Class B,13,27,"2.30,5",,Engine
+1981,DNF,,42,Mazcars Croyden,Mazda RX-7,"John Duggan, AUS; Michael O'Hehir, AUS; (Lynn Brown, AUS)",2292 eq,R2,Class B,1,35,"2.34,0",,Accident
+1981,DNQ,,19,Neil Cunningham,Holden VC Commodore,"Neil Cunningham, AUS; Rod Coppins, AUS",5044,V8,Class A,,,,,Reserve
+1981,DNQ,,38,Les Grose,Ford Capri 3.0S,"Les Grose, AUS; Alan Cant, AUS",2993,V6,Class B,,,,,Reserve
+1981,DNQ,,71,Ken Harrison,Ford Escort 1.6,"Ken Harrison, AUS; Ian Wells, AUS",1599,L4,Class C,,,,,Reserve
+1981,DNQ,,22,Jim Keogh,Ford Falcon XD,"Jim Keogh, AUS; Andrew Newton, AUS",5760,V8,Class A,,,,,
+1981,DNQ,,48,Isuzu Gemini,,"Ken Price, AUS; Peter Fitzgerald, AUS; (Steve Jonas, AUS)",1584,L4,Class C,,,,,
+1981,DNQ,,53,VW Golf,,"Chris Heyer, AUS; Peter Lander, AUS",1596?,L4,Class C,,,,,
+1981,NC,,14,Fred Geissler,Holden VC Commodore,"Fred Geissler, AUS; Graham Watson, AUS",5044,V8,Class A,85,14,"2.26,5",,Insufficient laps completed
+1981,NC,,66,Scottune,Mitsubishi Colt,"Ian Burrell, AUS; Rob Shute, AUS",1597,L4,Class C,83,57,"2.53,5",,Insufficient laps completed
+1981,NC,,49,Jagparts Racing,Triumph Dolomite Sprint,"Martin Power, AUS; Brian Winsall, AUS",1998,L4,Class C,80,55,"2.51,7",,Insufficient laps completed
+1981,NC,,70,Colin Spencer,Isuzu Gemini,"Colin Spencer, AUS; John White, AUS",1584,L4,Class C,75,60,"2.55,7",,Insufficient laps completed
+1981,NC,,10,Goss Garages,Jaguar XJ-S,"John Goss, AUS; Barry Seton, AUS",5344,V12,Class A,73,19,"2.28,0",,Insufficient laps completed
+1981,NC,,63,Cherry City Ford,Ford Escort 2.0 GL,"John Faulkner, AUS; Gary Dumbrell, AUS",1993,L4,Class C,72,51,"2.47,7",,Insufficient laps completed
+1981,NC,,57,Sutton Motors Pty Ltd,Isuzu Gemini ZZ,"David Seldon, AUS; Gary Rowe, AUS; (Phil Ward, AUS)",1817,L4,Class C,70,46,"2.42,8",,Insufficient laps completed
+1981,WDN,,36,Trend Windows Pty Ltd,Ford Capri 3.0S,"Peter Hopwood, AUS; Terry Daly, AUS",2993,V6,Class B,,,,,Withdrawn
+1981,WDN,,67,Alfa Romeo Alfasud,,"Ray Gulson, AUS; Gordon Mackinlay, AUS",1499?,B4,Class C,,,,,Withdrawn
+1982,1,1,05,Marlboro Holden Dealer Team,Holden VH Commodore,"Peter Brock, AUS; Larry Perkins, AUS",5044,V8,Class A,"163 laps, 6:32.03,2",HH2,"2.17,836",,
+1982,2,2,4,Re-Car Racing,Holden VH Commodore,"Allan Grice, AUS; Alan Browne, AUS",5044,V8,Class A,162,HH1,"2.17,501",,
+1982,3,3,25,Marlboro Holden Dealer Team,Holden VH Commodore,"John Harvey, AUS; Gary Scott, AUS",5044,V8,Class A,162,HH9,"2.19,764",,
+1982,4,4,3,Cadbury Schweppes Pty Ltd,Holden VH Commodore,"Peter Janson, GB; David ""Skippy"" Parsons, AUS",5044,V8,Class A,158,17,"2.22,9",,
+1982,5,5,31,JPS Team BMW,BMW 635 CSi,"Jim Richards, NZ; David Hobbs, GB",3475,L6,Class A,157,19,"2.23,8",,
+1982,6,6,43,Peter Stuyvesant International Racing,Mazda RX-7,"Allan Moffat, AUS; Yoshimi Katayama, J",2292 eq,R2,Class A,156,HH8,"2.19,761",,
+1982,7,7,2,Masterton Homes Pty Ltd,Ford Falcon XE,"Steve Masterton, AUS; Bruce Stewart, AUS",5760,V8,Class A,155,31,"2.25,7",,
+1982,8,1,56,Nissan Motor Company,Nissan Bluebird Turbo,"Masahiro Hasemi, J; Kazuyoshi Hoshino, J",1770 tc,L4,Class B,153,HH3,"2.18,870",,
+1982,9,8,40,Strongbow Racing Team,Mazda RX-7,"Peter McLeod, AUS; Peter Dane, AUS",2292 eq,R2,Class A,153,22,"2.24,0",,
+1982,10,9,35,Tokico,Mazda RX-7,"Phil Alexander, AUS; Ron Gillard, AUS",2292 eq,R2,Class A,149,30,"2.25,7",,
+1982,11,10,6,Ron Dickson,Chevrolet Camaro,"Ron Dickson, AUS; Bob Stevens, AUS",5736,V8,Class A,149,23,"2.24,1",,
+1982,12,2,50,Barry Seton,Ford Capri 3.0S,"Barry Seton, AUS; Don Smith, AUS",2993,V6,Class B,147,43,"2.34,4",,
+1982,13,11,30,Bangalow Motors Pty Ltd,Mazda RX-7,"Tony Kavich, AUS; Phil Ward, AUS",2292 eq,R2,Class A,145,34,"2.28,3",,
+1982,14,3,54,Les Grose,Ford Capri 3.0S,"Les Grose, AUS; Alan Cant, AUS",2993,V6,Class B,144,48,"2.36,7",,
+1982,15,4,63,Bob Holden Motors Manly Vale,Ford Escort 2.0 GL,"Bob Holden, AUS; Neville Bridges, AUS",1993,L4,Class B,141,50,"2.38,8",,
+1982,16,5,53,Chris Heyer's Kingswood Import Centre,Audi 5+5,"Chris Heyer, AUS; Peter Lander, AUS",2145,L5,Class B,139,52,"2.41,3",,
+1982,17,6,57,Walter Scott,Toyota Celica,"Wally Scott, AUS; Peter Walton, AUS",1968,L4,Class B,137,51,"2.40,7",,
+1982,18,12,44,Ron Horner,Mazda RX-7,"Paul Jones, AUS; Bob Skelton, AUS; (Ken Hastings, AUS)",2292 eq,R2,Class A,137,40,"2.30,3",,
+1982,19,7,64,Ray Gulson,Alfa Romeo Alfetta GTV/6,"Ray Gulson, AUS; Bruce Lynton, AUS",2491,V6,Class B,136,54,"2.45,8",,
+1982,20,13,26,William O’Brien,Ford Falcon XD,"Bill O'Brien, AUS; Brian Sampson, AUS",5760,V8,Class A,134,24,"2.24,1",,
+1982,21,14,12,Ron Dickson,Chevrolet Camaro,"Geoff Leeds, AUS; Peter Fitzgerald, AUS",5736,V8,Class A,134,26,"2.24,3",,
+1982,22,15,19,Cadbury Schweppes Pty Ltd,Holden VH Commodore,"Greg Toepfer, AUS; Ken Mathews, AUS",5044,V8,Class A,130,36,"2.29,4",,
+1982,DNF,,11,Soundwave Discos,Holden VH Commodore,"Charlie O'Brien, AUS; Clive Benson-Browne, AUS",5044,V8,Class A,143,28,"2.24,8",,Engine
+1982,DNF,,10,Jaguar Cars-John Goss Racing,Jaguar XJ-S,"John Goss, AUS; Bob Tullius, USA",5344,V12,Class A,119,14,"2.22,3",,Suspension
+1982,DNF,,16,Re-Car Racing,Holden VH Commodore,"Ron Wanless, AUS; Garry Rogers, AUS",5044,V8,Class A,119,HH5,"2.19,332",,Brakes
+1982,DNF,,38,Bernie Stack,Holden VH Commodore,"Bernie Stack, AUS; Tony Parkinson, AUS; (Neil Cunningham, AUS)",5044,V8,Class A,118,35,"2.28,4",,Accident
+1982,DNF,,41,JPS Team BMW,BMW 635 CSi,"Denny Hulme, NZ; Stephen Brook, AUS",3475,L6,Class A,96,38,"2.29,5",,Accident
+1982,DNF,,27,Alan Jones,Mazda RX-7,"Alan Jones, AUS; Barry Jones, AUS; (David Seldon, AUS)",2292 eq,R2,Class A,88,15,"2.22,6",,Gearbox
+1982,DNF,,20,King George Tavern,Ford Falcon XE,"Joe Moore, AUS; Graham Moore, AUS",5760,V8,Class A,75,42,"2.32,6",,Engine
+1982,DNF,,8,Mascot Galvanising Works Pty Ltd,Ford Falcon XD,"Garry Willmington, AUS; Mike Griffin, AUS",5760,V8,Class A,134,21,"2.23,9",,Engine
+1982,DNF,,61,Chickadee Chicken,Toyota Celica,"Graeme Bailey, AUS; Steve Land, AUS",1968,L4,Class B,65,49,"2.38,6",,Engine
+1982,DNF,,22,Warren Cullen,Holden VH Commodore,"Warren Cullen, AUS; Gary Cooke, AUS",5044,V8,Class A,54,11,"2.21,1",,Head gasket
+1982,DNF,,29,John Donnelly,Ford Falcon XD,"John Donnelly, AUS; Ian McGee, AUS",5760,V8,Class A,51,44,"2.35,1",,Engine
+1982,DNF,,23,Alf Grant Racing,Ford Falcon XD,"Alf Grant, AUS; Leo Leonard, NZ",5760,V8,Class A,48,33,"2.26,3",,Engine
+1982,DNF,,55,Nissan Motor Company,Nissan Bluebird Turbo,"George Fury, AUS; Fred Gibson, AUS",1770 tc,L4,Class B,40,HH10,"2.20,613",,Head gasket
+1982,DNF,,9,Nine Network Racing Team,Chevrolet Camaro,"Kevin Bartlett, AUS; Colin Bond, AUS",5736,V8,Class A,27,HH4,"2.18,946",,Accident
+1982,DNF,,18,John Sands Racing,Ford Falcon XE,"Murray Carter, AUS; Rusty French, AUS",5760,V8,Class A,25,32,"2.36,1",,Engine
+1982,DNF,,14,Valley Meat Hall,Ford Falcon XD,"John English, AUS; Paul Gulson, AUS",5760,V8,Class A,17,25,"2.24,3",,Engine
+1982,DNF,,51,Capri Components,Ford Capri 3.0S,"Lawrie Nelson, AUS; Peter Jones, AUS",2993,V6,Class B,17,41,"2.31,4",,Engine
+1982,DNF,,33,BF Goodrich Australia,Mazda RX-7,"Gerry Burges, AUS; Lynn Brown, AUS",2292 eq,R2,Class A,13,47,"2.36,6",,Clutch
+1982,DNF,,15,Terry Finnigan,Holden VH Commodore,"Terry Finnigan, AUS; John Gates, AUS",5044,V8,Class A,9,12,"2.22,0",,Accident
+1982,DNF,,48,Fred Geissler,Holden VH Commodore,"Fred Geissler, AUS; Ralph Radburn, AUS",5044,V8,Class A,4,29,"2.25,4",,Accident
+1982,DNF,,34,Penrith Mazda Centre Pty Ltd,Mazda RX-7,"John Duggan, AUS; Don Bretland, AUS; (Don Holland, AUS)",2292 eq,R2,Class A,4,16,"2.22,6",,Engine
+1982,DNF,,28,Bayside Spare Parts,Holden VH Commodore,"Barry Lawrence, AUS; Geoff Russell, AUS",5044,V8,Class A,1,27,"2.24,7",,Accident
+1982,DNS,,7,Alan Jones,Ford Falcon XE,"Bob Morris, AUS; John Fitzpatrick, GB; (Alan Jones, AUS)",5760,V8,Class A,,HH6,"2.19,380",,Accident
+1982,DNS,,62,Gary Leggatt,Alfa Romeo Alfetta GTV/6,"Gary Leggatt, AUS; Phil McDonnell, AUS",2491,V6,Class B,,,,,Accident
+1982,DNS,,42,Peter Stuyvesant International Racing,Mazda RX-7,"Gregg Hansford, AUS; Lucio Cesario, AUS",2292 eq,R2,Class A,,,,,Accident
+1982,NC,,46,Rosco Rotary,Mazda RX-7,"Ross Burbidge, AUS; Craig Kinmoth, AUS",2292 eq,R2,Class A,109,45,"2.35,7",,Insufficient laps completed
+1982,NC,,32,Scotty Taylor Holden,Holden VC Commodore,"Alan ""Scotty"" Taylor, AUS; Kevin Kennedy, AUS",5044,V8,Class A,102,39,"2.30,1",,Insufficient laps completed
+1982,NC,,60,Country Dealer Team,Isuzu Gemini ZZ,"Jim Faneco, AUS; Allan Gough, AUS",1817,L4,Class B,96,53,"2.42,2",,Insufficient laps completed
+1982,NC,,21,Roadways Pty Ltd,Holden VH Commodore,"Steve Harrington, AUS; Garth Wigston, AUS",5044,V8,Class A,90,13,"2.22,2",,Insufficient laps completed
+1982,DSQ,,17,Palmer Tube Mills,Ford Falcon XE,"Dick Johnson, AUS; John French, AUS",5760,V8,Class A,160,HH9,"2.19,764",,
+1982,DSQ,,47,Brian Callaghan Racing P/L,Ford Falcon XE,"Brian Callaghan, AUS; Bob Muir, AUS",5760,V8,Class A,150,18,"2.23,0",,Illegal heads
+1983,1,1,25,Marlboro Holden Dealer Team,Holden VH Commodore,"John Harvey, AUS; Peter Brock, AUS; Larry Perkins, AUS; (Phil Brock, AUS)",5044,V8,Class A,"163 laps, 6:28.31,6",5,"2.18,549",,
+1983,2,2,43,Peter Stuyvesant Racing,Mazda RX-7,"Allan Moffat, AUS; Yoshimi Katayama, J",2292 eq.,R2,Class A,162,14,"2.19,8",,
+1983,3,3,6,STP Roadways Racing,Holden VH Commodore,"Allan Grice, AUS; Colin Bond, AUS",5044,V8,Class A,160,8,"2.18,963",,
+1983,4,4,14,STP Roadways Racing,Holden VH Commodore,"Steve Harrington, AUS; Garth Wigston, AUS",5044,V8,Class A,158,11,"2.19,2",,
+1983,5,5,50,Petrolon Slick 50,Mazda RX-7,"Peter McLeod, AUS; Graeme Bailey, AUS",2292 eq.,R2,Class A,158,19,"2.21,2",,
+1983,6,6,12,Team Toshiba,Holden VH Commodore,"Jim Keogh, AUS; Leo Leonard, NZ",5044,V8,Class A,157,17,"2.20,1",,
+1983,7,7,27,Alf Grant Racing,Ford Falcon XD,"Alf Grant, AUS; David Seldon, AUS",5760,V8,Class A,156,26,"2.22,2",,
+1983,8,8,4,John Sands Racing,Holden VH Commodore,"Rusty French, AUS; Bob Morris, AUS; (Alan Browne, AUS)",5044,V8,Class A,154,9,"2.22,2",,
+1983,9,9,35,Tokico,Mazda RX-7,"Phil Alexander, AUS; Ron Gillard, AUS",2292 eq.,R2,Class A,153,24,"2.22,0",,
+1983,10,10,9,Andrew Harris,Holden VH Commodore,"Gary Cooke, AUS; Andrew Harris, AUS; (Colin Spencer, AUS)",5044,V8,Class A,151,30,"2.24,0",,
+1983,11,11,41,BF Goodrich,Mazda RX-7,"Barry Jones, AUS; Rod Millen, USA",2292 eq.,R2,Class A,151,40,"2.28,2",,
+1983,12,12,11,Soundwave Discos,Holden VH Commodore,"Clive Benson-Browne, AUS; Garry Rogers, AUS",5044,V8,Class A,149,7,"2.18,648",,
+1983,13,13,8,Everlast Battery Service,Ford Falcon XD,"Garry Willmington, AUS; Mike Griffin, AUS",5760,V8,Class A,147,33,"2.25,0",,
+1983,14,14,24,Scotty Taylor Holden,Holden VH Commodore,"Kevin Kennedy, AUS; Alan ""Scotty"" Taylor, AUS",5044,V8,Class A,146,36,"2.25,5",,
+1983,15,1,64,Les Grose,Ford Capri 3.0S,"Alan Cant, AUS; Les Grose, AUS",2993,V6,Class B,144,47,"2.33,7",,
+1983,16,15,13,Greg Symes,Holden VH Commodore,"Bruce Smith, AUS; Greg Symes, AUS",5044,V8,Class A,141,31,"2.24,6",,
+1983,17,2,58,Ray Gulson,Alfa Romeo Alfetta GTV/6,"Ray Gulson, AUS; Gerard Murphy, AUS",2491,V6,Class B,141,51,"2.39,4",,
+1983,18,16,51,Tony Mulvihill,Mazda RX-7,"Tony Mulvihill, AUS; John Murden, AUS",2292 eq.,R2,Class A,138,49,"2.38,0",,
+1983,19,17,26,Everlast Battery Service,Ford Falcon XD,"Bill O'Brien, AUS; Brian Sampson, AUS",5760,V8,Class A,136,22,"2.21,4",,
+1983,20,18,47,Brian Callaghan Racing P/L,Ford Falcon XE,"Brian Callaghan, AUS; Barry Graham, AUS",5760,V8,Class A,136,28,"2.22,5",,
+1983,21,19,32,Johnnie Walker,Mazda RX-7,"Johnnie Walker, AUS; Gene Cook, AUS",2292 eq.,R2,Class A,135,44,"2.32,5",,
+1983,22,20,16,Nissan Motor Company Australia,Nissan Bluebird Turbo,"Fred Gibson, AUS; John French, AUS",1770 tc,L4,Class A,134,18,"2.21,1",,
+1983,23,21,19,Ken Mathews Prestige Cars,Holden VH Commodore,"Ken Mathews, AUS; Greg Toepfer, AUS",5044,V8,Class A,132,23,"2.21,9",,
+1983,24,3,63,Chris Heyer's Kingswood Import Centre,Audi 5+5,"Chris Heyer, AUS; Don Bretland, AUS",2145,L5,Class B,132,57,"2.44,2",,
+1983,25,4,61,John White,Isuzu Gemini,"John White, AUS; Bernie McClure, AUS",1584,L4,Class B,125,52,"2.39,8",,
+1983,26,5,59,Capri Components,Ford Capri 3.0S,"Lawrie Nelson, AUS; Peter Jones, AUS",2993,V6,Class B,114,48,"2.33,9",,
+1983,DNF,,55,Barry Seton,Ford Capri 3.0S,"Barry Seton, AUS; Glenn Seton, AUS",2993,V6,Class B,134,41,"2.30,2",,Crankshaft
+1983,DNF,,15,Nissan Motor Company Australia,Nissan Bluebird Turbo,"George Fury, AUS; Gary Scott, AUS",1770 tc,L4,Class A,130,2,"2.17,509",,Gearbox
+1983,DNF,,37,Eurocars (Northside),Mazda RX-7,"Terry Shiel, AUS; Wally Storey, AUS",2292 eq.,R2,Class A,122,15,"2.19,8",,Gearbox
+1983,DNF,,53,Fred Geissler,Holden VH Commodore,"Fred Geissler, AUS; Ralph Radburn, AUS",5044,V8,Class A,116,29,"2.23,7",,Head gasket
+1983,DNF,,22,Cullen Automotive Industries,Holden VH Commodore,"Warren Cullen, AUS; Ron Harrop, AUS",5044,V8,Class A,116,6,"2.18,563",,Differential
+1983,DNF,,3,Cadbury Schweppes Pty Ltd,Holden VH Commodore,"Peter Janson, GB; David ""Skippy"" Parsons, AUS",5044,V8,Class A,106,3,"2.18,212",,Engine
+1983,DNF,,42,T.P. Ryan,Mazda RX-7,"Terry Ryan, AUS; Graham Storah, AUS",2292 eq.,R2,Class A,84,56,"2.43,9",,Gearbox
+1983,DNF,,48,Roger Manson Holden,Holden VH Commodore,"Andrew Manson, AUS; Geoffrey Manson, AUS",5044,V8,Class A,80,38,"2.27,2",,Tailshaft
+1983,DNF,,38,Gawler SA,Holden VH Commodore,"Bernie Stack, AUS; Bob Jennings, AUS",5044,V8,Class A,68,32,"2.24,7",,Gearbox
+1983,DNF,,10,Terry Finnigan,Holden VH Commodore,"Terry Finnigan, AUS; Geoff Leeds, AUS",5044,V8,Class A,62,16,"2.19,9",,Engine
+1983,DNF,,57,J.L. Hazelton,Ford Capri 3.0S,"Laurie Hazelton, AUS; Jerry Strauberg, AUS",2993,V6,Class B,61,54,"2.40,9",,Accident
+1983,DNF,,17,Palmer Tube Mills,Ford Falcon XE,"Dick Johnson, AUS; Kevin Bartlett, AUS",5760,V8,Class A,61,10,,,Electrics
+1983,DNF,,34,Peter Stuyvesant Racing,Mazda RX-7,"Gregg Hansford, AUS; Garry Waldon, AUS",2292 eq.,R2,Class A,49,12,"2.19,6",,Engine
+1983,DNF,,29,John Donnelly,Ford Falcon XD,"John Donnelly, AUS; Kerry Baily, AUS",5760,V8,Class A,37,46,"2.33,6",,Engine
+1983,DNF,,36,Gerry Burges,Mazda RX-7,"Gerry Burges, AUS; Roger Mandeville, USA",2292 eq.,R2,Class A,35,39,"2.27,6",,Accident
+1983,DNF,,23,Bryan Byrt Ford,Ford Falcon XD,"John English, AUS; Paul Gulson, AUS",5760,V8,Class A,32,27,"2.22,5",,Engine
+1983,DNF,,21,Ron Dickson,Mazda RX-7,"Ron Dickson, AUS; Bob Stevens, AUS",2292 eq.,R2,Class A,24,34,"2.25,3",,Suspension
+1983,DNF,,20,King George Tavern,Ford Falcon XE,"Joe Moore, AUS; Graham Moore, AUS",5760,V8,Class A,17,35,"2.25,4",,Head gasket
+1983,DNF,,2,Masterton Homes Pty Ltd,Ford Falcon XE,"Steve Masterton, AUS; Bruce Stewart, AUS",5760,V8,Class A,17,13,"2.19,7",,Overheating
+1983,DNF,,18,Valentine Greetings,Mazda RX-7,"Murray Carter, AUS; David Clement, AUS",2292 eq.,R2,Class A,14,25,"2.22,1",,Fuel injection
+1983,DNF,,60,Nissan Motor Company Australia,Nissan Pulsar EXA Turbo,"Christine Gibson, AUS; Bob Muir, AUS",1495 tc,L4,Class B,14,37,"2.27,1",,Mainshaft
+1983,DNF,,05,Marlboro Holden Dealer Team,Holden VH Commodore,"Peter Brock, AUS; Larry Perkins, AUS",5044,V8,Class A,8,1,"2.16,270",,Engine
+1983,DNF,,39,John Bundy,Mazda RX-7,"John Bundy, AUS; Norm Carr, AUS",2292 eq.,R2,Class A,8,42,"2.31,5",,Accident
+1983,DNF,,31,JPS Team BMW,BMW 635 CSi,"Jim Richards, NZ; Frank Gardner, AUS",3475,L6,Class A,6,4,"2.18,414",,Fuel system
+1983,DNF,,45,Gary Hinton,Holden VH Commodore,"Gary Hinton, AUS; Lester Smerdon, AUS",5044,V8,Class A,5,50,"2.39,0",,Overheating
+1983,DNF,,56,Hulcraft Autos,Ford Capri 3.0S,"John Craft, AUS; Don Smith, AUS",2993,V6,Class B,3,43,"2.31,8",,Oil line
+1983,DNF,,40,CDT Performance Vehicles,Ford Falcon XE,"Jim Faneco, AUS; Tony Hubbard, AUS",5760,V8,Class A,3,45,"2.32,8",,Oil pressure
+1983,DNF,,52,Ron Grose,Mazda RX-7,"Ron Grose, AUS; David Grose, AUS",2292 eq.,R2,Class A,3,53,"2.40,2",,Apex seals
+1983,DNS,,62,The Daily Planet,Toyota Celica,"Bob Holden, AUS; Gordon Spice, GB; (Craig Bradtke, AUS)",1968,L4,Class B,,55,"2.42,6",,Engine on warm up lap
+1983,DNS,,28,Bayside Spare Parts,Holden VH Commodore,"Barry Lawrence, AUS; Geoff Russell, AUS",5044,V8,Class A,,20,"2.21,3",,Withdrawn
+1983,DNQ,,30,Tony Kavich,Mazda RX-7,"Tony Kavich, AUS; Paul Jones, AUS",2292 eq.,R2,Class A,,58,"2.49,9",,
+1983,NC,,33,Dreamworld,Chevrolet Camaro,"Mike Burgmann, AUS; Tony Longhurst, AUS",5735,V8,Class A,121,21,"2.21,4",,Insufficient laps completed
+1984,1,1,05,Marlboro Holden Dealer Team,Holden VK Commodore,"Peter Brock, AUS; Larry Perkins, AUS",5044,V8,Group C,163 laps,,,,
+1984,2,2,25,Marlboro Holden Dealer Team,Holden VK Commodore,"John Harvey, AUS; David ""Skippy"" Parsons, AUS",5044,V8,Group C,,,,,
+1984,3,3,42,Peter Stuyvesant International Racing,Mazda RX-7,"Gregg Hansford, AUS; Allan Moffat, AUS",2292 eq.,R2,Group C,,,,,
+1984,4,4,8,K-Mart Auto racing,Holden VK Commodore,"Warren Cullen, AUS; Alan Jones, AUS",5044,V8,Group C,,,,,
+1984,5,5,28,Bayside Spare Parts,Holden VH Commodore,"Barry Lawrence, AUS; Alan Browne, AUS; (Geoff Russell, AUS)",5044,V8,Group C,,,,,
+1984,6,6,10,John Sands Racing,Holden VH Commodore,"Rusty French, AUS; Geoff Russell, AUS; (David Seldon, AUS)",5044,V8,Group C,,,,,
+1984,7,7,47,Brian Callaghan Racing P/L,Ford Falcon XE,"Brian Callaghan, AUS; Barry Graham, AUS",5760,V8,Group C,,,,,
+1984,8,8,33,Mike Burgmann,Mazda RX-7,"Mike Burgmann, AUS; Bob Stevens, AUS",2292 eq.,R2,Group C,,,,,
+1984,9,9,35,Goodyear Car Owners Club,Mazda RX-7,"Ron Gillard, AUS; Mark Gibbs, AUS",2292 eq.,R2,Group C,,,,,
+1984,10,10,27,Bryan Byrt Ford,Ford Falcon XD,"Alf Grant, AUS; Craig Harris, AUS",5760,V8,Group C,,,,,
+1984,11,11,52,Fred Geissler,Holden VH Commodore,"Fred Geissler, AUS; Ralph Radburn, AUS",5044,V8,Group C,,,,,
+1984,12,1,61,Mobil Rover Racing,Rover Vitesse,"Jeff Allam, GB; Armin Hahne, D",3532,V8,Group A,,,,,
+1984,13,12,12,Ken Mathews Prestige Cars,Holden VH Commodore,"Ken Mathews, AUS; Greg Toepfer, AUS; (Bob Skelton, AUS)",5044,V8,Group C,,,,,
+1984,14,13,21,Lusty Engineering Pty Ltd,Mazda RX-7,"Graham Lusty, AUS; John Lusty, AUS",2292 eq.,R2,Group C,,,,,
+1984,15,2,62,JPS Team BMW,BMW 635 CSi,"Denny Hulme, NZ; Leopold von Bayern, D",3475,L6,Group A,,,,,
+1984,16,14,15,Nissan Motor Company,Nissan Bluebird Turbo,"George Fury, AUS; Gary Scott, AUS",1770 tc,L4,Group C,,,,,
+1984,17,15,7,Queensland Highway Patrol Racing Team,Holden VK Commodore,"Lester Smerdon, AUS; Wayne Park, AUS",5044,V8,Group C,,,,,
+1984,18,16,51,Tokico,Mazda RX-7,"Tony Mulvihill, AUS; Brian Nightingale, AUS",2292 eq.,R2,Group C,,,,,
+1984,19,17,37,Graham Stones,Mazda RX-7,"Graham Stones, AUS; Ian Stones, AUS",2292 eq.,R2,Group C,,,,,
+1984,20,3,69,Don Smith,Ford Mustang 5.0,"Barry Seton, AUS; Don Smith, AUS",4968,V8,Group A,,,,,
+1984,21,4,65,Hulcraft Autos,Ford Capri III 3.0S,"John Craft, AUS; Les Grose, AUS",2993,V6,Group A,,,,,
+1984,22,5,67,Ray Gulson,Alfa Romeo Alfetta GTV/6,"Ray Gulson, AUS; Grant O'Donnell, AUS",2491,V6,Group A,,,,,
+1984,23,18,24,Scotty Taylor Holden,Holden VH Commodore,"Alan ""Scotty"" Taylor, AUS; Kevin Kennedy, AUS",5044,V8,Group C,,,,,
+1984,24,19,45,Jim Keogh,Holden VH Commodore,"Bernie Stack, AUS; Wayne Clift, AUS; Terry Shiel, AUS",5044,V8,Group C,,,,,
+1984,25,20,38,Bayswater Automotor Wreckers Pty Ltd,Holden VH Commodore,"Colin Campbell, AUS; John Faulkner, AUS",5044,V8,Group C,,,,,
+1984,26,6,73,Racing car News,Toyota Sprinter,"Bob Holden, AUS; Alexandra Surplice, AUS",1587,L4,Group A,,,,,
+1984,27,21,32,Berklee Exhausts,Mazda RX-7,"Chris Clearihan, AUS; David Grose, AUS",2292 eq.,R2,Group C,,,,,
+1984,28,7,63,Chris Heyer's Kingswood Import Centre,Audi 5+5,"Chris Heyer, AUS; Gerard Murphy, AUS",2145,L5,Group A,,,,,
+1984,29,8,60,Mobil Rover Racing,Rover Vitesse,"Steve Soper, GB; Ron Dickson, AUS",3532,V8,Group A,,,,,
+1984,DNF,,13,Bruce Keith Smith,Holden VH Commodore,"Bruce Smith, AUS; Graeme ""Hoss"" Waswo, NZ",5044,V8,Group C,,,,,
+1984,DNF,,22,P.F. Motor Racing,Chevrolet Camaro,"Bryan Thomson, AUS; John Mann, AUS",5736,V8,Group C,,,,,
+1984,DNF,,75,Laurie Hazelton,Ford Capri III 3.0S,"Laurie Hazelton, AUS; Jerry Strauberg, AUS",2993,V6,Group A,,,,,
+1984,DNF,,44,Chequered Flag Magazines,Mazda RX-7,"Peter MacKay, AUS; Graham Moore, AUS",2292 eq.,R2,Group C,,,,,
+1984,DNF,,40,King George Tavern,Ford Falcon XE,"Joe Moore, AUS; Bob Muir, AUS",5760,V8,Group C,,,,,
+1984,DNF,,3,Cadbury Schweppes Pty Ltd,Holden VH Commodore,"Peter Janson, GB; Garry Rogers, AUS",5044,V8,Group C,,,,,
+1984,DNF,,17,Palmer Tube Mills,Ford Falcon XE,"Dick Johnson, AUS; John French, AUS",5760,V8,Group C,,,,,
+1984,DNF,,26,Everlast Battery Service,Ford Falcon XD,"Bill O'Brien, AUS; Gary Cooke, AUS",5760,V8,Group C,,,,,
+1984,DNF,,72,Toyota Team Australia,Toyota Sprinter,"John Smith, AUS; Stephen Brook, AUS",1587,L4,Group A,,,,,
+1984,DNF,,29,Freedom Fence,Ford Falcon XE,"Paul Jones, AUS; Peter Hopwood, AUS; (Rod Millen, USA)",5760,V8,Group C,,,,,
+1984,DNF,,16,Nissan Motor Company,Nissan Pulsar EXA,"Christine Gibson, AUS; Glenn Seton, AUS",1495 tc,L4,Group C,,,,,
+1984,DNF,,6,Roadways Racing Pty Ltd,Holden VK Commodore,"Steve Harrington, AUS; Allan Grice, AUS",5044,V8,Group C,,,,,
+1984,DNF,,9,K-Mart Auto racing,Holden VH Commodore,"Andrew Harris, AUS; Ron Harrop, AUS",5044,V8,Group C,,,,,
+1984,DNF,,4,Terry Finnigan,Holden VH Commodore,"Terry Finnigan, AUS; Geoff Leeds, AUS",5044,V8,Group C,,,,,
+1984,DNF,,31,JPS Team BMW,BMW 635 CSi,"Jim Richards, NZ; Tony Longhurst, AUS",3475,L6,Group C,,,,,
+1984,DNF,,50,Petrolon Slick 50,Mazda RX-7,"Peter McLeod, AUS; Graeme Bailey, AUS",2292 eq.,R2,Group C,,,,,
+1984,DNF,,11,Magic Eleven,Ford Falcon XD,"Garry Willmington, AUS; Mike Griffin, AUS",5760,V8,Group C,,,,,
+1984,DNF,,14,John English,Ford Falcon XD,"John English, AUS; Paul Gulson, AUS",5760,V8,Group C,,,,,
+1984,DNF,,66,Equipe Sixty Six (Hong Kong),Mitsubishi Starion 2000 EX,"Kevin Bartlett, AUS; Peter Fitzgerald, AUS",1998 tc,L4,Group A,,,,,
+1984,DNF,,20,Jim Keogh,Holden VH Commodore,"Jim Keogh, AUS; Terry Shiel, AUS",5044,V8,Group C,,,,,
+1984,DNF,,2,Masterton Homes Pty Ltd,Ford Falcon XE,"Steve Masterton, AUS; Bruce Stewart, AUS; (Phil Ward, AUS)",5760,V8,Group C,,,,,
+1984,DNF,,43,Peter Stuyvesant International Racing,Mazda RX-7,"Allan Moffat, AUS; Gregg Hansford, AUS",2292 eq.,R2,Group C,,,,,
+1984,DNF,,36,Roadways Racing Pty Ltd,Holden VK Commodore,"Allan Grice, AUS; Steve Harrington, AUS",5044,V8,Group C,,,,,
+1984,DNF,,64,Capri Components,Ford Mustang 5.0,"Lawrie Nelson, AUS; Peter Jones, AUS",4968,V8,Group A,,,,,
+1984,DNF,,18,Valentine Greetings,Mazda RX-7,"Murray Carter, AUS; John Murden, AUS",2292 eq.,R2,Group C,,,,,
+1984,DNF,,12,John Goss Racing Pty Ltd.,Jaguar XJ-S,"Tom Walkinshaw, GB; John Goss, AUS",5344,V12,Group C,,,,,
+1984,DNF,,34,Pennant Hills Suspension Centre,Chevrolet Camaro,"John Tesoriero, AUS; Bob Tindal, AUS; (Neil Brain, AUS); (Peter Hopwood, AUS)",5736,V8,Group C,,,,,
+1984,DNF,,77,Peter Williamson Toyota,Toyota Supra,"Peter Williamson, AUS; Charlie O'Brien, AUS; Mike Quinn, AUS",2759,L6,Group A,,,,,
+1984,DNS,,71,Palmer Tube Mills,Ford Mustang 5.0,"Dick Johnson, AUS; John French, AUS",4968,V8,Group A,,,,,
+1985,1,1,10,JRA Ltd / Jaguar Racing,Jaguar XJ-S,"Armin Hahne, D; John Goss, AUS",5344,V12,Class C,"163 laps, 6:41.30,19",6,"2.20,919",,
+1985,2,2,21,Gould Motorsport,BMW 635 CSi,"Johnny Cecotto, YV; Roberto Ravaglia, I; (Nelson Piquet, BR); (Niki Lauda, A)",3475,L6,Class C,"163 laps, 6:42.17,66",9,"2.22,874",,
+1985,3,3,8,JRA Ltd / Jaguar Racing,Jaguar XJ-S,"Tom Walkinshaw, GB; Win Percy, GB",5344,V12,Class C,160,1,"2.18,822",,
+1985,4,4,1,JPS Team BMW,BMW 635 CSi,"Jim Richards, NZ; Tony Longhurst, AUS",3475,L6,Class C,160,7,"2.21,396",,
+1985,5,5,3,H. Kent Baigent,BMW 635 CSi,"Kent Baigent, NZ; Neal Lowe, NZ",3475,L6,Class C,159,12,"2.24,38",,
+1985,6,6,20,Jim Keogh,BMW 635 CSi,"Garry Rogers, AUS; Jim Keogh, AUS",3475,L6,Class C,159,16,"2.25,64",,
+1985,7,7,17,Palmer Tube Mills,Ford Mustang,"Dick Johnson, AUS; Larry Perkins, AUS",4968,V8,Class C,159,3,"2.20,646",,
+1985,8,1,47,Network Alfa,Alfa Romeo Alfetta GTV/6,"Colin Bond, AUS; Gregg Hansford, AUS",2491,V6,Class B,158,21,"2.26,65",,
+1985,9,2,42,Mitsubishi Ralliart,Mitsubishi Starion 2000 EX,"Kevin Bartlett, AUS; Peter MacKay, AUS",1998 tc,L4,Class B,157,13,"2.24,60",,
+1985,10,8,41,Barry Jones,Holden VK Commodore,"Barry Jones, AUS; Tony Mulvihill, AUS",4980,V8,Class C,156,25,"2.27,32",,
+1985,11,9,25,Yellow Pages Racing,Holden VK Commodore,"Ralph Radburn, AUS; Tony Kavich, AUS",4980,V8,Class C,156,34,"2.31,12",,
+1985,12,10,40,Terry Finnigan,Holden VK Commodore,"Barry Lawrence, AUS; Terry Finnigan, AUS",5044,V8,Class C,155,24,"2.27,32",,
+1985,13,11,11,Tim Slako,Rover Vitesse,"Geoff Leeds, AUS; Tim Slako, AUS",3532,V8,Class C,152,18,"2.25,92",,
+1985,14,12,12,Garry Wllmington,Jaguar XJ-S,"Garry Willmington, AUS; Peter Janson, GB",5344,V12,Class C,150,29,"2.29,10",,
+1985,15,13,19,Ken Mathews Prestige Cars,Holden VK Commodore,"Bob Muir, AUS; Ken Mathews, AUS",5044,V8,Class C,148,32,"2.29,74",,
+1985,16,3,45,Ray Gulson,Alfa Romeo Alfetta GTV/6,"Frank Porter, AUS; Ray Gulson, AUS",2491,V6,Class B,148,40,"2.33,25",,
+1985,17,1,60,Toyota Team Australia,Toyota Corolla,"Drew Price, AUS; John Smith, AUS",1587,L4,Class A,148,42,"2.34,38",,
+1985,18,14,30,Lester Smerdon,Holden VK Commodore,"Geoff Russell, AUS; Lester Smerdon, AUS",4980,V8,Class C,145,38,"2.32,40",,
+1985,19,4,51,Greville Arnel,Mitsubishi Starion 2000 EX,"Andrew Harris, AUS; Greville Arnel, AUS; (Lyndon Arnel, AUS)",1998 tc,L4,Class B,141,48,"2.40,94",,
+1985,20,15,39,Sleepyhead Beds,Holden VK Commodore,"Graeme Bowkett, NZ; Wayne Wilkinson, NZ",4980,V8,Class C,135,20,"2.26,60",,
+1985,21,5,53,Chris Heyer's Kingswood Import Centre,Audi 5+5,"Chris Heyer, AUS; Graham McGregor, NZ",2145,L5,Class B,134,49,"2.42,13",,
+1985,22,16,36,Lusty Engineering P/L,Holden VK Commodore,"Graham Lusty, AUS; Ken Lusty, AUS",4980,V8,Class C,133,45,"2.35,89",,
+1985,23,17,34,The Xerox Shop,Holden VK Commodore,"Alan ""Scotty"" Taylor, AUS; Kevin Kennedy, AUS",5044,V8,Class C,132,41,"2.33,96",,
+1985,DNF,,5,Mobil Holden Dealer Team,Holden VK Commodore,"David Oxton, NZ; Peter Brock, AUS",4980,V8,Class C,160,11,"2.23,018",,Engine
+1985,DNF,,14,Auckland-Coin & Bullion Exchange Ltd,Holden VK Commodore,"Denny Hulme, NZ; Ray Smith, NZ",4980,V8,Class C,146,15,"2.24,87",,Engine
+1985,DNF,,13,Grellis Marketing,Holden VK Commodore,"Bernie McClure, AUS; Ray Ellis, AUS",4980,V8,Class C,136,36,"2.31,95",,Valves
+1985,DNF,,4,I.M.B. Team Wollongong,Holden VK Commodore,"Graeme Bailey, AUS; Peter McLeod, AUS",4980,V8,Class C,126,22,"2.27,13",,Gearbox
+1985,DNF,,57,Bob Holden Motors,Toyota Sprinter,"Bob Holden, AUS; Glenn Clark, NZ",1587,L4,Class A,123,46,"2.35,94",,Engine
+1985,DNF,,55,Mark Petch,Volvo 240 Turbo,"John Bowe, AUS; Robert Francevic, NZ; (Ulf Granberg, S)",2141 tc,L4,Class B,122,5,"2.20,873",,Out of fuel
+1985,DNF,,6,Roadways,Holden VK Commodore,"Allan Grice, AUS; Warren Cullen, AUS",4980,V8,Class C,114,4,"2.20,661",,Accident
+1985,DNF,,24,Jagparts Racing,Holden VK Commodore,"Gerald Kay, AUS; Martin Power, AUS",4980,V8,Class C,112,33,"2.30,34",,Head gasket
+1985,DNF,,61,Toyota Team Australia,Toyota Sprinter,"John Faulkner, AUS; Ray Cutchie, AUS",1587,L4,Class A,110,43,"2.35,37",,Axle
+1985,DNF,,22,Erle McRae Racing,BMW 635 CSi,"Charlie O'Brien, AUS; John English, AUS; (Andrew Miedecke, AUS)",3475,L6,Class C,106,23,"2.27,15",,Gearbox
+1985,DNF,,7,Mobil Holden Dealer Team,Holden VK Commodore,"David ""Skippy"" Parsons, AUS; John Harvey, AUS",4980,V8,Class C,96,10,"2.22,886",,Engine
+1985,DNF,,33,Mike Burgmann,Holden VK Commodore,"Bob Stevens, AUS; Mike Burgmann, AUS",4980,V8,Class C,93,30,"2.29,58",,Pushrod
+1985,DNF,,31,JPS Team BMW,BMW 635 CSi,"George Fury, AUS; Neville Crichton, NZ",3475,L6,Class C,68,17,"2.25,79",,Engine
+1985,DNF,,49,John Bundy,Mazda RX-7,"John Bundy, AUS; Norm Carr, AUS",2 x 573,R2,Class B,67,51,"2.48,68",,Differential
+1985,DNF,,16,Flexible Hose Supplies Ltd,Rover Vitesse,"Barry Robinson, GB; Jon Jeffery, GB; (Dudley Wood, GB)",3532,V8,Class C,59,52,"2.55,33",,Engine
+1985,DNF,,23,Simon Emmerling,BMW 635 CSi,"Simon Emmerling, AUS; Trevor Hine, AUS",3475,L6,Class C,42,31,"2.29,62",,Engine
+1985,DNF,,38,Barry Wraith,Holden VK Commodore,"Barry Wraith, AUS; Wayne Park, AUS",5044,V8,Class C,34,39,"2.33,12",,Engine
+1985,DNF,,44,Peter Williamson Toyota,Toyota Celica Supra,"Peter Williamson, AUS; Tomas Mezera, AUS",2759,L6,Class B,32,27,"2.28,79",,Engine
+1985,DNF,,29,Ken Davison,Ford Mustang,"Ken Davison, AUS; Wally Kramer, AUS",4968,V8,Class C,19,44,"2.35,83",,Lost wheel
+1985,DNF,,28,Capri Components,Ford Mustang,"Bill O'Brien, AUS; Lawrie Nelson, AUS",4968,V8,Class C,18,37,"2.31,99",,Electrics
+1985,DNF,,32,Anderson & O'Leary,Ford Mustang,"Bruce Anderson, NZ; Wayne Anderson, NZ",4968,V8,Class C,17,28,"2.28,90",,Engine
+1985,DNF,,9,JRA Ltd / Jaguar Racing,Jaguar XJ-S,"Jeff Allam, GB; Ron Dickson, AUS",5344,V12,Class C,3,2,"2.19,915",,Engine
+1985,DNF,,43,Mitsubishi Ralliart,Mitsubishi Starion 2000 EX,"Brad Jones, AUS; Peter Fitzgerald, AUS",1998 tc,L4,Class B,,14,"2.24,77",,Accident
+1985,DNF,,27,Alf Grant Racing,Holden VK Commodore,"Alf Grant, AUS; John French, AUS",4980,V8,Class C,,19,"2.26,45",,Accident
+1985,DNS,,18,Palmer Tube Mills,Ford Mustang,"Dick Johnson, AUS; Larry Perkins, AUS; (Allan Moffat, AUS); (Michel Delcourt, B)",4968,V8,Class C,,8,"2.22,34",,Withdrawn
+1985,DNS,,52,Formula 1 Investments Pty Ltd,Mitsubishi Starion 2000 EX,"Graham Moore, AUS; Michel Delcourt, B",1998 tc,L4,Class B,,50,"2.44,40",,Withdrawn
+1985,DNS,,26,Roadways,Holden VK Commodore,"Allan Grice, AUS; Warren Cullen, AUS",4980,V8,Class C,,,,,Withdrawn
+1985,NC,,54,Melbourne Clutch and Brake service,Mitsubishi Starion 2000 EX,"Brian Sampson, AUS; Garry Waldon, AUS",1998 tc,L4,Class B,117,35,"2.31,12",,Insufficient laps
+1985,NC,,37,Brian Callaghan Racing P/L,Holden VK Commodore,"Barry Graham, AUS; Brian Callaghan, AUS",4980,V8,Class C,114,26,"2.28,38",,Insufficient laps
+1985,NC,,58,David Ratcliff,Toyota Sprinter,"David Ratcliff, AUS; Don Smith, AUS",1587,L4,Class A,98,47,"2.36,38",,Insufficient laps
+1985,NC,,2,Masterton Homes Pty Ltd,Holden VK Commodore,"Bruce Stewart, AUS; Steve Masterton, AUS",4980,V8,Class C,96,53,"3.01,31",,Insufficient laps
+1985,DNP,,59,Phil McDonnell,Alfa Romeo Alfetta GTV,"Greg Crick, AUS; Phil McDonnell, AUS",1985,L4,Class A,,,,,Withdrawn
+1986,1,1,2,Chickadee Chicken,Holden VK Commodore,"Allan Grice, AUS; Graeme Bailey, AUS",4980,V8,Class C,"163 laps, 6:30.35,68",2,"2.17,246",,
+1986,2,2,3,Mobil Holden Dealer Team,Holden VK Commodore,"John Harvey, AUS; Neal Lowe, NZ",4980,V8,Class C,"163, 6:32.05,42",13,"2.20,86",,
+1986,3,1,15,Peter Jackson Nissan Racing,Nissan Skyline GTS-R DR30,"Gary Scott, AUS; Terry Shiel, AUS",1990 tc,L4,Class B,"163, 6:32.25,95",1,"2.17,159",,
+1986,4,3,17,Palmer Tube Mills,Ford Mustang,"Dick Johnson, AUS; Gregg Hansford, AUS",4968,V8,Class C,162,6,"2.19,808",,
+1986,5,4,5,Mobil Holden Dealer Team,Holden VK Commodore,"Peter Brock, AUS; Allan Moffat, AUS",4980,V8,Class C,162,11,"2.18,10",,
+1986,6,5,1,JPS Team BMW,BMW 635 CSi,"Jim Richards, NZ; Tony Longhurst, AUS",3475,L6,Class C,161,8,"2.20,751",,
+1986,7,6,22,Formula 1 Investments Pty Ltd,Holden VK Commodore,"Graham Moore, AUS; Michel Delcourt, B",4980,V8,Class C,158,18,"2.22,28",,
+1986,8,7,8,Cullen Supa Salvage,Holden VK Commodore,"Gary Sprague, AUS; Warren Cullen, AUS",4980,V8,Class C,157,12,"2.20,60",,
+1986,9,2,41,Bob Jane T-Marts,Mercedes 190 E 2.3-16,"Denny Hulme, NZ; Franz Klammer, A; (Hans Heyer, D); (Volker Weidler, D)",2323,L4,Class B,157,23,"2.23,19",,
+1986,10,3,36,Everlast Battery Service,Nissan Skyline GTS-R DR30,"Bill O'Brien, AUS; Murray Carter, AUS",1990 tc,L4,Class B,157,42,"2.27,05",,
+1986,11,4,42,Volvo Dealer Team,Volvo 240 Turbo,"Graham McRae, NZ; John Bowe, AUS; Neville Crichton, NZ; (Robert Francevic, NZ)",2141 tc,L4,Class B,156,24,"2.23,21",,
+1986,12,8,37,Airport Rent A Car,Holden VK Commodore,"Chris Clearihan, AUS; Fred Geissler, AUS",4980,V8,Class C,156,34,"2.24,76",,
+1986,13,9,6,Bob Jane T-Marts,Holden VK Commodore,"Graeme Crosby, NZ; Wayne Wilkinson, NZ",4980,V8,Class C,156,7,"2.20,370",,
+1986,14,10,19,Tony Mulvihill,Holden VK Commodore,"Ken Mathews, AUS; Tony Mulvihill, AUS",4980,V8,Class C,155,31,"2.24,33",,
+1986,15,11,23,Lusty Engineering P/L,Holden VK Commodore,"Graham Lusty, AUS; John Lusty, AUS",4980,V8,Class C,154,37,"2.25,42",,
+1986,16,12,38,Grellis Marketing,Holden VK Commodore,"Kerry Baily, AUS; Ray Ellis, AUS",4980,V8,Class C,150,33,"2.24,43",,
+1986,17,13,26,Simon Emmerling,BMW 635 CSi,"Simon Emmerling, AUS; Trevor Hine, AUS",3475,L6,Class C,149,45,"2.29,99",,
+1986,18,5,57,Network Alfa,Alfa Romeo Alfetta GTV/6,"Lucio Cesario, AUS; Warwick Rooklyn, AUS",2491,V6,Class B,148,47,"2.31,19",,
+1986,19,1,61,Toyota Team Australia,Toyota Corolla GT,"John Faulkner, AUS; Mike Quinn, AUS",1587,L4,Class A,148,52,"2.33,73",,
+1986,20,14,91,Graham Lorimer,BMW 635 CSi,"Graham Lorimer, NZ; Phil Myhre, NZ",3475,L6,Class C,146,51,"2.32,42",,
+1986,21,2,60,Giddings Motorsport/Vale Nissan,Nissan Gazelle,"Bruce Stewart, AUS; John Giddings, AUS",1990,L4,Class A,146,50,"2.32,42",,
+1986,22,15,18,Terry Finnigan,Holden VK Commodore,"Steve Williams, AUS; Terry Finnigan, AUS",4980,V8,Class C,144,30,"2.24,09",,
+1986,23,16,48,The Xerox Shop,Holden VK Commodore,"Alan ""Scotty"" Taylor, AUS; Kevin Kennedy, AUS",4980,V8,Class C,144,44,"2.29,32",,
+1986,24,17,10,John Goss Racing Pty Ltd.,Jaguar XJ-S,"Bob Muir, AUS; John Goss, AUS",5344,V12,Class C,140,26,"2.23,61",,
+1986,25,18,11,Enzed Team Perkins,Holden VK Commodore,"David ""Skippy"" Parsons, AUS; Larry Perkins, AUS",4980,V8,Class C,140,4,"2.19,433",,
+1986,26,2,58,Ratcliff Transport Spares,Toyota Sprinter,"David Ratcliff, AUS; Don Smith, AUS",1587,L4,Class A,140,58,"2.48,85",,
+1986,27,4,13,Bob Holden Motors,Toyota Sprinter,"Geoff Kimber-Smith, GB; Bob Holden, AUS",1587,L4,Class A,138,55,"2.40,49",,
+1986,DNF,,47,Brian Callaghan Racing P/L,Holden VK Commodore,"Barry Graham, AUS; Brian Callaghan, AUS",4980,V8,Class C,140,25,"2.23,42",,Engine
+1986,DNF,,24,Jagparts Racing,Holden VK Commodore,"Gerald Kay, AUS; Martin Power, AUS",4980,V8,Class C,135,29,"2.23,80",,Split bore
+1986,DNF,,87,B. Bolwell,BMW 323i,"Brian Bolwell, AUS; Tony Farrell, AUS",2330,L6,Class B,124,54,"2.39,00",,Accident
+1986,DNF,,30,Peter Jackson Nissan Racing,Nissan Skyline GTS-R DR30,"George Fury, AUS; Glenn Seton, AUS",1990 tc,L4,Class B,114,3,"2.19,044",,Hub bearing
+1986,DNF,,44,Volvo Dealer Team,Volvo 240 Turbo,"John Bowe, AUS; Alf Costanzo, AUS",2141 tc,L4,Class B,113,5,"2.19,594",,Engine
+1986,DNF,,75,Network Alfa,Alfa Romeo Alfetta GTV/6,"Colin Bond, AUS; Peter Fitzgerald, AUS",2491,V6,Class B,111,36,"2.25,36",,Engine
+1986,DNF,,34,Lansvale Smash Repairs P/L,Holden VK Commodore,"Steve Reed, AUS; Trevor Ashby, AUS",4980,V8,Class C,111,16,"2.21,78",,Differential
+1986,DNF,,9,JPS Team BMW,BMW 635 CSi,"Kevin Bartlett, AUS; Trevor Crowe, NZ",3475,L6,Class C,109,17,"2.21,93",,Handling
+1986,DNF,,35,Lester Smerdon,Holden VK Commodore,"Geoff Russell, AUS; Lester Smerdon, AUS",4980,V8,Class C,100,28,"2.23,79",,Differential
+1986,DNF,,50,John Donnelly,Rover Vitesse,"John Donnelly, AUS; Simon Harrex, AUS",3532,V8,Class C,98,53,"2.36,85",,Engine
+1986,DNF,,12,Garry Wllmington,Jaguar XJ-S,"Garry Willmington, AUS; Peter Janson, GB",5344,V12,Class C,88,14,"2.21,28",,Brakes
+1986,DNF,,43,Anderson &amp; O'Leary,Ford Mustang,"Bruce Anderson, NZ; Wayne Anderson, NZ",4968,V8,Class C,81,39,"2.25,49",,Engine
+1986,DNF,,96,Tim Slako,Rover Vitesse,"Geoff Leeds, AUS; Tim Slako, AUS",3532,V8,Class C,77,32,"2.24,41",,Overheating
+1986,DNF,,53,BJ Motorsport,Mitsubishi Starion 2000 EX,"Brad Jones, AUS; Akihiko Nakaya, J",1998 tc,L4,Class B,61,10,"2.35,969",,Gearbox
+1986,DNF,,4,Autopart Centre,Holden VK Commodore,"Glenn Clark, NZ; Peter McLeod, AUS",4980,V8,Class C,48,15,"2.21,70",,Accident
+1986,DNF,,62,Bob Holden Motors,Toyota Sprinter,"Brian Nightingale, AUS; Keith McClelland, AUS",1587,L4,Class A,38,57,"2.44,23",,Engine
+1986,DNF,,29,Ken Davison,Ford Mustang,"Ken Davison, AUS; Wally Kramer, AUS",4968,V8,Class C,36,48,"2.31,29",,Overheating
+1986,DNF,,20,James Keogh,BMW 635 CSi,"Des Wall, AUS; Jim Keogh, AUS",3475,L6,Class C,30,41,"2.26,53",,Clutch
+1986,DNF,,40,Motorsport Pacific - Mark Petch,Ford Sierra XR4 TI,"Leo Leonard, NZ; Robert Francevic, NZ",2320 tc,L4,Class C,27,21,"2.23,05",,Electrics
+1986,DNF,,55,Motorsport Pacific,Ford Escort RS 1600i,"Andrew Bagnall, NZ; Ted Jarvis, NZ",1598,L4,Class A,23,56,"2.42,89",,Engine mount
+1986,DNF,,7,Gould Motorsport-Bob Jane T-Marts,BMW 635 CSi,"Charlie O'Brien, AUS; Garry Rogers, AUS",3475,L6,Class C,19,22,"2.23,19",,Clutch
+1986,DNF,,51,Team Nissan racing NZ,Nissan Skyline GTS-R DR30,"Graeme Bowkett, NZ; Kent Baigent, NZ",1990 tc,L4,Class B,13,38,"2.25,45",,Overheating
+1986,DNF,,27,Dulux Auto Colour,Holden VK Commodore,"Alf Grant, AUS; John French, AUS",4980,V8,Class C,11,20,"2.23,00",,Overheating
+1986,DNF,,33,Mike Burgmann,Holden VK Commodore,"Mal Rose, AUS; Mike Burgmann, AUS",4980,V8,Class C,5,27,"2.23,74",,Fatal accident (Burgmann)
+1986,DNF,,28,Yellow Pages Racing,Holden VK Commodore,"Ralph Radburn, AUS; Tony Kavich, AUS",4980,V8,Class C,4,19,"2.22,75",,Engine
+1986,DNF,,16,Toyota Team Australia,Toyota Corolla,"Drew Price, AUS; John Smith, AUS",1587,L4,Class A,3,49,"2.31,74",,Engine
+1986,DNF,,21,Gould Motorsport-Bob Jane T-Marts,BMW 635 CSi,"Dieter Quester, A; Roberto Ravaglia, I; (Gerhard Berger, A)",3475,L6,Class C,2,9,"2.20,955",,Accident
+1986,DNF,,14,Bob Jane T-Marts,Mercedes 190 E 2.3-16,"Andrew Miedecke, AUS; Jörg van Ommen, D",2323,L4,Class B,,35,"2.24,84",,Accident
+1986,DNS,,77,Peter Williamson Toyota,Toyota Celica Supra,"Mark Skaife, AUS; Peter Williamson, AUS",2759,L6,Class B,,,,,Accident
+1986,NC,,56,F. Cecchele,Fiat Uno Turbo,"Allan McCarthy, AUS; Gordon Mitchell, AUS; (John Farrell, AUS)",1301 tc,L4,Class A,110,59,No time,,Insufficient laps
+1986,NC,,32,John English,BMW 635 CSi,"Glenn McIntyre, NZ; John English, AUS",3475,L6,Class C,101,40,"2.25,54",,Insufficient laps
+1986,NC,,49,Ray Gulson,Alfa Romeo Alfetta GTV/6,"Ray Gulson, AUS; Frank Porter, AUS",2491,V6,Class B,94,46,"2.30,62",,Insufficient laps
+1986,NC,,39,Trevor McLean,Holden VK Commodore,"Rod Downs, NZ; Trevor McLean, NZ",4980,V8,Class C,90,43,"2.28,33",,Insufficient laps
+1986,DNP,,25,JPS Team BMW,BMW 325i,"Tony Longhurst, AUS; Trevor Crowe, NZ",2494,L6,Class B,,,,,Withdrawn
+1986,DNP,,45,Oxo Motorsport,Ford Sierra RS Cosworth,"Don Smith, AUS; Les Grose, AUS",1993 tc,L4,Class B,,,,,Withdrawn
+1986,DNP,,46,Oxo Motorsport,Ford Sierra RS Cosworth,"Craig Harris, AUS; John Craft, AUS",1993 tc,L4,Class B,,,,,Withdrawn
+1986,DNP,,52,BJ Motorsport,Mitsubishi Starion 2000 EX,"Brad Jones, AUS; Akihiko Nakaya, J",1998 tc,L4,Class B,,,,,Withdrawn
+1987,1,1,10,HDT Racing P/L,Holden VL Commodore,"David ""Skippy"" Parsons, AUS; Peter Brock, AUS; Peter McLeod, AUS; (Jon Crooke, AUS)",4980,V8,Div. 3,"158 laps, 7:01.08,40",20,"2.25,12",,
+1987,2,2,15,Peter Jackson Nissan Racing,Nissan Skyline GTS-R DR30,"John Bowe, AUS; Glenn Seton, AUS; (George Fury, AUS)",1990 tc,L4,Div. 3,157,15,"2.23,40",,
+1987,3,3,30,Peter Jackson Nissan Racing,Nissan Skyline GTS-R DR30,"George Fury, AUS; Terry Shiel, AUS; (Glenn Seton, AUS)",1990 tc,L4,Div. 3,157,14,"2.22,76",,
+1987,4,1,44,JPS Team BMW,BMW M3,"Jim Richards, NZ; Tony Longhurst, AUS; (Ludwig Finauer, D)",2332,L4,Div. 2,156,12,"2.22,42",,
+1987,5,4,16,Mitsubishi Ralliart,Mitsubishi Starion 2000 EX,"Gary Scott, AUS; Akihiko Nakaya, J; (John French, AUS)",1998 tc,L4,Div. 3,154,23,"2.25,82",,
+1987,6,2,45,JPS Team BMW,BMW M3,"Robert Francevic, NZ; Ludwig Finauer, D; (Jim Richards, NZ)",2332,L4,Div. 2,154,22,"2.25,50",,
+1987,7,3,42,BMW Motorsport/CiBiEmme,BMW M3,"Gianfranco Brancatelli, I; Johnny Cecotto, YV",2332,L4,Div. 2,154,HH 6,"2.23,147",,
+1987,8,5,4,Formula 1 Investments Pty Ltd,Holden VK Commodore,"Graham Moore, AUS; Michel Delcourt, B",4980,V8,Div. 3,152,29,"2.28,18",,
+1987,9,6,26,Kalari Transport Services,Holden VK Commodore,"Garry Rush, AUS; Tony Noske, AUS",4980,V8,Div. 3,151,35,"2.29,00",,
+1987,10,7,39,Lansvale Smash Repairs P/L,Holden VL Commodore,"Steve Reed, AUS; Trevor Ashby, AUS",4980,V8,Div. 3,150,38,"2.30,12",,
+1987,11,4,43,BMW Motorsport/Bigazzi,BMW M3,"Altfrid Heger, D; Olivier Grouillard, F; Winfried Vogt, D; (Luis Perez Sala, E)",2332,L4,Div. 2,150,16,"2.24,54",,
+1987,12,5,40,BMW Motorsport/Schnitzer,BMW M3,"Emanuele Pirro, I; Roberto Ravaglia, I; (Markus Oestreich, D); (Roland Ratzenberger, A)",2332,L4,Div. 2,150,19,"2.24,82",,
+1987,13,8,34,OXO Supercube Motorsport,Ford Sierra RS 500,"Bruce Stewart, AUS; John Giddings, AUS",1993 tc,L4,Div. 3,150,24,"2.26,10",,
+1987,14,9,38,Everlast Automotive Services,Holden VL Commodore,"Brian Sampson, AUS; Bill O'Brien, AUS",4980,V8,Div. 3,146,33,"2.28,52",,
+1987,15,10,27,Ray Gulson,BMW 635 CSi,"Graham Gulson, AUS; Ray Gulson, AUS",3475,L6,Div. 3,146,41,"2.31,24",,
+1987,16,6,41,BMW Motorsport/CiBiEmme,BMW M3,"Gary Brabham, AUS; Juan Manuel Fangio II, RA",2332,L4,Div. 2,146,18,"2.24,68",,
+1987,17,11,35,OXO Supercube Motorsport,Ford Sierra RS 500,"Andrew Miedecke, AUS; Don Smith, AUS",1993 tc,L4,Div. 3,144,HH 5,"2.22,057",,
+1987,18,12,3,R.G. Lanyon,Holden VK Commodore,"Peter Fitzgerald, AUS; Peter Janson, GB; (Graeme Crosby, NZ); (Graham McRae, NZ)",4980,V8,Div. 3,144,37,"2.29,84",,
+1987,19,7,60,Peter Jackson Nissan Racing,Nissan Gazelle,"Mark Skaife, AUS; Grant Jarrett, AUS",1990,L4,Div. 3,138,44,"2.35,78",,
+1987,20,13,29,Kalari Transport Services,Holden VK Commodore,"Ken Mathews, AUS; Tony Mulvihill, AUS; (Barry Jones, AUS)",4980,V8,Div. 3,136,32,"2.28,42",,
+1987,21,14,24,Team Nissan racing NZ,Nissan Skyline GTS-R DR30,"Graeme Bowkett, NZ; Kent Baigent, NZ",1990 tc,L4,Div. 3,135,17,"2.24,60",,
+1987,22,15,36,Yellow Pages Racing,Holden VK Commodore,"Kerry Baily, AUS; Tony Kavich, AUS; (Allan Grice, AUS)",4980,V8,Div. 3,131,31,"2.28,28",,
+1987,23,1,93,Bob Holden Motors,Toyota Corolla Sprinter,"Bob Holden, AUS; Bryan Bate, NZ; Garry Willmington, AUS; (Geoff Kimber-Smith, GB)",1587,L4,Div. 1,123,47,"2.39,18",,
+1987,DNF,,90,Toyota Team Australia,Toyota Corolla GT,"Drew Price, AUS; John Smith, AUS; (John Faulkner, AUS)",1587,L4,Div. 1,119,43,"2.35,30",,Accident
+1987,DNF,,91,Toyota Team Australia,Toyota Corolla GT,"John Faulkner, AUS; Mike Quinn, AUS; (John Smith, AUS)",1587,L4,Div. 1,118,45,"2.37,58",,Accident
+1987,DNF,,2,Bob Jane T-Marts,Holden VL Commodore,"Allan Grice, AUS; Win Percy, GB",4980,V8,Div. 3,96,HH 7,"2.23,626",,Rear axle
+1987,DNF,,92,Ratcliff Transport Spares,Toyota Levin,"David Ratcliff, AUS; Mark Gibbs, AUS",1587,L4,Div. 1,96,49,"2.44,28",,Crankshaft
+1987,DNF,,37,Brian Callaghan Racing P/L,Holden VK Commodore,"Barry Graham, AUS; Brian Callaghan, AUS",4980,V8,Div. 3,86,26,"2.26,84",,Engine
+1987,DNF,,94,Gullivers Ltd.,Toyota Corolla GT,"Andrew Bagnall, NZ; Chris Hodgetts, GB; Mark Jennings, NZ",1587,L4,Div. 1,77,46,"2.37,84",,Accident
+1987,DNF,,19,Canam Enterprises,Holden VL Commodore,"Graeme Cameron, NZ; Wayne Wilkinson, NZ",4980,V8,Div. 3,71,25,"2.26,66",,Fuel pump
+1987,DNF,,50,Riethmuller-Ward International Motorsport P/L,Mercedes 190 E 2.3-16,"Llyndon Riethmuller, AUS; Phil Ward, AUS; (Chris Clearihan, AUS); (Steve Smith, AUS)",2323,L4,Div. 2,70,40,"2.30,72",,Suspension
+1987,DNF,,100,Alfa Romeo,Alfa Romeo 33,"Giorgio Francia, I; Daniele Toffoli, I; (Alain Thiebaut, B); (Giovanni? Maggiorelli, I)",1498,B4,Div. 1,55,48,"2.44,10",,Engine
+1987,DNF,,47,BMW Motorsport/Schnitzer,BMW M3,"Anette Meeuvissen, D; Mercedes Stermitz, A; (Roland Ratzenberger, A)",2332,L4,Div. 2,45,42,"2.34,74",,Clutch
+1987,DNF,,46,BMW Motorsport/Schnitzer,BMW M3,"Markus Oestreich, D; Roland Ratzenberger, A; (Emanuele Pirro, I); (Roberto Ravaglia, I)",2332,L4,Div. 2,41,13,"2.22,66",,Engine
+1987,DNF,,5,HDT Racing P/L,Holden VL Commodore,"Peter Brock, AUS; David ""Skippy"" Parsons, AUS",4980,V8,Div. 3,34,11,"2.22,38",,Engine
+1987,DNF,,57,Network Alfa,Alfa Romeo 75 Turbo,"Colin Bond, AUS; Lucio Cesario, AUS",1779 tc,L4,Div. 2,34,21,"2.25,34",,Accident
+1987,DNF,,9,Allan Moffat Enterprises,Ford Sierra RS 500,"Andy Rouse, GB; Thierry Tassin, B; Allan Moffat, AUS",1993 tc,L4,Div. 3,31,HH 2,"2.18,468",,Transmission
+1987,DNF,,32,Warren Cullen,Holden VK Commodore,"Gary Cooke, AUS; Gary Sprague, AUS; Warren Cullen, AUS",4980,V8,Div. 3,31,27,"2.27,16",,Accident
+1987,DNF,,1,Pro Team Italia/Imberti,Maserati Biturbo,"Armin Hahne, D; Kevin Bartlett, AUS; (Bruno Giacomelli, I); (Marcello Gunella, I)",2491 tc,V6,Div. 3,29,34,"2.28,88",,Differential
+1987,DNF,,22,Lusty Engineering P/L,Holden VL Commodore,"Graham Lusty, AUS; John Lusty, AUS",4980,V8,Div. 3,17,39,"2.30,66",,Accident
+1987,DNF,,21,D.F.C. NZ Ltd,Holden VK Commodore,"Graeme Crosby, NZ; John Billington, NZ; (Chris Castle, NZ)",4980,V8,Div. 3,9,28,"2.27,22",,Oil pressure
+1987,DNF,,17,Shell Ultra Hi Tech Racing Team,Ford Sierra RS 500,"Dick Johnson, AUS; Gregg Hansford, AUS",1993 tc,L4,Div. 3,3,HH 9 *,"2.22,744",,Differential
+1987,DNF,,11,Enzed team Perkins,Holden VK Commodore,"Denny Hulme, NZ; Larry Perkins, AUS",4980,V8,Div. 3,2,HH 8,"2.24,209",,Accident
+1987,DNF,,18,Shell Ultra Hi Tech Racing Team,Ford Sierra RS 500,"Charlie O'Brien, AUS; Neville Crichton, NZ; (Dick Johnson, AUS)",1993 tc,L4,Div. 3,2,HH 10 *,"2.21,452",,Accident
+1987,DNS,,12,Eggenberger Motorsport,Ford Sierra RS 500,"Klaus Ludwig, D; Klaus Niedzwiedz, D",1993 tc,L4,Div. 3,,HH 4,"2.21,318",,Spare car
+1987,DNQ,,20,Terry Finnigan,Holden VL Commodore,"Geoff Leeds, AUS; Terry Finnigan, AUS",4980,V8,Div. 3,,,"2.28,43",,DNQ Leeds
+1987,DNQ,,31,Lester Smerdon,Holden VK Commodore,"Bruce Williams, AUS; Lester Smerdon, AUS",4980,V8,Div. 3,,,"2.30,48",,DNQ Smerdon
+1987,DNQ,,23,Jagparts Racing,Holden VK Commodore,"Alf Grant, AUS; Gerald Kay, AUS",4980,V8,Div. 3,,,"2.31,10",,DNQ Kay
+1987,DNQ,,33,Peter Williamson Toyota,Toyota Celica Supra,"Chris Clearihan, AUS; Peter Williamson, AUS; John Sax, NZ; (Warwick Rooklyn, AUS)",2759,L6,Div. 3,,,"2.35,08",,DNQ Sax & Clearihan
+1987,DNQ,,28,Wayne Clift,Holden VK Commodore,"Bernie Stack, AUS; Wayne Clift, AUS",4980,V8,Div. 3,,,"2.31,88",,DNQ Clift
+1987,DNQ,,25,Team Nissan racing NZ,Nissan Skyline GTS-R DR30,"Graeme Bowkett, NZ; Kent Baigent, NZ",1990 tc,L4,Div. 3,,,,,Withdrawn
+1987,DNP,,13,Viacard Services,BMW 635 CSi,"Ian Tulloch, NZ; Trevor Crowe, NZ; (Jim Keogh, AUS)",3475,L6,Div. 3,,,,,Withdrawn
+1987,DQ,,6,Eggenberger Motorsport,Ford Sierra RS 500,"Steve Soper, GB; Pierre Dieudonné, B; (Klaus Niedzwiedz, D)",1993 tc,L4,Div. 3,161,HH 3,"2.18,663",,Wheel arches
+1987,DQ,,7,Eggenberger Motorsport,Ford Sierra RS 500,"Klaus Ludwig, D; Klaus Niedzwiedz, D; (Pierre Dieudonné, B)",1993 tc,L4,Div. 3,159,HH 1,"2.16,969",,Wheel arches
+1987,DQ,,53,Viacard Services,BMW M3,"Ian Tulloch, NZ; Trevor Crowe, NZ; (Jim Keogh, AUS)",2332,L4,Div. 2,151,36,"2.29,08",,Illegal spoiler
+1987,DQ,3,14,Nettcomm (Aust) Racing,Nissan Skyline GTS-R DR30,"Murray Carter, AUS; Steve Masterton, AUS; (Denis Horley, AUS)",1990 tc,L4,Div. 3,147,30,"2.28,22",,Illegal tyres
+1988,1,1,25,Benson & Hedges Racing,Ford Sierra RS 500,"Tony Longhurst, AUS; Tomas Mezera, AUS",1993 tc,L4,Div. 3,"161 laps, 7:02.10,28",3,"2.17,96",,
+1988,2,2,18,Shell Ultra Hi Tech Racing Team,Ford Sierra RS 500,"Dick Johnson, AUS; John Bowe, AUS; John Smith, AUS; (Alf Costanzo, AUS)",1993 tc,L4,Div. 3,160 laps,12,"2.22,34",,
+1988,3,3,4,Caltex CXT Race Team,Ford Sierra RS 500,"Alan Jones, AUS; Colin Bond, AUS",1993 tc,L4,Div. 3,158,6,"2.19,84",,
+1988,4,1,53,Gould Motorsport/Schnitzer BMW,BMW M3,"Peter Janson, GB; Trevor Crowe, NZ; (John Sax, NZ)",2332,L4,Div. 2,156,36,"2.30,46",,
+1988,5,4,44,Caltex CXT Race Team,Ford Sierra RS 500,"Bruce Stewart, AUS; John Giddings, AUS; (Colin Bond, AUS)",1993 tc,L4,Div. 3,155,28,"2.27,84",,
+1988,6,5,37,Brian Callaghan Racing P/L,Holden VL Commodore,"Barry Graham, AUS; Brian Callaghan, AUS",4980,V8,Div. 3,152,20,"2.26,14",,
+1988,7,6,46,Sunliner Campmobiles,Holden VL Commodore,"Steve Harrington, AUS; Tony Hunter, NZ",4980,V8,Div. 3,151,33,"2.30,04",,
+1988,8,7,24,Jagparts Racing,Holden VL Commodore,"Geoff Munday, AUS; Gerald Kay, AUS; (Alf Grant, AUS)",4980,V8,Div. 3,150,38,"2.30,84",,
+1988,9,1,71,Toyota Team Australia,Toyota Corolla,"Drew Price, AUS; John Faulkner, AUS",1587,L4,Div. 1,146,41,"2.38,84",,
+1988,10,8,31,Ralliart Australia,Mitsubishi Starion 2000 EX,"Brad Jones, AUS; Terry Shiel, AUS; (Michael Preston, AUS)",1998 tc,L4,Div. 3,145,27,"2.27,62",,
+1988,11,2,73,Toyota Team Australia,Toyota Corolla,"Brett Riley, NZ; Peter MacKay, AUS",1587,L4,Div. 1,145,42,"2.41,32",,
+1988,12,3,74,Bryan Bate,Toyota Corolla,"Andrew Maher, NZ; Bryan Bate, NZ; Dave Barrow, NZ",1587,L4,Div. 1,144,43,"2.44,54",,
+1988,13,9,23,Chris Lambden,Holden VL Commodore,"Chris Lambden, AUS; Kerry Baily, AUS",4980,V8,Div. 3,141,35,"2.30,18",,
+1988,14,10,12,Bob Forbes Corporation Pty Ltd,Holden VL Commodore,"John Harvey, AUS; Kevin Bartlett, AUS",4980,V8,Div. 3,140,22,"2.26,26",,
+1988,15,11,2,Garry Rogers,Holden VL Commodore,"Allan Grice, AUS; Win Percy, GB",4980,V8,Div. 3,139,11,"2.22,32",,
+1988,16,4,72,Toyota Team Australia,Toyota Corolla,"Mike Freeman, AUS; Mike Oliver, AUS",1587,L4,Div. 1,133,44,"2.46,46",,
+1988,17,5,78,Bob Holden Motors,Toyota Sprinter,"Bob Holden, AUS; Damon Beck, AUS; Jim Faneco, AUS",1587,L4,Div. 1,128,45,"2.46,90",,
+1988,18,12,49,Alcair Airconditioning,Holden VL Commodore,"Bob Tindal, AUS; Wayne Park, AUS",4980,V8,Div. 3,127,32,"2.29,36",,
+1988,19,2,55,Bill Bryce Racing,BMW M3,"Ludwig Finauer, D; Paul Radisich, NZ",2332,L4,Div. 2,113,19,"2.25,60",,
+1988,DNF,,10,Holden Special Vehicles,Holden VL Commodore,"Denny Hulme, NZ; Larry Perkins, AUS; Tom Walkinshaw, GB",4980,V8,Div. 3,137,8,"2.21,00",,Engine
+1988,DNF,,9,Allan Moffat Enterprises,Ford Sierra RS 500,"Allan Moffat, AUS; Klaus Niedzwiedz, D; Gregg Hansford, AUS",1993 tc,L4,Div. 3,129,4,"2.18,02",,Engine
+1988,DNF,,75,Belgrave 2-Way Radio Services,Toyota Sprinter,"David Ratcliff, AUS; Mike Mortimer, AUS",1587,L4,Div. 1,118,48,"2.49,96",,Cam follower
+1988,DNF,,45,Wolf Racing Team,Ford Sierra RS 500,"Armin Hahne, D; Robert Francevic, NZ",1993 tc,L4,Div. 3,103,14,"2.22,62",,Overheating
+1988,DNF,,6,Miedecke Motorsport,Ford Sierra RS 500,"Andrew Miedecke, AUS; Steve Soper, GB",1993 tc,L4,Div. 3,102,5,"2.18,78",,Split bore
+1988,DNF,,50,Leeson Civil Engineering P/L,Holden VL Commodore,"Garry Willmington, AUS; John Leeson, AUS",4980,V8,Div. 3,101,30,"2.28,42",,Suspension
+1988,DNF,,54,Sax Racing,BMW M3,"John Sax, NZ; John Sorenson, NZ; Kayne Scott, NZ",2332,L4,Div. 2,100,40,"2.33,38",,Accident
+1988,DNF,,56,Mobil 1 Racing,BMW M3,"Neil Crompton, AUS; Peter Brock, AUS; (Jim Richards, NZ)",2332,L4,Div. 2,89,16,"2.23,76",,Engine
+1988,DNF,,16,Ralliart Australia,Mitsubishi Starion 2000 EX,"Akihiko Nakaya, J; Gary Scott, AUS; (Terry Shiel, AUS)",1998 tc,L4,Div. 3,88,15,"2.23,24",,Gearbox
+1988,DNF,,19,Finnigan/Mathews Racing,Holden VL Commodore,"Ken Mathews, AUS; Terry Finnigan, AUS; (Greg Toepfer, AUS)",4980,V8,Div. 3,84,23,"2.26,28",,Engine
+1988,DNF,,26,Formula 1 Investments Pty Ltd,Holden VL Commodore,"Graham Moore, AUS; Tony Noske, AUS; (Garry Rush, AUS)",4980,V8,Div. 3,79,21,"2.26,26",,Rocker arm
+1988,DNF,,57,Mobil 1 Racing,BMW M3,"David ""Skippy"" Parsons, AUS; Jim Richards, NZ; (Neil Crompton, AUS)",2332,L4,Div. 2,68,24,"2.26,74",,Overheating
+1988,DNF,,36,Everlast Battery Service,Holden VL Commodore,"Bill O'Brien, AUS; Brian Sampson, AUS; (Ray Lintott, AUS)",4980,V8,Div. 3,66,25,"2.27,14",,Accident
+1988,DNF,,33,Garry Rogers,Holden VL Commodore,"Garry Rogers, AUS; John Andretti, USA",4980,V8,Div. 3,37,18,"2.25,08",,Accident
+1988,DNF,,51,Phil Ward,Mercedes 190 E 2.3-16,"David Clement, AUS; Phil Ward, AUS",2323,L4,Div. 2,21?,39,"2.32,08",,Accident
+1988,DNF,,28,Shell Ultra Hi Tech Racing Team,Ford Sierra RS 500,"John Bowe, AUS; Robb Gravett, GB; Neville Crichton, NZ",1993 tc,L4,Div. 3,26,2,"2.17,52",,Engine
+1988,DNF,,17,Shell Ultra Hi Tech Racing Team,Ford Sierra RS 500,"Dick Johnson, AUS; John Bowe, AUS; (Neville Crichton, NZ)",1993 tc,L4,Div. 3,22,1,"2.16,46",,Differential
+1988,DNF,,14,Nettcomm (Aust) Racing,Ford Sierra RS 500,"Murray Carter, AUS; Steve Masterton, AUS",1993 tc,L4,Div. 3,22,37,"2.30,50",,Driveshaft
+1988,DNF,,30,Peter Jackson Nissan Racing,Nissan Skyline GTS-R HR31,"Mark Skaife, AUS; George Fury, AUS; (Glenn Seton, AUS)",2029 tc,L6,Div. 3,17,9,"2.21,92",,Fan belt
+1988,DNF,,8,Andrew Bagnall,Ford Sierra RS 500,"Andrew Bagnall, NZ; Pierre Dieudonné, B",1993 tc,L4,Div. 3,9,7,"2.20,34",,Head gasket
+1988,DNF,,3,Yellow Pages Racing,Holden VL Commodore,"Jim Keogh, AUS; Peter McLeod, AUS",4980,V8,Div. 3,7,29,"2.28,14",,Electrics
+1988,DNF,,21,Team CMS Sweden,Ford Sierra RS 500,"Ulf Granberg, S; Christer Simonsen, S; Ian Tulloch, NZ",1993 tc,L4,Div. 3,6,10,"2.22,20",,Turbo
+1988,DNF,,20,Holden Special Vehicles,Holden VL Commodore,"Jeff Allam, GB; Tom Walkinshaw, GB; (Larry Perkins, AUS)",4980,V8,Div. 3,5,13,"2.22,48",,Axle
+1988,DNF,,15,Peter Jackson Nissan Racing,Nissan Skyline GTS-R HR31,"Anders Olofsson, S; George Fury, AUS; Glenn Seton, AUS",2029 tc,L6,Div. 3,,17,"2.24,14",,Differential
+1988,DNQ,,11,Ray Gulson,BMW 635 CSi,"Graham Gulson, AUS; Ray Gulson, AUS",3475,L6,Div. 3,,,"2.31,48",,
+1988,DNQ,,47,Craig Kinmoth,Holden VL Commodore,"Alf Grant, AUS; Craig Kinmoth, AUS",4980,V8,Div. 3,,,"2.33,68",,
+1988,DNQ,,38,Grellis Marketing,Holden VL Commodore,"Ray Ellis, AUS; Bruce Williams, AUS",4980,V8,Div. 3,,,"2.33,98",,
+1988,DNQ,,48,Tony Kavich,Holden VL Commodore,"Ken Davison, AUS; Tony Kavich, AUS",4980,V8,Div. 3,,,"2.34,50",,
+1988,DNQ,,42,Steve Williams,Holden VL Commodore,"Chris Clearihan, AUS; Steve Williams, AUS",4980,V8,Div. 3,,,"2.34,70",,
+1988,DNQ,,29,The Xerox Shop,Mitsubishi Starion 2000 EX,"Alan ""Scotty"" Taylor, AUS; Kevin Kennedy, AUS",1998 tc,L4,Div. 3,,,"2.41,06",,
+1988,DNQ,,40,Holden Special Vehicles,Holden VL Commodore,"Tom Walkinshaw, GB; Larry Perkins, AUS",4980,V8,Div. 3,,,,,Withdrawn
+1988,NC,,22,Lusty Engineering P/L,Holden VL Commodore,"Graham Lusty, AUS; John Lusty, AUS",4980,V8,Div. 3,141,34,"2.30,06",,Slow last lap
+1988,NC,,39,Lansvale Smash Repairs P/L,Holden VL Commodore,"Steve Reed, AUS; Trevor Ashby, AUS; (Wally Storey, AUS)",4980,V8,Div. 3,151,26,"2.27,34",,Slow last lap
+1988,NC,,41,Mulvihill Motorsport P/L,Holden VL Commodore,"Barry Jones, AUS; Geoff Leeds, AUS; Tony Mulvihill, AUS",4980,V8,Div. 3,118,31,"2.28,68",,Slow last lap
+1988,NC,,76,Bob Holden Motors,Toyota Sprinter,"Dennis Rogers, AUS; Garry Jones, AUS; (Bob Holden, AUS)",1587,L4,Div. 1,89,47,"2.49,26",,Insufficient laps completed
+1988,NC,,77,Mark Ducquet,Toyota Sprinter,"Brian Selby, AUS; Marc Ducquet, AUS; (M. Birks, AUS)",1587,L4,Div. 1,85,46,"2.48,88",,Insufficient laps completed
+1989,1,1,17,Shell Ultra Hi Tech Racing Team,Ford Sierra RS 500,"Dick Johnson, AUS; John Bowe, AUS",1993 tc,L4,Div. 3,"161 laps, 6:30.53,44",2,"2.16,79",,
+1989,2,2,10,Allan Moffat Enterprises,Ford Sierra RS 500,"Frank Biela, D; Klaus Niedzwiedz, D",1993 tc,L4,Div. 3,"161 laps, 6:32.15,06",4,"2.17,42",,
+1989,3,3,2,Nismo,Nissan Skyline GTS-R HR31,"Jim Richards, NZ; Mark Skaife, AUS; (Anders Olofsson, S)",2029 tc,L6,Div. 3,160 laps,7,"2.20,09",,
+1989,4,4,3,Nismo,Nissan Skyline GTS-R HR31,"Anders Olofsson, S; George Fury, AUS; (Mark Skaife, AUS)",2029 tc,L6,Div. 3,160,13,"2.19,64",,
+1989,5,5,20,Benson & Hedges Racing,Ford Sierra RS 500,"Alan Jones, AUS; Denny Hulme, NZ; Tony Longhurst, AUS",1993 tc,L4,Div. 3,158,9,"2.20,63",,
+1989,6,6,16,Holden Racing Team,Holden VL Commodore,"Larry Perkins, AUS; Tomas Mezera, AUS; (Win Percy, GB)",4980,V8,Div. 3,158,11,"2.19,16",,
+1989,7,7,7,Holden Racing Team,Holden VL Commodore,"Win Percy, GB; Neil Crompton, AUS; (John Harvey, AUS); (Steve Harrington, AUS)",4980,V8,Div. 3,158,18,"2.22,00",,
+1989,8,8,18,Shell Ultra Hi Tech Racing Team,Ford Sierra RS 500,"Robb Gravett, GB; Jeff Allam, GB",1993 tc,L4,Div. 3,158,12,"2.19,62",,
+1989,9,9,105,Mobil 1 Racing,Ford Sierra RS 500,"Brad Jones, AUS; Paul Radisich, NZ",1993 tc,L4,Div. 3,153,5,"2.19,09",,
+1989,10,10,15,I.C.L. Racing P/L,Holden VL Commodore,"Allan Grice, AUS; Peter Janson, GB",4980,V8,Div. 3,153,19,"2.22,44",,
+1989,11,11,37,Brian Callaghan Racing P/L,Holden VL Commodore,"Barry Graham, AUS; Brian Callaghan, AUS",4980,V8,Div. 3,152,22,"2.23,40",,
+1989,12,12,55,Playscape Racing Australia,Ford Sierra RS 500,"Kevin Waldock, AUS; Bryan Thomson, AUS; (Michael Preston, AUS)",1993 tc,L4,Div. 3,152,23,"2.25,10",,
+1989,13,13,12,Lansvale Smash Repairs P/L,Holden VL Commodore,"Steve Reed, AUS; Trevor Ashby, AUS; (Wally Storey, AUS)",4980,V8,Div. 3,151,29,"2.27,32",,
+1989,14,14,22,Lusty Engineering P/L,Holden VL Commodore,"Alf Costanzo, AUS; Graham Lusty, AUS",4980,V8,Div. 3,146,24,"2.25,20",,
+1989,15,15,34,Ray Gulson,BMW 635 CSi,"Graham Gulson, AUS; Ray Gulson, AUS",3475,L6,Div. 3,143,39,"2.30,60",,
+1989,16,1,52,M3 Motorsport,BMW M3,"John Cotter, AUS; Peter Doulman, AUS",2332,L4,Div. 2,142,42,"2.34,84",,
+1989,17,1,33,Toyota Team Australia,Toyota Corolla,"Mike Dowson, AUS; Neal Bates, AUS",1587,L4,Div. 1,141,48,"2.37,92",,
+1989,18,16,44,Sutherland Mitsubishi,Mitsubishi Starion 2000 EX,"Gary Scott, AUS; Kevin Bartlett, AUS; Terry Shiel, AUS",1998 tc,L4,Div. 3,141,26,"2.25,94",,
+1989,19,2,32,Toyota Team Australia,Toyota Corolla,"John Faulkner, AUS; Peter MacKay, AUS",1587,L4,Div. 1,140,46,"2.36,32",,
+1989,20,17,30,Peter Jackson Nissan Racing,Ford Sierra RS 500,"Glenn Seton, AUS; John Goss, AUS; Tony Noske, AUS",1993 tc,L4,Div. 3,140,8,"2.20,52",,
+1989,21,18,60,The Xerox Shop,Mitsubishi Starion 2000 EX,"Alan ""Scotty"" Taylor, AUS; Roger Hurd, AUS",1998 tc,L4,Div. 3,139,44,"2.35,46",,
+1989,22,19,54,Clive Smith,Nissan Skyline GTS-R DR30,"Clive Smith, AUS; Paul Trevathan, AUS",1990 tc,L4,Div. 3,137,47,"2.36,52",,
+1989,23,3,78,Team Madison Racing,Toyota Sprinter,"Geoffrey Full, AUS; Michael Adcock, AUS",1587,L4,Div. 1,136,53,"2.45,54",,
+1989,24,2,49,David Sala,Nissan Gazelle,"Ross Burbidge, AUS; Steve Williams, AUS; (David Roberts, AUS)",1990,L4,Div. 2,134,50,"2.41,00",,
+1989,25,20,38,Mulvihill Motorsport P/L,Holden VL Commodore,"Glenn McIntyre, NZ; Graham Moore, AUS; Tony Mulvihill, AUS",4980,V8,Div. 3,133,37,"2.29,74",,
+1989,26,21,4,Caltex CXT Race Team,Ford Sierra RS 500,"Bruce Stewart, AUS; Colin Bond, AUS; (Dominic Beninca, AUS)",1993 tc,L4,Div. 3,131,16,"2.20,44",,
+1989,27,22,48,Mystic Mould Destroyer,Holden VL Commodore,"John Giddings, AUS; Wayne Park, AUS",4980,V8,Div. 3,130,27,"2.25,98",,
+1989,DNF,,45,Lester Smerdon,Holden VL Commodore,"Gary Hinton, AUS; Lester Smerdon, AUS; Marty Turpin, AUS",4980,V8,Div. 3,112,43,"2.34,92",,Axle
+1989,DNF,,51,Bob Holden Motors,Toyota Sprinter,"Dennis Rogers, AUS; Marc Ducquet, AUS; Richard Vorst, AUS",1587,L4,Div. 1,103,56,,,Head gasket
+1989,DNF,,50,Bill Bryce Racing,BMW M3,"Brett Riley, NZ; Ludwig Finauer, D",2332,L4,Div. 2,101,28,"2.26,42",,Engine
+1989,DNF,,57,Sax Racing,BMW M3,"Craig Turner, NZ; Kent Baigent, NZ; Lou Vandermeer, NZ",2332,L4,Div. 2,98,41,"2.33,00",,Accident
+1989,DNF,,8,Miedecke Motorsport,Ford Sierra RS 500,"Andrew Bagnall, NZ; Graeme Crosby, NZ",1993 tc,L4,Div. 3,97,10,Crash in top ten,,Head gasket
+1989,DNF,,35,Peter Jackson Nissan Racing,Ford Sierra RS 500,"Alain Ferté, F; Glenn Seton, AUS; Tony Noske, AUS; (John Goss, AUS)",1993 tc,L4,Div. 3,92,17,"2.21,44",,Engine
+1989,DNF,,24,Jagparts Racing,Holden VL Commodore,"Alf Grant, AUS; Gerald Kay, AUS",4980,V8,Div. 3,91,38,"2.30,16",,Engine
+1989,DNF,,56,Sax Racing,BMW M3,"Graham Lorimer, NZ; John Sax, NZ; ? Mark Thatcher, GB",2332,L4,Div. 2,82,36,"2.29,72",,Fire
+1989,DNF,,5,Mobil 1 Racing,Ford Sierra RS 500,"Peter Brock, AUS; Andy Rouse, GB",1993 tc,L4,Div. 3,81,1,"2.15,80",,Stuck wheel
+1989,DNF,,41,Leeson Civil Engineering P/L,Holden VL Commodore,"Bob Tindal, AUS; Des Wall, AUS; John Leeson, AUS",4980,V8,Div. 3,79,55,"2.47,78",,Ignition
+1989,DNF,,43,Everlast Battery Service,Holden VL Commodore,"Bill O'Brien, AUS; Brian Sampson, AUS",4980,V8,Div. 3,65,33,"2.28,76",,Accident
+1989,DNF,,19,Caltex CXT Race Team,Ford Sierra RS 500,"Garry Rogers, AUS; Ken Mathews, AUS",1993 tc,L4,Div. 3,50,20,"2.22,62",,Engine
+1989,DNF,,21,Bob Forbes Corporation Pty Ltd,Holden VL Commodore,"Mark Gibbs, AUS; Rohan Onslow, AUS",4980,V8,Div. 3,44,21,"2.23,40",,Accident
+1989,DNF,,46,Riethmuller Pentecost Racing,Holden VL Commodore,"Ian Green, AUS; Llyndon Riethmuller, AUS",4980,V8,Div. 3,43,34,"2.29,28",,Overheating
+1989,DNF,,31,Toyota Team Australia,Toyota Supra Turbo,"Drew Price, AUS; John Smith, AUS",2954 tc,L6,Div. 3,35,35,"2.29,60",,Suspension
+1989,DNF,,9,Allan Moffat Enterprises,Ford Sierra RS 500,"Pierre Dieudonné, B; Gregg Hansford, AUS; (Allan Moffat, AUS)",1993 tc,L4,Div. 3,30,14,"2.19,76",,Overheating
+1989,DNF,,96,Barbagallo Motorsport,Holden VL Commodore,"Alf Barbagallo, AUS; Don Smith, AUS; Geoff Leeds, AUS; Tim Slako, AUS",4980,V8,Div. 3,28,30,"2.27,88",,Overheating
+1989,DNF,,25,Benson & Hedges Racing,Ford Sierra RS 500,"Neville Crichton, NZ; Tony Longhurst, AUS",1993 tc,L4,Div. 3,27,3,"2.16,98",,Engine
+1989,DNF,,27,Mark Petch,Ford Sierra RS 500,"Gianfranco Brancatelli, I; Robert Francevic, NZ",1993 tc,L4,Div. 3,14,15,"2.19,88",,Radiator
+1989,DNF,,40,Foodtown Supermarkets,Holden VL Commodore,"John English, AUS; Terry Finnigan, AUS",4980,V8,Div. 3,14,31,"2.28,16",,Engine
+1989,DNF,,14,Murray Carter,Ford Sierra RS 500,"John Mann, AUS; Murray Carter, AUS",1993 tc,L4,Div. 3,10,32,"2.28,28",,Broken wheel
+1989,DNF,,42,Matt Wacker,Holden VL Commodore,"Frank Porter, AUS; Matt Wacker, AUS; Mike King, AUS",4980,V8,Div. 3,4,40,"2.32,82",,Clutch
+1989,DNF,,6,Miedecke Motorsport,Ford Sierra RS 500,"Andrew Miedecke, AUS; Charlie O'Brien, AUS",1993 tc,L4,Div. 3,,6,"2.19,88",,Broken selector shaft
+1989,DNS,,39,David Sala,Toyota Corolla,"David Sala, AUS; Richard Vorst, AUS",1587,L4,Div. 1,,52,"2.42,76",,Piston on warmup lap
+1989,NC,,28,Joseph Sommariva,BMW 635 CSi,"Joe Sommariva, AUS; Warren McKellar, NZ; (Darrel Belsky, AUS)",3475,L6,Div. 3,118,45,"2.36,08",,Insufficient laps
+1989,NC,,13,Bob Holden Motors,Toyota Sprinter,"Bob Holden, AUS; Tim Hall, NZ; (Kevin O'Neal, NZ)",1587,L4,Div. 1,108,54,"2.47,64",,Insufficient laps
+1989,NC,,69,Blue Haven Pools,Holden VL Commodore,"Ray Lintott, AUS; Reda Awadullah, AUS; (Bryan Bate, NZ)",4980,V8,Div. 3,106,51,"2.41,56",,Insufficient laps
+1989,NC,,68,Blue Haven Pools,Toyota Supra Turbo,"Garry Willmington, AUS; Tom Watkinson, AUS",2954 tc,L6,Div. 3,91,49,"2.39,78",,Insufficient laps
+1989,NC,,23,Beaurepaires,Holden VL Commodore,"Chris Lambden, AUS; Greg Crick, AUS; (Kerry Baily, AUS)",4980,V8,Div. 3,90,25,"2.25,78",,Insufficient laps
+1990,1,1,16,Holden Racing Team,Holden TWR VL Commodore,"Win Percy, GB; Allan Grice, AUS",4980,V8,Div. 1,"161 laps, 6:40.52,64",6,"2.16,17",,
+1990,2,2,18,Shell Ultra Hi Racing,Ford Sierra RS 500,"Jeff Allam, GB; Paul Radisich, NZ",1993 tc,L4,Div. 1,"161 laps, 6:41.07,58",13,"2.16,42",,
+1990,3,3,11,Holden Racing Team,Holden TWR VL Commodore,"Larry Perkins, AUS; Tomas Mezera, AUS",4980,V8,Div. 1,"161 laps, 6:42.20,44",7,"2.17,03",,
+1990,4,4,05,Mobil 1 Racing,Ford Sierra RS 500,"Peter Brock, AUS; Andy Rouse, GB",1993 tc,L4,Div. 1,160,3,"2.14,71",,
+1990,5,5,7,Holden Racing Team,Holden TWR VL Commodore,"Neil Crompton, AUS; Brad Jones, AUS",4980,V8,Div. 1,159,16,"2.17,90",,
+1990,6,6,28,Playscape Racing Australia,Ford Sierra RS 500,"Kevin Waldock, AUS; Michael Preston, AUS",1993 tc,L4,Div. 1,159,18,"2.19,40",,
+1990,7,7,38,Andrew Bagnall,Ford Sierra RS 500,"Andrew Bagnall, NZ; Robert Francevic, NZ",1993 tc,L4,Div. 1,155,17,"2.18,68",,
+1990,8,8,39,Holden Racing Team,Holden TWR VL Commodore,"Bill O'Brien, AUS; Brian Sampson, AUS",4980,V8,Div. 1,153,31,"2.24,82",,
+1990,9,9,23,Beaurepaires,Nissan Skyline GTS-R HR31,"Chris Lambden, AUS; Greg Crick, AUS",2029 tc,L6,Div. 1,151,25,"2.22,62",,
+1990,10,10,10,Allan Moffat Enterprises,Ford Sierra RS 500,"Klaus Niedzwiedz, D; Frank Biela, D; Pierre Dieudonné, B; (Gregg Hansford, AUS)",1993 tc,L4,Div. 1,151,1,"2.13,94",,60 second penalty
+1990,11,11,6,Mobil 1 Racing,Ford Sierra RS 500,"Andrew Miedecke, AUS; Charlie O'Brien, AUS; David ""Skippy"" Parsons, AUS",1993 tc,L4,Div. 1,149,14,"2.16,78",,
+1990,12,1,51,Phil Ward,Mercedes 190 E 2.3-16,"Phil Ward, AUS; John Goss, AUS; (Garry Jones, AUS)",2323,L4,Div. 2,148,38,"2.27,44",,
+1990,13,12,21,Bob Forbes Corporation Pty Ltd,Holden TWR VL Commodore,"Mark Gibbs, AUS; Rohan Onslow, AUS",4980,V8,Div. 1,148,21,"2.20,80",,
+1990,14,2,52,M3 Motorsport,BMW M3,"Peter Doulman, AUS; John Cotter, AUS",2332?,L4,Div. 2,147,47,"2.34,38",,
+1990,15,13,33,Pro-Duct Motorsport Pty Ltd,Holden TWR VL Commodore,"Bob Pearson, AUS; Bruce Stewart, AUS",4980,V8,Div. 1,147,32,"2.25,00",,
+1990,16,14,34,Ray Gulson,BMW 635 CSi,"Ray Gulson, AUS; Graham Gulson, AUS",3475,L6,Div. 1,147,43,"2.31,08",,
+1990,17,15,13,Bob Forbes Corporation Pty Ltd,Holden TWR VL Commodore,"Kevin Bartlett, AUS; Russell Ingall, AUS; Rohan Onslow, AUS",4980,V8,Div. 1,146,24,"2.21,48",,
+1990,18,16,1,Nissan Motor Sport,Nissan Skyline GT-R BNR32,"Jim Richards, NZ; Mark Skaife, AUS",2568 tc,L6,Div. 1,146,11,"2.15,66",,
+1990,19,17,12,Ray Lintott,Ford Sierra RS 500,"Ray Lintott, AUS; Garry Rush, AUS; Terry Shiel, AUS",1993 tc,L4,Div. 1,143,19,"2.20,28",,
+1990,20,18,46,Garry Wllmington,Toyota Supra Turbo,"Garry Willmington, AUS; Bryan Thomson, AUS",2954 tc,L6,Div. 1,143,40,"2.29,92",,
+1990,21,19,43,Brian Callaghan Racing P/L,Holden VL Commodore,"Brian Callaghan, AUS; John Gerwald, AUS; Jason Bargwanna, AUS",4980,V8,Div. 1,143,41,"2.30,46",,
+1990,22,1,78,Phoenix Motorsport,Toyota Sprinter,"Geoffrey Full, AUS; David Ratcliff, AUS; (Mike Quinn, AUS)",1587,L4,Div. 3,142,49,"2.37,32",,
+1990,23,20,44,Paul Trevathan,Holden VL Commodore,"Paul Trevathan, AUS; Andrew McDowell, AUS",4980,V8,Div. 1,138,45,"2.32,66",,
+1990,24,3,53,Brian Bolwell Racing,BMW 323i,"Brian Bolwell, AUS; Mike Twigden, AUS; David Pullen, AUS",2330,L6,Div. 2,137,55,"2.43,98",,
+1990,25,2,72,David Sala,Toyota Corolla,"David Sala, AUS; Richard Vorst, AUS",1587,L4,Div. 3,134,54,"2.42,02",,
+1990,26,21,19,Bob Jones,Holden TWR VL Commodore,"Bob Jones, AUS; Heather Spurle, NZ",4980,V8,Div. 1,133,42,"2.30,70",,
+1990,27,3,70,Toyota Team Australia,Toyota Corolla FX-GT,"Mike Dowson, AUS; Paul Stokell, AUS; John Faulkner, AUS",1587,L4,Div. 3,130,48,"2.35,96",,
+1990,DNF,,9,Allan Moffat Enterprises,Ford Sierra RS 500,"Gregg Hansford, AUS; Pierre Dieudonné, B; Klaus Niedzwiedz, D; (Allan Moffat, AUS); (Bernd Schneider, D)",1993 tc,L4,Div. 1,138,8,"2.17,97",,Differential
+1990,DNF,,35,Peter Jackson Racing,Ford Sierra RS 500,"George Fury, AUS; Drew Price, AUS; David Sears, GB",1993 tc,L4,Div. 1,125,12,"2.16,08",,Engine
+1990,DNF,,37,Brian Callaghan Racing P/L,Holden TWR VL Commodore,"Brian Callaghan, AUS; Barry Graham, AUS",4980,V8,Div. 1,120,23,"2.21,22",,Accident
+1990,DNF,,40,Mark Petch Seals,Ford Sierra RS 500,"Gianfranco Brancatelli, I; Robb Gravett, GB",1993 tc,L4,Div. 1,118,9,"2.23,05",,Differential
+1990,DNF,,15,Toyota Team Australia,Toyota Supra Turbo,"John Smith, AUS; Peter MacKay, AUS; Mark Poole, AUS",2954 tc,L6,Div. 1,112,30,"2.24,64",,Turbocharger
+1990,DNF,,76,Peter Verheyen,Toyota Sprinter,"Peter Verheyen, AUS; Ron Searle, AUS; Russell Becker, AUS",1587,L4,Div. 3,109,50,"2.39,86",,Oil pressure
+1990,DNF,,73,Bob Holden Motors,Toyota Sprinter,"Bob Holden, AUS; Mike Conway, AUS; (Etienne van Buynder)",1587,L4,Div. 3,101,53,"2.41,98",,Oil pressure
+1990,DNF,,17,Shell Ultra Hi Racing,Ford Sierra RS 500,"Dick Johnson, AUS; John Bowe, AUS",1993 tc,L4,Div. 1,94,2,"2.14,17",,Turbocharger
+1990,DNF,,22,Lusty Engineering P/L,Holden TWR VL Commodore,"Graham Lusty, AUS; Peter Janson, GB",4980,V8,Div. 1,83,33,"2.25,22",,Fuel
+1990,DNF,,54,Bryce Racing BMW,BMW M3,"Brett Riley, NZ; Craig Baird, NZ; (Kayne Scott, NZ)",2332?,L4,Div. 2,82,47,"2.34,38",,Clutch
+1990,DNF,,30,Peter Jackson Racing,Ford Sierra RS 500,"Glenn Seton, AUS; Drew Price, AUS; (David Sears, GB)",1993 tc,L4,Div. 1,77,12,"2.16,08",,Clutch
+1990,DNF,,4,Lansvale Smash Repairs P/L,Holden TWR VL Commodore,"Steve Reed, AUS; Trevor Ashby, AUS",4980,V8,Div. 1,76,20,"2.20,34",,Engine
+1990,DNF,,42,Lusty Engineering P/L,Holden TWR VL Commodore,"John Lusty, AUS; Bernie Stack, AUS",4980,V8,Div. 1,66,27,"2.23,50",,Engine
+1990,DNF,,20,Benson & Hedges Racing,Ford Sierra RS 500,"Denny Hulme, NZ; Alan Jones, AUS; Mark McLaughlin, AUS",1993 tc,L4,Div. 1,65,10,"2.21,93",,Engine
+1990,DNF,,2,Alf Grant Racing,Nissan Skyline GTS-R HR31,"Alf Grant, AUS; Tim Grant, AUS",2029 tc,L6,Div. 1,65,36,"2.27,18",,Clutch
+1990,DNF,,32,Laurie Donaher,Holden VL Commodore,"Laurie Donaher, AUS; Marc Ducquet, AUS",4980,V8,Div. 1,64,44,"2.32,52",,Camshaft
+1990,DNF,,75,Bob Holden Motors,Toyota Corolla,"Dennis Rogers, AUS; Garry Jones, AUS; (Llyndon Riethmuller, AUS)",1587,L4,Div. 3,60,52,"2.41,28",,Lost wheel
+1990,DNF,,71,Toyota Team Australia,Toyota Corolla FX-GT,"John Faulkner, AUS; Neal Bates, AUS",1587,L4,Div. 3,59,46,"2.33,38",,Engine
+1990,DNF,,3,Search For A Champion,Holden TWR VL Commodore,"Rick Bates, AUS; Peter Gazzard, AUS",4980,V8,Div. 1,57,35,"2.26,34",,Crankshaft
+1990,DNF,,25,Benson & Hedges Racing,Ford Sierra RS 500,"Tony Longhurst, AUS; Mark McLaughlin, AUS; (Alan Jones, AUS)",1993 tc,L4,Div. 1,53,5,"2.16,01",,Engine
+1990,DNF,,29,Wayne Park,Holden TWR VL Commodore,"Wayne Park, AUS; John English, AUS",4980,V8,Div. 1,51,29,"2.24,60",,Accident
+1990,DNF,,8,Caltex CXT Race Team,Ford Sierra RS 500,"Colin Bond, AUS; Graeme Crosby, NZ",1993 tc,L4,Div. 1,44,15,"2.17,24",,Head gasket
+1990,DNF,,27,Foodtown Supermarkets,Holden TWR VL Commodore,"Terry Finnigan, AUS; Geoff Leeds, AUS",4980,V8,Div. 1,37,26,"2.22,70",,Accident
+1990,DNF,,26,Garry Rogers,Holden TWR VL Commodore,"Garry Rogers, AUS; Graham Moore, AUS; (John Andretti, USA)",4980,V8,Div. 1,,22,"2.21,04",,Clutch
+1990,DNS,,74,Bob Holden Motors,Toyota Corolla,"Keith McCulloch, AUS; Phil Alexander, AUS",1587,L4,Div. 3,,51,"2.41,20",,Engine
+1990,NC,,14,Murray Carter,Ford Sierra RS 500,"Murray Carter, AUS; Matt Wacker, AUS",1993 tc,L4,Div. 1,116,28,"2.24,30",,Insufficient laps completed
+1990,NC,,45,Lester Smerdon,Holden TWR VL Commodore,"Lester Smerdon, AUS; Graham Jonsson, AUS",4980,V8,Div. 1,83,37,"2.27,20",,Insufficient laps completed
+1990,DQ,,41,Mulvihill Motorsport P/L,Holden TWR VL Commodore,"Tony Mulvihill, AUS; Glenn McIntyre, NZ; Dave Barrow, NZ",4980,V8,Div. 1,18,39,"2.28,22",,Gearbox
+1991,1,1,1,Nissan Motor Sport,Nissan Skyline GT-R BNR32,"Jim Richards, NZ; Mark Skaife, AUS",2568 tc,L6,Div. 1,"161 laps, 6:19.14,80",1,"2.12,630",,
+1991,2,2,16,Holden Racing Team,Holden VN Commodore,"Win Percy, GB; Allan Grice, AUS",4980,V8,Div. 1,160,10,"2.17,732",,
+1991,3,3,4,Bob Forbes Corporation Pty Ltd,Nissan Skyline GT-R BNR32,"Mark Gibbs, AUS; Rohan Onslow, AUS",2568 tc,L6,Div. 1,159,2,"2.13,876",,
+1991,4,1,20,Benson & Hedges racing,BMW M3 Sport Evo,"Denny Hulme, NZ; Peter Fitzgerald, AUS; (Alan Jones, AUS)",2492,L4,Div. 2,157,19,"2.20,88",,
+1991,5,4,28,Playscape Racing Australia,Ford Sierra RS 500,"Kevin Waldock, AUS; Brett Peters, AUS",1993 tc,L4,Div. 1,155,18,"2.20,56",,
+1991,6,5,6,Alf Grant Racing,Nissan Skyline GTS-R HR31,"Alf Grant, AUS; Tim Grant, AUS",2029 tc,L6,Div. 1,148,27,"2.26,44",,
+1991,7,6,05,Mobil 1 Racing Team,Holden VN Commodore,"Peter Brock, AUS; Andrew Miedecke, AUS",4980,V8,Div. 1,147,6,"2.16,071",,
+1991,8,7,27,Foodtown Supermarkets,Holden VN Commodore,"Terry Finnigan, AUS; Geoff Leeds, AUS",4980,V8,Div. 1,146,24,"2.22,78",,
+1991,9,8,30,Glenn Seton Racing Pty Ltd,Ford Sierra RS 500,"Glenn Seton, AUS; Gregg Hansford, AUS",1993 tc,L4,Div. 1,146,3,"2.14,892",,
+1991,10,9,50,Bryan Sala,Ford Sierra RS 500,"Bryan Sala, AUS; Graham Lusty, AUS",1993 tc,L4,Div. 1,140,35,"2.29,78",,
+1991,11,10,14,Warren Jonsson,Holden TWR VL Commodore,"Warren Jonsson, AUS; Graham Jonsson, AUS",4980,V8,Div. 1,140,28,"2.26,88",,
+1991,12,1,78,Speedtech Motorsport,Toyota Sprinter,"Geoffrey Full, AUS; Paul Morris, AUS",1587,L4,Div. 3,140,39,"2.34,54",,
+1991,13,11,3,Lansvale Smash Repairs P/L,Holden VN Commodore,"Trevor Ashby, AUS; Steve Reed, AUS",4980,V8,Div. 1,137,16,"2.19,44",,
+1991,14,12,26,Gemspares,Holden TWR VL Commodore,"Daryl Hendrick, AUS; Chris Lambden, AUS; John White, AUS; (Stephen White, AUS)",4980,V8,Div. 1,137,36,"2.29,94",,
+1991,15,13,22,Perkins Motorsport Pty Ltd,Holden VN Commodore,"Graham Moore, AUS; Michel Delcourt, B; Peter MacKay, AUS",4980,V8,Div. 1,136,21,"2.20,90",,
+1991,16,14,34,Ray Gulson,BMW 635 CSi,"Ray Gulson, AUS; Graham Gulson, AUS",3475,L6,Div. 1,134,34,"2.29,24",,
+1991,17,2,71,Mercantile Mutual Toyota Dealer Team,Toyota Corolla FX-GT,"Ron Searle, AUS; Don Griffiths, AUS",1587,L4,Div. 3,133,42,"2.36,94",,
+1991,18,15,15,Mercantile Mutual Toyota Dealer Team,Toyota Supra Turbo,"John Smith, AUS; Geoff Morgan, AUS",2954 tc,L6,Div. 1,131,17,"2.20,56",,
+1991,19,3,75,Bob Holden Motors,Toyota Corolla,"Brad Wright, AUS; Ted Dunford, AUS",1587,L4,Div. 3,126,46,"2.49,08",,
+1991,20,4,73,Bob Holden Motors,Toyota Corolla,"Bob Holden, AUS; Rauno Aaltonen, SF; Dennis Rogers, AUS",1587,L4,Div. 3,124,47,"2.49,26",,
+1991,21,16,12,Valvoline (Aust) Pty Ltd,Ford Sierra RS 500,"Ray Lintott, AUS; Tony Scott, AUS; John English, AUS; (Ken Douglas, AUS)",1993 tc,L4,Div. 1,122,20,"2.20,90",,
+1991,DNF,,18,Shell/Dick Johnson Racing,Ford Sierra RS 500,"Paul Radisich, NZ; Terry Shiel, AUS; John Bowe, AUS",1993 tc,L4,Div. 1,152,4,"2.15,679",,Engine
+1991,DNF,,8,Caltex CXT Race Team,Ford Sierra RS 500,"Colin Bond, AUS; Graeme Crosby, NZ",1993 tc,L4,Div. 1,152,14,"2.18,94",,Engine
+1991,DNF,,21,Cartrek Racing,Holden TWR VL Commodore,"Bob Jones, AUS; Mike Imrie, AUS; (Ed Lamont, NZ)",4980,V8,Div. 1,139,33,"2.28,90",,Differential
+1991,DNF,,25,Benson & Hedges racing,BMW M3 Sport Evo,"Tony Longhurst, AUS; Alan Jones, AUS; (Peter Fitzgerald, AUS)",2492,L4,Div. 2,138,11,"2.17,80",,Engine
+1991,DNF,,2,Nissan Motor Sport,Nissan Skyline GT-R BNR32,"Drew Price, AUS; Garry Waldon, AUS; Mark Skaife, AUS",2568 tc,L6,Div. 1,135,7,"2.16,296",,Differential
+1991,DNF,,52,M3 Motorsport,BMW M3,"Peter Doulman, AUS; John Cotter, AUS",2332,L4,Div. 2,133,32,"2.28,70",,Accident
+1991,DNF,,9,Allan Moffat Enterprises,Ford Sierra RS 500,"Gary Brabham, AUS; Steve Millen, NZ; (Geoff Brabham, AUS)",1993 tc,L4,Div. 1,128,15,"2.19,10",,Turbocharger
+1991,DNF,,17,Shell/Dick Johnson Racing,Ford Sierra RS 500,"Dick Johnson, AUS; John Bowe, AUS",1993 tc,L4,Div. 1,123,5,"2.16,03",,Engine
+1991,DNF,,24,Hesonne Engineering Pty Ltd,Holden VL Commodore,"Laurie Donaher, AUS; Michael Donaher, AUS",4980,V8,Div. 1,123,38,"2.33,02",,Tailshaft
+1991,DNF,,43,Brian Bolwell Racing,Ford Sierra RS 500,"Brian Bolwell, AUS; Arthur Abrahams, AUS",1993 tc,L4,Div. 1,113,22,"2.22,32",,Accident
+1991,DNF,,7,Holden Racing Team,Holden VN Commodore,"Brad Jones, AUS; Neil Crompton, AUS",4980,V8,Div. 1,100,13,"2.18,38",,Fuel
+1991,DNF,,77,Bob Holden Motors,Toyota Corolla,"Geoff Forshaw, AUS; Richard Vorst, AUS",1587,L4,Div. 3,96,48,"2.49,52",,Lost wheel
+1991,DNF,,44,Brian Bolwell Racing,Ford Sierra RS 500,"Glenn McIntyre, NZ; Dave Barrow, NZ; (Mike Twigden, AUS)",1993 tc,L4,Div. 1,93,31,"2.28,26",,Accident
+1991,DNF,,19,Shell/Dick Johnson Racing,Ford Sierra RS 500,"Kayne Scott, NZ; Greg Taylor, NZ",1993 tc,L4,Div. 1,90,25,"2.23,42",,Tailshaft
+1991,DNF,,74,Peter Verheyen,Toyota Sprinter,"Peter Verheyen, AUS; John Vernon, AUS",1587,L4,Div. 3,86,44,"2.45,04",,Fuel pump
+1991,DNF,,70,Mercantile Mutual Toyota Dealer Team,Toyota Corolla FX-GT,"Neal Bates, AUS; Rick Bates, AUS",1587,L4,Div. 3,76,41,"2.36,88",,Engine
+1991,DNF,,11,Mobil 1 Racing Team,Holden VN Commodore,"Larry Perkins, AUS; Tomas Mezera, AUS",4980,V8,Div. 1,65,8,"2.17,018",,Engine
+1991,DNF,,35,Glenn Seton Racing Pty Ltd,Ford Sierra RS 500,"David ""Skippy"" Parsons, AUS; Wayne Park, AUS",1993 tc,L4,Div. 1,60,9,"2.17,581",,Drivetrain
+1991,DNF,,41,Garry Wllmington,Toyota Supra Turbo,"Garry Willmington, AUS; Reda Awadullah, AUS; (John Goss, AUS)",2954 tc,L6,Div. 1,56,30,"2.27,82",,Gearbox
+1991,DNF,,24,Captain Peter Janson,Holden TWR VL Commodore,"Peter Janson, GB; Peter Gazzard, AUS",4980,V8,Div. 1,53,28,"2.26,88",,Oil pump
+1991,DNF,,33,Pro-Duct Motorsport Pty Ltd,Holden VN Commodore,"Bob Pearson, AUS; Bruce Stewart, AUS",4980,V8,Div. 1,48,23,"2.22,74",,Accident
+1991,DNF,,54,Kiwi Motorsport,BMW M3,"Keith Sharp, NZ; Ian Sharp, NZ; Edgar Salwegter, NZ",2332,L4,Div. 2,34,40,"2.36,48",,Engine
+1991,DNF,,72,David Sala,Toyota Corolla,"David Sala, AUS; Brad Stratton, AUS; (Tony Scott, AUS)",1587,L4,Div. 3,28,43,"2.43,90",,Engine
+1991,DNF,,32,Pro-Duct Motorsport/Bob Forbes Corporation,Holden VN Commodore,"Bob Tindal, AUS; Darren Stewart, AUS; (John Giddings, AUS)",4980,V8,Div. 1,,37,"2.30,60",,Engine (warm-up)
+1991,DNS,,76,Bob Holden Motors,Toyota Corolla,"Mike Conway, AUS; Calvin Gardiner, AUS",1587,L4,Div. 3,,45,"2.45,34",,Head gasket (warm-up)
+1991,DNS,,36,Ron Masing,Mitsubishi Starion 2000 EX,"Ron Masing, AUS; Greville Arnel, AUS",1998 tc,L4,Div. 1,,49,"2.36,20",,DNQ Arnel (crash); car damaged beyond repair
+1991,NC,,39,Bill O’Brien,Holden TWR VL Commodore,"Bill O'Brien, AUS; Brian Callaghan, AUS; Brian Callaghan Jr, AUS",4980,V8,Div. 1,116,26,"2.26,06",,Insufficient laps completed
+1991,DNP,,79,Malcolm Rea,Toyota Sprinter,"Malcolm Rea, AUS; Brian Selby, AUS; Garry Jones, AUS; Ken Talbert, AUS; John Blanchard, AUS",1587,L4,Div. 3,86,44,"2.45,04",,
+1991,DQ,,10,Allan Moffat Enterprises,Ford Sierra RS 500,"Charlie O'Brien, AUS; Gianfranco Brancatelli, I",1993 tc,L4,Div. 1,158,12,"2.18,28",,Differential
+1992,1,1,1,Nissan Motor Sport,Nissan Skyline GT-R BNR32,"Mark Skaife, AUS; Jim Richards, NZ",2568 tc,L6,Div. 1,"143 laps, 6:27.16,22",3,"2.14,546",,
+1992,2,2,17,Shell/Dick Johnson Racing,Ford Sierra RS 500,"Dick Johnson, AUS; John Bowe, AUS",1993 tc,L4,Div. 1,"143 laps, 6:28.15,67",1,"2.12,898",,
+1992,3,3,2,Nissan Motor Sport,Nissan Skyline GT-R BNR32,"Anders Olofsson, S; Neil Crompton, AUS",2568 tc,L6,Div. 1,"143 laps, 6:29.21,75",11,"2.16,17",,
+1992,4,4,25,Benson & Hedges Racing,BMW M3 Sport Evo,"Tony Longhurst, AUS; Johnny Cecotto, YV",2492,L4,Div. 1,142,9,"2.16,932",,
+1992,5,5,16,Holden Racing Team,Holden VP Commodore,"Win Percy, GB; Allan Grice, AUS",4980,V8,Div. 3,141,7,"2.16,215",,
+1992,6,6,4,Bob Forbes Corporation Pty Ltd,Nissan Skyline GT-R BNR32,"Mark Gibbs, AUS; Rohan Onslow, AUS",2568 tc,L6,Div. 1,138,6,"2.16,168",,
+1992,7,7,55,Mobil 1 Racing Team,Holden VN Commodore,"Andrew Miedecke, AUS; Troy Dunstan, AUS; (Paul Radisich, NZ)",4980,V8,Div. 1,137,16,"2.18,26",,
+1992,8,8,35,Peter Jackson Racing,Ford Sierra RS 500,"Wayne Park, AUS; David ""Skippy"" Parsons, AUS",1993 tc,L4,Div. 1,136,15,"2.17,65",,
+1992,9,9,11,Perkins Engineering Pty Ltd,Holden TWR VL Commodore,"Larry Perkins, AUS; Steve Harrington, AUS",4980,V8,Div. 1,135,2,"2.14,437",,
+1992,10,10,41,Daily Planet,Holden TWR VL Commodore,"Andrew Harris, AUS; Gary Cooke, AUS; John Trimbole, AUS",4980,V8,Div. 1,135,24,"2.22,92",,
+1992,11,11,18,Shell/Dick Johnson Racing,Ford Sierra RS 500,"Terry Shiel, AUS; Greg Crick, AUS; (Cameron McConville, AUS)",1993 tc,L4,Div. 1,134,17,"2.19,03",,
+1992,12,12,6,Alf Grant Racing,Nissan Skyline GTS-R HR31,"Alf Grant, AUS; Tim Grant, AUS",2029 tc,L6,Div. 1,134,27,"2.24,93",,
+1992,13,13,27,Foodtown Supermarkets,Holden VN Commodore,"Terry Finnigan, AUS; Garry Rogers, AUS",4980,V8,Div. 1,133,19,"2.20,45",,
+1992,14,14,28,Playscape Racing Australia,Ford Sierra RS 500,"Kevin Waldock, AUS; Brett Peters, AUS",1993 tc,L4,Div. 1,132,20,"2.20,57",,
+1992,15,15,15,Holden Racing Team,Holden VP Commodore,"Tomas Mezera, AUS; Brad Jones, AUS",4980,V8,Div. 3,131,5,"2.16,028",,
+1992,16,16,14,Warren Jonsson,Holden TWR VL Commodore,"Warren Jonsson, AUS; Des Wall, AUS",4980,V8,Div. 1,130,28,"2.25,77",,
+1992,17,17,34,Ray Gulson,BMW 635 CSi,"Ray Gulson, AUS; Graham Gulson, AUS; Peter Beck, NZ",3475,L6,Div. 1,129,33,"2.28,24",,
+1992,18,18,39,Bill O’Brien,Holden TWR VL Commodore,"Bill O'Brien, AUS; Barry Graham, AUS; Brian Callaghan Jr, AUS",4980,V8,Div. 1,129,23,"2.22,70",,
+1992,19,19,9,Allan Moffat Enterprises,Ford Sierra RS 500,"Klaus Niedzwiedz, D; Gregg Hansford, AUS",1993 tc,L4,Div. 1,128,10,"2.16,943",,
+1992,20,20,13,Ampol Max 3 Racing,Holden TWR VL Commodore,"Bob Jones, AUS; Peter Janson, GB; (Roger Freeth, NZ)",4980,V8,Div. 1,128,25,"2.23,05",,
+1992,21,21,44,Kart Mania,Holden TWR VL Commodore,"Stuart McColl, AUS; Peter Gazzard, AUS",4980,V8,Div. 1,126,30,"2.27,54",,
+1992,22,1,71,Mercantile Mutual Toyota Dealer Team,Toyota Corolla FX-GT,"Jason Bargwanna, AUS; Scott Bargwanna, AUS",1587,L4,Div. 2,126,39,"2.37,27",,
+1992,23,2,74,Peter Verheyen,Toyota Sprinter,"Peter Verheyen, AUS; Geoffrey Full, AUS; (Mike Conway, AUS)",1587,L4,Div. 2,125,40,"2.45,78",,
+1992,24,3,70,John Smith,Toyota Corolla FX-GT,"Neal Bates, AUS; Rick Bates, AUS",1587,L4,Div. 2,125,38,"2.35,94",,
+1992,25,22,10,Allan Moffat Enterprises,Ford Sierra RS 500,"Charlie O'Brien, AUS; Gary Brabham, AUS",1993 tc,L4,Div. 1,124,13,"2.16,78",,
+1992,26,23,42,Formula 1 Investments Pty Ltd,Holden VN Commodore,"Graham Moore, AUS; Wayne Gardner, AUS; (Michel Delcourt, B)",4980,V8,Div. 1,119,21,"2.20,98",,
+1992,27,24,05,Mobil 1 Racing Team,Holden VP Commodore,"Peter Brock, AUS; Manuel Reuter, D",4980,V8,Div. 3,118,8,"2.16,459",,
+1992,28,4,72,Adrian Brooke,Toyota Sprinter,"Gregg Easton, AUS; Brad Stratton, AUS; David Sala, AUS; (Peter Brett, AUS)",1587,L4,Div. 2,115,41,"2.45,78",,
+1992,29,5,78,Bob Holden Motors,Toyota Corolla,"Ted Dunford, AUS; Brad Wright, AUS",1587,L4,Div. 2,113,44,"2.50,36",,
+1992,30,6,76,Mountain Motorsport,Toyota Sprinter,"Calvin Gardiner, AUS; Geoff Forshaw, AUS; Mike Conway, AUS; (Phil Alexander, AUS)",1587,L4,Div. 2,112,42,"2.46,27",,
+1992,31,7,82,Stuart Murphy,Toyota Corolla AE82,"Stuart Murphy, NZ; Chris Barns, NZ; (Tony Robinson, NZ)",1587,L4,Div. 2,110,46,"2.52,67",,
+1992,DNF,,37,Roger Alexander,Toyota Supra Turbo,"John Bourke, AUS; Keith Carling, AUS; (Bryan Thomson, AUS)",2954 tc,L6,Div. 1,94,29,"2.27,45",,Gearbox
+1992,DNF,,30,Peter Jackson Racing,Ford Falcon EB,"Glenn Seton, AUS; Alan Jones, AUS",4949,V8,Div. 3,84,4,"2.14,971",,Fuel pump
+1992,DNF,,52,M3 Motorsport,BMW M3,"Peter Doulman, AUS; John Cotter, AUS",2332,L4,Div. 1,80,31,"2.27,66",,Engine
+1992,DNF,,73,Bob Holden Motors,Toyota Corolla,"Bob Holden, AUS; Dennis Rogers, AUS; Garry Jones, AUS; (Michael Caruso, AUS)",1587,L4,Div. 2,68,43,"2.47,41",,Engine
+1992,DNF,,3,Lansvale Smash Repairs P/L,Holden VN Commodore,"Steve Reed, AUS; Trevor Ashby, AUS",4980,V8,Div. 1,65,14,"2.17,48",,Accident
+1992,DNF,,7,Caltex CXT Race Team,Ford Sierra RS 500,"Peter Hopwood, AUS; Terry Bosnjak, AUS",1993 tc,L4,Div. 1,54,22,"2.21,41",,Accident
+1992,DNF,,29,Wayne Douglas Racing,Holden TWR VL Commodore,"John English, AUS; Ed Lamont, NZ",4980,V8,Div. 1,49,32,"2.27,79",,Accident
+1992,DNF,,20,Benson & Hedges Racing,BMW M3 Sport Evo,"Paul Morris, AUS; Denny Hulme, NZ",2492,L4,Div. 1,32,18,"2.19,78",,Driver died (Hulme)
+1992,DNF,,40,J & D Leeson,Holden TWR VL Commodore,"Garry Willmington, AUS; Tom Watkinson, AUS; (John Leeson, AUS); (Rohan Cooke, AUS)",4980,V8,Div. 1,29,35,"2.29,14",,Engine
+1992,DNF,,50,Bryan Sala,Ford Sierra RS 500,"Bryan Sala, AUS; Kevin Weeks, AUS; (Brian Bolwell, AUS)",1993 tc,L4,Div. 1,15,26,"2.23,11",,Accident
+1992,DNF,,8,Caltex CXT Race Team,Ford Sierra RS 500,"Colin Bond, AUS; John Smith, AUS",1993 tc,L4,Div. 1,7,12,"2.16,75",,Accident
+1992,DNS,,22,Perkins Engineering Pty Ltd,Holden TWR VL Commodore,"John Trimbole, AUS; Rohan Cooke, AUS",4980,V8,Div. 1,,,,,
+1992,NC,,77,Malcolm Rea,Toyota Sprinter,"Malcolm Rea, AUS; Ken Talbert, AUS; Richard Wilson, AUS",1587,L4,Div. 2,104,47,"2.53,77",,Insufficient laps completed
+1992,NC,,36,Rod Jones,Ford Sierra RS 500,"Ken Mathews, AUS; Rod Jones, AUS; Mike Newton, GB; (Adrian Fu, HK)",1993 tc,L4,Div. 1,101,37,"2.34,61",,Insufficient laps completed
+1992,NC,,75,Bob Holden Motors,Toyota Corolla,"Frank Binding, AUS; Bob Tindal, AUS",1587,L4,Div. 2,96,45,"2.51,79",,Insufficient laps completed
+1992,NC,,26,Gemspares,Holden TWR VL Commodore,"Daryl Hendrick, AUS; John Blanchard, AUS",4980,V8,Div. 1,94,34,"2.28,89",,Insufficient laps completed
+1992,NC,,31,Car-Trek Racing Pty Ltd,Holden TWR VL Commodore,"Robbie Ker, NZ; Don Watson, AUS; (Peter Hudson, AUS); (Ian Carrig, AUS); (Ian Clark, AUS)",4980,V8,Div. 1,81,36,"2.32,39",,Insufficient laps completed
+1993,1,1,11,Castrol Perkins Racing Team,Holden VP Commodore,"Larry Perkins, AUS; Gregg Hansford, AUS",4980,V8,Class A,"161 laps, 6:29.016,69",HH1,"2.13,013",,
+1993,2,2,1,Winfield Racing,Holden VP Commodore,"Mark Skaife, AUS; Jim Richards, NZ",4980,V8,Class A,"161 laps, 6:29.17,23",HH2,"2.13,573",,
+1993,3,3,16,Holden Racing Team,Holden VP Commodore,"Wayne Gardner, AUS; Brad Jones, AUS; (Michael Preston, AUS)",4980,V8,Class A,160,HH4,"2.14,903",,
+1993,4,4,2,Winfield Racing,Holden VP Commodore,"David Brabham, AUS; Anders Olofsson, S",4980,V8,Class A,159,HH8,"2.16,308",,
+1993,5,5,55,Advantage,Holden VP Commodore,"Troy Dunstan, AUS; Steve Harrington, AUS",4980,V8,Class A,156,12,"2.16,491",,
+1993,6,6,35,Peter Jackson Racing,Ford Falcon EB,"Geoff Brabham, AUS; David ""Skippy"" Parsons, AUS",4949,V8,Class A,154,14,"2.16,784",,
+1993,7,7,12,Ampol Max 3 Racing,Holden VP Commodore,"Bob Jones, AUS; Greg Crick, AUS; (Peter Verheyen, AUS)",4980,V8,Class A,153,15,"2.16,962",,
+1993,8,6,18,Shell/Dick Johnson Racing,Ford Falcon EB,"Paul Radisich, NZ; Cameron McConville, AUS",4949,V8,Class A,151,HH9,"2.16,545",,
+1993,9,9,27,Foodtown Supermarkets,Holden VP Commodore,"Terry Finnigan, AUS; Garry Rogers, AUS",4980,V8,Class A,150,20,"2.19,410",,
+1993,10,10,33,Pro-Duct Motorsport Pty Ltd,Holden VP Commodore,"Bob Pearson, AUS; Bruce Stewart, AUS; (Phil Ward, AUS)",4980,V8,Class A,148,17,"2.17,369",,
+1993,11,11,20,Benson & Hedges Racing,BMW M3 Sport Evo,"John Blanchard, AUS; Jeff Allam, GB",2492,L4,Class A,148,24,"2.21,511",,
+1993,12,12,21,Mocopan Pty Ltd,Holden TWR VL Commodore,"Michael Donaher, AUS; Laurie Donaher, AUS",4980,V8,Class A,147,22,"2.21,043",,
+1993,13,13,14,Warren Jonsson,Holden TWR VL Commodore,"Warren Jonsson, AUS; Des Wall, AUS",4980,V8,Class A,146,27,"2.24,616",,
+1993,14,14,47,Larry Perkins Engineering,Holden TWR VL Commodore,"John Trimbole, AUS; Andrew Harris, AUS; (Rohan Cooke, AUS)",4980,V8,Class A,146,28,"2.24,814",,
+1993,15,15,23,Diet Coke BMW Race Team,BMW M3 Sport Evo,"Paul Morris, AUS; Joachim Winkelhock, D",2492,L4,Class A,146,11,"2.15,900",,
+1993,16,16,28,Playscape Racing Australia,Ford Falcon EB,"Michael Preston, AUS; Brett Peters, AUS; (Kevin Waldock, AUS)",4949,V8,Class A,145,19,"2.19,377",,
+1993,17,17,05,Mobil 1 Racing Team,Holden VP Commodore,"Peter Brock, AUS; John Cleland, GB",4980,V8,Class A,142,HH7,"2.16,251",,
+1993,18,18,4,Bob Forbes Corporation Pty Ltd,Holden VP Commodore,"Stuart McColl, AUS; Peter Gazzard, AUS",4980,V8,Class A,140,23,"2.21,113",,
+1993,19,1,52,M3 Motorsport,BMW M3,"Peter Doulman, AUS; John Cotter, AUS",2332,L4,Class B,136,36,"2.33,050",,
+1993,20,19,26,Darrell Dixon,Holden TWR VL Commodore,"Graham Lusty, AUS; Kevin Hefferman, NZ; John Lusty, AUS; (Darrell Dixon, AUS)",4980,V8,Class A,135,29,"2.25,888",,
+1993,21,20,22,Wayne Douglas Racing,Holden TWR VL Commodore,"John English, AUS; Brett Youlden, AUS",4980,V8,Class A,134,26,"2.24,298",,
+1993,22,2,13,Bob Holden Motors,Toyota Sprinter,"Dennis Rogers, AUS; Peter Hopwood, AUS; (Bob Holden, AUS); (David Sala, AUS)",1587,L4,Class B,128,44,"2.56,072",,
+1993,23,3,79,Mike Conway,Toyota Sprinter,"Mike Conway, AUS; Calvin Gardiner, AUS; Gavin Monaghan, AUS; (Steve Hardman, AUS)",1587,L4,Class B,127,38,"2.39,436",,
+1993,DNF,,30,Peter Jackson Racing,Ford Falcon EB,"Glenn Seton, AUS; Alan Jones, AUS",4949,V8,Class A,147,HH6,"2.15,549",,Driveshaft
+1993,DNF,,7,Bob Forbes Corporation Pty Ltd,Holden VP Commodore,"Neil Crompton, AUS; Mark Gibbs, AUS",4980,V8,Class A,125,HH10,"2.29,902",,Accident
+1993,DNF,,50,Steve Masterton,Ford Sierra,"Steve Masterton, AUS; Peter Hills, AUS",1993,L4,Class B,122,45,"6.19,375",,Head gasket
+1993,DNF,,6,Caltex CXT Race Team,Toyota Corolla Seca,"John Smith, AUS; Neal Bates, AUS",1998,L4,Class B,113,33,"2.30,636",,Engine
+1993,DNF,,15,Holden Racing Team,Holden VP Commodore,"Tomas Mezera, AUS; Win Percy, GB",4980,V8,Class A,107,HH3,"2.14,450",,Accident
+1993,DNF,,72,Advanced Vehicle Performance,Toyota Corolla,"Brad Stratton, AUS; Chris Madden, AUS",1587,L4,Class B,100,41,"2.44,000",,Engine
+1993,DNF,,17,Shell/Dick Johnson Racing,Ford Falcon EB,"Dick Johnson, AUS; John Bowe, AUS",4949,V8,Class A,96,HH5,"2.15,386",,Accident
+1993,DNF,,19,Lansvale Smash Repairs P/L,Holden TWR VL Commodore,"Glenn Mason, AUS; Richard Wilson, AUS; Gregg McShane, AUS",4980,V8,Class A,93,34,ca. 2.31,,Accident
+1993,DNF,,39,Everlast Automotive Services,Holden TWR VL Commodore,"Bill O'Brien, AUS; Brian Callaghan Jr, AUS; Barry Graham, AUS",4980,V8,Class A,81,25,"2.23,518",,Accident
+1993,DNF,,3,Lansvale Smash Repairs P/L,Holden VP Commodore,"Trevor Ashby, AUS; Steve Reed, AUS",4980,V8,Class A,80,16,"2.17,219",,Engine
+1993,DNF,,25,Benson & Hedges Racing,BMW M3 Sport Evo,"Tony Longhurst, AUS; Steve Soper, GB",2492,L4,Class A,79,13,"2.16,493",,Engine
+1993,DNF,,45,Ray Gulson,BMW 635 CSi,"Ray Gulson, AUS; Graham Gulson, AUS; (Tania Gulson, AUS)",3475,L6,Class A,70,31,"2.29,920",,Insufficient laps completed
+1993,DNF,,8,Caltex CXT Race Team,Toyota Corolla Seca,"Colin Bond, AUS; Terry Bosnjak, AUS",1998,L4,Class B,64,35,"2.32,148",,Gearbox
+1993,DNF,,77,Phoenix Motorsport,Ford Sierra,"Steven Ellery, AUS; Gary Gosatti, AUS",1993,L4,Class B,62,37,"2.35,567",,Gearbox
+1993,DNF,,99,Malcolm Rea,Toyota Corolla,"Steve Cramp, AUS; Denis Cribbin, AUS; (Greg Woodrow, AUS)",1587,L4,Class B,57,43,"2.47,136",,Gearbox
+1993,DNF,,24,Diet Coke BMW Race Team,BMW M3 Sport Evo,"Geoffrey Full, AUS; Peter Fitzgerald, AUS",2492,L4,Class A,53,21,"2.20,758",,Electrics
+1993,DNF,,75,Frank Binding,Toyota Corolla,"Frank Binding, AUS; Frank Dartel, AUS",1587,L4,Class B,52,39,"2.42,448",,Suspension
+1993,DNF,,49,Bob Holden Motors,Toyota Corolla FX-GT,"Dave McMillan, AUS; Matthew Martin, AUS; Spencer Martin, AUS",1587,L4,Class B,46,40,"2.43,077",,Engine
+1993,DNF,,10,Allan Moffat Enterprises,Ford Falcon EB,"Andrew Miedecke, AUS; Charlie O'Brien, AUS; (Klaus Niedzwiedz, D)",4949,V8,Class A,41,18,"2.18,421",,Gearbox
+1993,DNF,,44,Kart Mania,Holden TWR VL Commodore,"Ken Mathews, AUS; Tony Mulvihill, AUS; John Mathews, AUS",4980,V8,Class A,31,30,"2.29,649",,
+1993,DNF,,41,Garry Wllmington,Ford Falcon EB,"Garry Willmington, AUS; Darren Pate, AUS; Tom Watkinson, AUS",4949,V8,Class A,29,32,"2.30,323",,Differential
+1993,DNF,,66,Malcolm Rea,Toyota Sprinter,"Gregg Easton, AUS; Kurt Kratzmann, AUS",1587,L4,Class B,8,42,"2.45,639",,Throttle
+1993,DNS,,34,Pro-Duct Motorsport Pty Ltd,Holden VP Commodore,"Bruce Stewart, AUS; Darren Stewart, AUS",4980,V8,Class A,,,,,Withdrawn
+1993,DNS,,43,J. Leeson,Holden TWR VL Commodore,"John Leeson, AUS; Steve Coulter, AUS; Greg Smith, AUS; (Gregg McShane, AUS)",4980,V8,Class A,,,,,Withdrawn
+1993,DNP,,88,Malcolm Rea,Toyota Carina,"Malcolm Rea, AUS; Ken Talbert, AUS; Chris Barns, NZ",1998,L4,Class B,,,,,Late arrival

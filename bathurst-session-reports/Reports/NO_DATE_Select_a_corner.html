@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bathurst Circuit Evolution — 3 Era Maps Prototype</title>
+<style>
+  :root{
+    --bg:#111318; --panel:#171a22; --panel2:#12151d; --border:#252a36; --border2:#2a2f40;
+    --text:#cbd5e1; --muted:#9aa5bd; --accent:#2a5bd7; --accent2:#ffd400; --red:#e53935;
+  }
+  *{box-sizing:border-box}
+  body{margin:0; background:var(--bg); color:var(--text); font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; line-height:1.5}
+  header{max-width:1200px; margin:0 auto; padding:32px 20px 10px}
+  header h1{margin:0; font-size:clamp(24px,3vw,34px); letter-spacing:-.02em}
+  header p{color:var(--muted); max-width:780px}
+  .wrap{max-width:1200px; margin:0 auto; padding:0 20px 60px}
+  .controls{display:flex; gap:12px; flex-wrap:wrap; align-items:center; background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:14px; margin:18px 0}
+  .controls label{font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); font-weight:800}
+  .controls input[type="range"]{width:260px}
+  .controls select, .controls button{padding:10px 12px; border-radius:10px; border:1px solid var(--border2); background:var(--panel2); color:#fff; font-weight:700; cursor:pointer}
+  .controls button.active{background:var(--accent); border-color:var(--accent)}
+  .era-badge{display:inline-flex; gap:8px; align-items:center; padding:6px 10px; border-radius:999px; background:var(--panel2); border:1px solid var(--border); font-size:12px; font-weight:700}
+  .era-badge .dot{width:8px; height:8px; border-radius:50%; background:var(--accent)}
+  .grid{display:grid; grid-template-columns:1.2fr .8fr; gap:18px; margin-top:18px}
+  @media(max-width:900px){.grid{grid-template-columns:1fr}}
+  .map-card{background:linear-gradient(145deg,#171a22,#11141b); border:1px solid var(--border); border-radius:16px; padding:16px; position:relative; overflow:hidden}
+  .map-card h2{margin:0 0 8px; font-size:18px}
+  .map-card small{color:var(--muted)}
+  .map-stage{background:#0e1016; border:1px solid #1e2332; border-radius:12px; padding:12px; margin-top:12px; position:relative; min-height:460px; display:flex; align-items:center; justify-content:center}
+  .map-stage svg{width:100%; max-width:620px; height:auto}
+  /* Track styles */
+  .track-outline{fill:none; stroke:#2a344e; stroke-width:22; stroke-linecap:round; stroke-linejoin:round}
+  .track-center{fill:none; stroke:#3a4a6e; stroke-width:1.5; stroke-dasharray:6 8; opacity:.6}
+  .track-main{fill:none; stroke:#dbeafe; stroke-width:3.5; stroke-linecap:round; stroke-linejoin:round; opacity:.9}
+  .chase-hilite{fill:none; stroke:var(--accent2); stroke-width:4; stroke-dasharray:0; opacity:.9}
+  .corner-dot{fill:#12151d; stroke:var(--accent); stroke-width:2; cursor:pointer; transition:.15s}
+  .corner-dot:hover, .corner-dot.active{fill:var(--accent); stroke:#fff; r:8}
+  .corner-dot.murray{stroke:var(--red)}
+  .corner-dot.brock{stroke:#4caf50}
+  .corner-label{font-size:10px; font-weight:800; fill:#9aa5bd; pointer-events:none; text-transform:uppercase; letter-spacing:.04em}
+  .corner-label.active{fill:#fff}
+  /* Tooltip */
+  #tooltip{position:absolute; left:0; top:0; max-width:320px; background:#111318; border:1px solid var(--border2); border-radius:12px; padding:12px; box-shadow:0 12px 32px rgba(0,0,0,.5); display:none; z-index:20}
+  #tooltip h3{margin:0 0 4px; font-size:13px}
+  #tooltip .meta{font-size:11px; color:var(--muted); margin-bottom:6px}
+  #tooltip p{margin:0; font-size:12px; color:#cbd5e1; line-height:1.45}
+  /* Side panel */
+  .info-panel{background:var(--panel); border:1px solid var(--border); border-radius:16px; padding:16px; height:fit-content; position:sticky; top:16px}
+  .timeline{margin:14px 0 0; padding:0; list-style:none}
+  .timeline li{display:grid; grid-template-columns:56px 1fr; gap:12px; padding:12px 0; border-bottom:1px solid #1e2332}
+  .timeline li:last-child{border-bottom:none}
+  .timeline .yr{font-weight:800; font-size:12px; color:var(--accent2); background:#1a1d25; border:1px solid var(--border2); border-radius:999px; padding:4px 8px; height:fit-content; text-align:center}
+  .timeline h4{margin:0 0 2px; font-size:13px}
+  .timeline p{margin:0; font-size:12px; color:var(--muted)}
+  .legend{display:flex; gap:8px; flex-wrap:wrap; margin-top:10px}
+  .legend span{display:inline-flex; align-items:center; gap:6px; font-size:11px; color:var(--muted); border:1px solid var(--border); background:var(--panel2); padding:4px 8px; border-radius:999px}
+  .swatch{width:10px; height:10px; border-radius:2px; background:var(--accent)}
+  .callout{margin-top:14px; background:#12151d; border:1px dashed #2a5bd7; border-radius:10px; padding:10px 12px; font-size:12px; color:var(--muted)}
+  .pill-row{display:flex; gap:6px; flex-wrap:wrap; margin-top:10px}
+  .pill{padding:5px 8px; border-radius:999px; border:1px solid var(--border); background:var(--panel2); font-size:11px; font-weight:700; color:var(--muted)}
+  .pill.hl{border-color:var(--accent); color:#fff}
+  footer{max-width:1200px; margin:20px auto; padding:0 20px; color:var(--muted); font-size:11px}
+</style>
+</head>
+<body>
+<header>
+  <h1>Mount Panorama Circuit Evolution</h1>
+  <p>Prototype for your archive — three era-accurate maps with hoverable corner origins. Phillip Island 1960-62, Panorama pre-Chase 1963-86, Panorama modern 1987-now. This file is standalone so you can review before merging into Index.html.</p>
+</header>
+
+<div class="wrap">
+  <div class="controls">
+    <div>
+      <label>Select year</label><br>
+      <input id="yearSlider" type="range" min="1960" max="2025" value="1986" step="1">
+      <span id="yearLabel" class="era-badge"><span class="dot"></span><span id="yearVal">1986</span> — <span id="eraName">Pre-Chase</span></span>
+    </div>
+    <div style="display:flex; gap:8px; margin-left:auto; flex-wrap:wrap">
+      <button data-era="phillip" class="eraBtn">Phillip Island 60-62</button>
+      <button data-era="pre" class="eraBtn active">Pre-Chase 63-86</button>
+      <button data-era="post" class="eraBtn">Post-Chase 87-now</button>
+    </div>
+    <select id="mapSelect" style="margin-left:4px">
+      <option value="pre">Mount Panorama — Original (no Chase)</option>
+      <option value="post">Mount Panorama — Modern (with Chase)</option>
+      <option value="phillip">Phillip Island — Original 500</option>
+    </select>
+  </div>
+
+  <div class="grid">
+    <div class="map-card">
+      <h2 id="mapTitle">Mount Panorama — Pre-Chase (1963-1986)</h2>
+      <small id="mapSub">6.172km, Conrod Straight unbroken with two humps. Pit entry after Murray's Corner until 1984.</small>
+      <div class="map-stage" id="mapStage">
+        <div id="tooltip"></div>
+        <!-- SVGs injected here -->
+        <svg id="svg-pre" viewBox="0 0 620 420" xmlns="http://www.w3.org/2000/svg" style="display:block">
+          <!-- Outline -->
+          <path class="track-outline" d="M 80 320 L 80 100 C 80 70 95 55 130 60 L 210 80 L 260 140 L 300 170 L 350 180 L 390 160 L 430 120 L 460 90 L 500 80 L 540 110 L 520 150 L 480 190 L 520 230 L 540 300 L 520 360 L 360 360 L 200 360 L 90 360 Z"/>
+          <path class="track-center" d="M 80 320 L 80 100 C 80 70 95 55 130 60 L 210 80 L 260 140 L 300 170 L 350 180 L 390 160 L 430 120 L 460 90 L 500 80 L 540 110 L 520 150 L 480 190 L 520 230 L 540 300 L 520 360 L 360 360 L 200 360 L 90 360 Z"/>
+          <path class="track-main" d="M 80 320 L 80 100 C 80 70 95 55 130 60 L 210 80 L 260 140 L 300 170 L 350 180 L 390 160 L 430 120 L 460 90 L 500 80 L 540 110 L 520 150 L 480 190 L 520 230 L 540 300 L 520 360 L 360 360 L 200 360 L 90 360 Z"/>
+          <!-- Corners -->
+          <g id="corners-pre"></g>
+        </svg>
+        <svg id="svg-post" viewBox="0 0 620 420" xmlns="http://www.w3.org/2000/svg" style="display:none">
+          <path class="track-outline" d="M 80 320 L 80 100 C 80 70 95 55 130 60 L 210 80 L 260 140 L 300 170 L 350 180 L 390 160 L 430 120 L 460 90 L 500 80 L 540 110 L 520 150 L 480 190 L 520 230 L 500 260 L 460 260 L 480 290 L 540 300 L 520 360 L 360 360 L 200 360 L 90 360 Z"/>
+          <path class="track-center" d="M 80 320 L 80 100 C 80 70 95 55 130 60 L 210 80 L 260 140 L 300 170 L 350 180 L 390 160 L 430 120 L 460 90 L 500 80 L 540 110 L 520 150 L 480 190 L 520 230 L 500 260 L 460 260 L 480 290 L 540 300 L 520 360 L 360 360 L 200 360 L 90 360 Z"/>
+          <path class="track-main" d="M 80 320 L 80 100 C 80 70 95 55 130 60 L 210 80 L 260 140 L 300 170 L 350 180 L 390 160 L 430 120 L 460 90 L 500 80 L 540 110 L 520 150 L 480 190 L 520 230 L 500 260 L 460 260 L 480 290 L 540 300 L 520 360 L 360 360 L 200 360 L 90 360 Z"/>
+          <path class="chase-hilite" d="M 520 230 L 500 260 L 460 260 L 480 290"/>
+          <g id="corners-post"></g>
+        </svg>
+        <svg id="svg-phillip" viewBox="0 0 620 420" xmlns="http://www.w3.org/2000/svg" style="display:none">
+          <path class="track-outline" d="M 100 300 L 100 120 C 100 80 140 60 200 70 L 350 90 L 480 110 L 520 160 L 500 260 L 380 300 L 200 320 Z"/>
+          <path class="track-center" d="M 100 300 L 100 120 C 100 80 140 60 200 70 L 350 90 L 480 110 L 520 160 L 500 260 L 380 300 L 200 320 Z"/>
+          <path class="track-main" d="M 100 300 L 100 120 C 100 80 140 60 200 70 L 350 90 L 480 110 L 520 160 L 500 260 L 380 300 L 200 320 Z"/>
+          <g id="corners-phillip"></g>
+        </svg>
+      </div>
+      <div class="legend">
+        <span><span class="swatch" style="background:#2a5bd7"></span> Standard corner</span>
+        <span><span class="swatch" style="background:#e53935"></span> Murray's / Pit</span>
+        <span><span class="swatch" style="background:#4caf50"></span> Brock's Skyline (from 1997)</span>
+        <span><span class="swatch" style="background:#ffd400"></span> The Chase (1987+)</span>
+      </div>
+      <div class="callout" id="callout">
+        Hover a corner dot. The tooltip shows year named + origin. Click locks it to keep info in side panel.
+      </div>
+      <div class="pill-row" id="pillRow"></div>
+    </div>
+
+    <div class="info-panel">
+      <div style="display:flex; justify-content:space-between; align-items:center">
+        <h3 style="margin:0">Corner Origins & Research Notes</h3>
+        <span class="era-badge" id="sideEra">Pre-Chase</span>
+      </div>
+      <p style="margin:8px 0 0; font-size:12px; color:var(--muted)">Click any corner. Data from V8 Sleuth: How Bathurst's corners got their names + safety/track development articles.</p>
+      <div id="cornerDetail" style="margin-top:14px; background:#12151d; border:1px solid var(--border); border-radius:12px; padding:12px">
+        <h4 id="detailName" style="margin:0">Select a corner</h4>
+        <div id="detailMeta" style="font-size:11px; color:var(--muted); margin:4px 0 8px"></div>
+        <p id="detailText" style="margin:0; font-size:13px; line-height:1.5; color:#cbd5e1">Hover or tap a dot on the track. The archive will eventually show a different map per era automatically.</p>
+      </div>
+      <ul class="timeline" id="evolutionList"></ul>
+      <div style="margin-top:14px; padding:10px; background:#0e1016; border:1px solid #1e2332; border-radius:10px; font-size:11px; color:var(--muted)">
+        <strong style="color:#fff">What to add to main Index.html:</strong><br>
+        • 3 SVG files: phillip.svg, panorama-pre.svg, panorama-post.svg<br>
+        • Auto-switch in chartResearch and raceYearHistory based on year < 1963, <1987, >=1987<br>
+        • Store corner data in window.__BATHURST_CORNERS for tooltips everywhere<br>
+        • Add Wahluu dual name to header: Mount Panorama / Wahluu
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  Prototype built for Bathurst Archive — uses research from V8 Sleuth: Corner names, Safety changes, Track development 1964-2025. Maps are stylized, not to scale, for interactive storytelling. Replace with accurate CAD traces later if you have them.
+</footer>
+
+<script>
+const corners = [
+  {id:'hell', name:'Hell Corner', x:80, y:88, year:'c.1938', era:'all-pano', cls:'', story:'90-degree left-hander to start lap. Named after a tree stump on the apex in early motorcycle days — hitting it was said to be fatal, so riders risked hell.'},
+  {id:'griffins', name:'Griffins Bend', x:195, y:86, year:'1938', era:'all-pano', cls:'', story:'Uphill right-hander at end of Mountain Straight. Named after Martin Griffin, Mayor of Bathurst 1931-41 who hatched plan to build a tourist drive with public money that became the circuit.'},
+  {id:'cutting', name:'The Cutting', x:260, y:135, year:'1938', era:'all-pano', cls:'', story:'Road literally cut into side of Mount Panorama. Still steepest climb at 1:6 gradient. Inside was lowered over years.'},
+  {id:'reid', name:'Reid Park', x:305, y:173, year:'1938', era:'all-pano', cls:'', story:'After council engineer Hughie Reid tasked with designing tourist drive layout using existing tracks. Area includes campground and track section.'},
+  {id:'sulman', name:'Sulman Park', x:360, y:180, year:'1970', era:'all-pano', cls:'', story:'Named after racer Tom Sulman who died in a crash on Conrod in March 1970 in Lotus Eleven. Includes metal grate on right used as turn-in marker.'},
+  {id:'mcphillamy', name:'McPhillamy Park', x:395, y:155, year:'1938', era:'all-pano', cls:'', story:'After Walter J. McPhillamy, councillor & former mayor who donated land for parking/camping. Died June 1938 months after first race.'},
+  {id:'brock', name:"Brock's Skyline", x:465, y:92, year:'Skyline c.1938 / Brock 1997', era:'all-pano', cls:'brock', story:'Where circuit begins downhill plunge. Originally just Skyline for view. Peter Brock name added ahead of 1997 Primus 1000 Classic to honour 9-time winner.'},
+  {id:'esses', name:'The Esses / The Dipper', x:520, y:130, year:'1938', era:'all-pano', cls:'', story:'Named directly from layout — snakes down Mountain through significant dip. Sand trap here removed later for bitumen runoff.'},
+  {id:'forrests', name:"Forrest's Elbow", x:490, y:190, year:'1947', era:'all-pano', cls:'', story:'Was The Elbow / Devil\'s Elbow until Jack Forrest crashed his Norton in Oct 1947 practice and ground his elbow off. Harry Hinton dubbed it Forrest\'s Elbow.'},
+  {id:'conrod', name:'Conrod Straight', x:535, y:285, year:'1939', era:'all-pano', cls:'', story:'Was Main Straight until Easter 1939 when Frank Kleinig\'s Hudson Special had spectacular con-rod failure. Longest straight, 1.9km pre-Chase.'},
+  {id:'chase', name:'The Chase', x:485, y:260, year:'1987', era:'post', cls:'', story:'Right-left-right chicane added 1987 as safety upgrade ahead of World Touring Car Championship + after Mike Burgmann fatal 1986. Originally Caltex Chase via sponsorship.'},
+  {id:'murray', name:"Murray's Corner", x:100, y:345, year:'Pit Corner pre-1946 / Murray 1946', era:'all-pano', cls:'murray', story:'Final turn, was Pit Corner until Bill Murray crashed Hudson Special into sandbags in 1946 NSW GP. Winner Alf Najar graffitied Murray\'s Corner on fence that night — name stuck. Murray won 1947 AGP.'},
+];
+
+const phillipCorners = [
+  {id:'p1', name:'Phillip Island — Start/Finish', x:110, y:150, story:'Original Armstrong 500 venue 1960-62. Rough surface, moved to Bathurst 1963.'},
+  {id:'p2', name:'Southern Loop area', x:500, y:200, story:'Fast coastal layout, very different to mountain climb.'},
+];
+
+function getEraForYear(y){
+  y=Number(y);
+  if(y<=1962) return 'phillip';
+  if(y<=1986) return 'pre';
+  return 'post';
+}
+
+const svgIds = {pre:'svg-pre', post:'svg-post', phillip:'svg-phillip'};
+const titles = {
+  pre:{t:'Mount Panorama — Pre-Chase (1963-1986)', sub:'6.172km, Conrod Straight unbroken with two humps, creek crossing, no concrete walls until mid-70s.'},
+  post:{t:'Mount Panorama — Modern (1987-now)', sub:'6.21km with The Chase chicane, new pit complex 1987 & 2004, tunnel under Chase by 1993, gravel traps extended.'},
+  phillip:{t:'Phillip Island — Original 500 (1960-1962)', sub:'The Great Race started here as Armstrong 500. 3.0mi coastal circuit, rough surface, moved to Bathurst in 1963.'}
+};
+
+function renderCorners(era){
+  ['pre','post','phillip'].forEach(k=>{
+    const g = document.getElementById('corners-'+k);
+    if(!g) return;
+    g.innerHTML='';
+  });
+  const list = era==='phillip' ? phillipCorners : corners.filter(c=> c.era==='all-pano' || c.era===era || (era==='pre' && c.era!=='post'));
+  const g = document.getElementById('corners-'+era);
+  list.forEach(c=>{
+    const dot = document.createElementNS('http://www.w3.org/2000/svg','circle');
+    dot.setAttribute('cx', c.x); dot.setAttribute('cy', c.y); dot.setAttribute('r','6');
+    dot.setAttribute('class','corner-dot '+(c.cls||'')); dot.dataset.id=c.id;
+    dot.addEventListener('mouseenter', (e)=> showTip(e,c));
+    dot.addEventListener('mouseleave', hideTip);
+    dot.addEventListener('click', ()=> lockCorner(c));
+    g.appendChild(dot);
+    if(era!=='phillip'){
+      const label = document.createElementNS('http://www.w3.org/2000/svg','text');
+      label.setAttribute('x', c.x+10); label.setAttribute('y', c.y-10);
+      label.setAttribute('class','corner-label'); label.textContent = c.name.replace("'s","").split(' ')[0];
+      g.appendChild(label);
+    }
+  });
+  // pills
+  const pills = document.getElementById('pillRow');
+  pills.innerHTML = list.map(c=>`<span class="pill" data-id="${c.id}">${c.name}</span>`).join('');
+  pills.querySelectorAll('.pill').forEach(p=> p.addEventListener('click', ()=>{ const c=list.find(x=>x.id===p.dataset.id); if(c) lockCorner(c); }));
+}
+
+let locked=null;
+const tooltip = document.getElementById('tooltip');
+function showTip(evt,c){
+  const stageRect = document.getElementById('mapStage').getBoundingClientRect();
+  const x = evt.clientX - stageRect.left + 14;
+  const y = evt.clientY - stageRect.top + 14;
+  tooltip.style.left=x+'px'; tooltip.style.top=y+'px'; tooltip.style.display='block';
+  tooltip.innerHTML=`<h3>${c.name}</h3><div class="meta">${c.year||''} • ${c.era||''}</div><p>${c.story}</p>`;
+  highlight(c.id,true);
+}
+function hideTip(){ if(!locked){ tooltip.style.display='none'; highlight(null,false);} }
+function lockCorner(c){
+  locked=c; document.getElementById('detailName').textContent=c.name;
+  document.getElementById('detailMeta').textContent=(c.year||'')+(c.year?' — ':'')+(c.era||'');
+  document.getElementById('detailText').textContent=c.story;
+  tooltip.style.display='none';
+  highlight(c.id,true);
+}
+function highlight(id,on){
+  document.querySelectorAll('.corner-dot').forEach(d=> d.classList.toggle('active', on && d.dataset.id===id));
+}
+
+function setEra(era){
+  Object.keys(svgIds).forEach(k=>{
+    const el=document.getElementById(svgIds[k]);
+    if(el) el.style.display = k===era ? 'block':'none';
+  });
+  document.getElementById('mapTitle').textContent=titles[era].t;
+  document.getElementById('mapSub').textContent=titles[era].sub;
+  document.getElementById('sideEra').textContent=era==='pre'?'Pre-Chase':era==='post'?'Post-Chase':'Phillip Island';
+  document.querySelectorAll('.eraBtn').forEach(b=> b.classList.toggle('active', b.dataset.era===era));
+  document.getElementById('mapSelect').value=era;
+  renderCorners(era);
+  buildTimeline(era);
+}
+
+function buildTimeline(era){
+  const data = [
+    {yr:'1938', h:'Circuit opens', p:'Dirt surface, tourist drive concept by Martin Griffin.'},
+    {yr:'1939', h:'Main Straight → Conrod', p:'Frank Kleinig con-rod failure renames straight.'},
+    {yr:'1946', h:'Pit Corner → Murray’s', p:'Bill Murray crash, Alf Najar graffiti.'},
+    {yr:'1947', h:'Elbow → Forrest’s Elbow', p:'Jack Forrest elbow injury.'},
+    {yr:'1963', h:'Move to Bathurst', p:'Armstrong 500 moves from Phillip Island.'},
+    {yr:'1970', h:'Sulman Park named', p:'After Tom Sulman death on Conrod.'},
+    {yr:'1984', h:'Pit entry moved', p:'From after Murray’s to before — still used today. Bridge over pit straight.'},
+    {yr:'1987', h:'The Chase added', p:'First major layout change in 50 years, $5m pits, concrete walls, Safety Car arrives.'},
+    {yr:'1993', h:'Tunnel under Chase', p:'Plus National Motor Racing Museum at Murray’s.'},
+    {yr:'1997', h:'Skyline → Brock’s Skyline', p:'Tribute to 9-time winner ahead of Primus 1000 Classic.'},
+    {yr:'2004', h:'New pit building', p:'Modern complex replaces 1987 facility.'},
+    {yr:'2025', h:'Current 23-turn layout', p:'6.21km, Chase campgrounds expanded, dual name Mount Panorama / Wahluu gazetted.'},
+  ];
+  const ul=document.getElementById('evolutionList');
+  ul.innerHTML=data.map(d=>`<li><div class="yr">${d.yr}</div><div><h4>${d.h}</h4><p>${d.p}</p></div></li>`).join('');
+}
+
+// Slider
+const slider=document.getElementById('yearSlider');
+const yearVal=document.getElementById('yearVal');
+const eraName=document.getElementById('eraName');
+slider.addEventListener('input', ()=>{
+  const y=slider.value; yearVal.textContent=y;
+  const era=getEraForYear(y); eraName.textContent=era==='phillip'?'Phillip Island':era==='pre'?'Pre-Chase':'Post-Chase';
+  setEra(era);
+});
+document.getElementById('mapSelect').addEventListener('change', e=>{ setEra(e.target.value); slider.value = e.target.value==='phillip'?1961: e.target.value==='pre'?1975:2005; yearVal.textContent=slider.value; });
+document.querySelectorAll('.eraBtn').forEach(b=> b.addEventListener('click', ()=> setEra(b.dataset.era)));
+
+// init
+setEra('pre');
+</script>
+</body>
+</html>
