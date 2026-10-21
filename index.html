@@ -2832,22 +2832,26 @@ function openFullResults(yearKey) {
             </section>`).join('')}
         </dl>`
       : '<p class="results-summary">No additional data is available for this entry.</p>';
+    const team = escapeHtml(entry.extraFields?.find(f => f.label.toLowerCase() === 'team')?.value || '—');
+    const sponsor = escapeHtml(entry.extraFields?.find(f => f.label.toLowerCase() === 'sponsor')?.value || '—');
     return `<tr>
       <td class="result-position">${escapeHtml(entry.position || entry.officialPos || '—')}</td>
-      <td class="result-car">#${escapeHtml(entry.car)}</td>
-      <td><span class="position-change ${positionChange.className}" title="${escapeHtml(positionChange.description)}" aria-label="${escapeHtml(positionChange.description)}">${escapeHtml(positionChange.text)}</span></td>
-      <td>${escapeHtml(vehicle || '—')}</td>
+      <td class="result-car">${escapeHtml(entry.car)}</td>
       <td>${escapeHtml(drivers || 'Unknown')}</td>
+      <td>${team}</td>
+      <td>${sponsor}</td>
+      <td>${escapeHtml(vehicle || '—')}</td>
+      <td><span class="position-change ${positionChange.className}" title="${escapeHtml(positionChange.description)}" aria-label="${escapeHtml(positionChange.description)}">${escapeHtml(positionChange.text)}</span></td>
       <td>${escapeHtml(entry.lapsCompleted ?? '—')}</td>
       <td>${escapeHtml(entry.status || (entry.extraFields?.find(f => f.label.toLowerCase() === 'dnf reason')?.value) || '—')}</td>
     </tr>
-    <tr class="result-detail-row" hidden><td colspan="7">${details}</td></tr>`;
+    <tr class="result-detail-row" hidden><td colspan="9">${details}</td></tr>`;
   }).join('');
   document.getElementById('resultsTableHost').innerHTML = entries.length
     ? `${hasPositionImprovement ? '' : '<p class="results-summary">Grid-to-finish changes appear when position-improvement data is included in the spreadsheet refresh.</p>'}
       <button id="resultsDetailToggle" class="results-detail-toggle" type="button" aria-expanded="false">Show all recorded data (${distinctFields.size} fields)</button>
       <div class="results-table-wrap"><table class="results-table">
-        <thead><tr><th>Position</th><th>Car</th><th>Grid to Finish</th><th>Vehicle</th><th>Driver(s)</th><th>Laps</th><th>Status</th></tr></thead>
+        <thead><tr><th>Position</th><th>Car</th><th>Driver(s)</th><th>Team</th><th>Sponsor</th><th>Vehicle</th><th>Grid to Finish</th><th>Laps</th><th>Status</th></tr></thead>
         <tbody>${rows}</tbody>
       </table></div>`
     : '<p class="results-summary">No full result entries are available for this year.</p>';
@@ -2870,11 +2874,13 @@ function openFullResults(yearKey) {
         const piClass = pi==null ? 'unavailable' : (pi>0 ? 'gain' : (pi<0 ? 'loss' : 'unchanged'));
         const veh = e.vehicle || e.make || '—';
         const drivers = (e.drivers||[]).map(d => d.name||d).join(' / ') || '—';
+        const team = e.extraFields?.find(f => f.label.toLowerCase() === 'team')?.value || '—';
+        const sponsor = e.extraFields?.find(f => f.label.toLowerCase() === 'sponsor')?.value || '—';
         const laps = e.lapsCompleted ?? '—';
         const status = e.status || '—';
-        return `<tr><td>${pos}</td><td>#${car}</td><td><span class="position-change ${piClass}">${piText}</span></td><td>${veh}</td><td>${drivers}</td><td>${laps}</td><td>${status}</td></tr>`;
+        return `<tr><td>${pos}</td><td>${car}</td><td>${drivers}</td><td>${team}</td><td>${sponsor}</td><td>${veh}</td><td><span class="position-change ${piClass}">${piText}</span></td><td>${laps}</td><td>${status}</td></tr>`;
       }).join('');
-      host.innerHTML = `<div class="results-table-wrap"><table class="results-table"><thead><tr><th>Position</th><th>Car</th><th>Grid to Finish</th><th>Vehicle</th><th>Driver(s)</th><th>Laps</th><th>Status</th></tr></thead><tbody>${rows}</tbody></table></div><p style="color:#ef4444;padding:12px;">Fallback view due to error: ${err.message}</p>`;
+      host.innerHTML = `<div class="results-table-wrap"><table class="results-table"><thead><tr><th>Position</th><th>Car</th><th>Driver(s)</th><th>Team</th><th>Sponsor</th><th>Vehicle</th><th>Grid to Finish</th><th>Laps</th><th>Status</th></tr></thead><tbody>${rows}</tbody></table></div><p style="color:#ef4444;padding:12px;">Fallback view due to error: ${err.message}</p>`;
       document.getElementById('yearView').hidden = true;
       document.getElementById('raceResultsPage').hidden = false;
     }
