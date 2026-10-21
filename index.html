@@ -1786,7 +1786,7 @@ html.light .vs-auto-item > small {
       <div style="display:flex; gap:8px; margin:12px 0">
         <button id="copyManufLinkBtn" type="button" style="padding:6px 10px; border-radius:8px; border:1px solid #2a2f40; background:#12151d; color:#fff; cursor:pointer; font-size:12px;">Copy link</button>
         <select id="manufacturersEra" style="padding:6px 10px; border-radius:8px; background:#12151d; border:1px solid #2a2f40; color:#fff; font-size:12px;">
-          <option value="all">All 1960-2025</option>
+          <option value="all">All 1960 to 2026</option>
           <option value="1960s">1960s</option>
           <option value="1970s">1970s</option>
           <option value="1980s">1980s</option>
@@ -2757,7 +2757,7 @@ function openFullResults(yearKey) {
     const positionChange = positionChangePresentation(entry.positionImprovement);
     const details = detailFields.length
       ? `<dl class="result-detail-grid">
-          <div class="result-detail-heading">Car #${escapeHtml(entry.car)} — all recorded data</div>
+          <div class="result-detail-heading">Car ${escapeHtml(entry.car)} — all recorded data</div>
           ${groupResultDetailFields(detailFields).map(group => `
             <section class="result-detail-section${group.title === 'Qualifying' ? ' qualifying-detail-section' : ''}">
               <h3>${escapeHtml(group.title)}</h3>
@@ -7652,7 +7652,7 @@ console.log('Fixes v4: duplicate ID removed, robots=index, OG path fixed, access
         <button onclick="navigator.clipboard.writeText(location.href).then(()=>alert('Link copied: '+location.href))">Copy deep link</button>
         <button onclick="document.getElementById('manufacturersEra').value='all'; renderMakes()">All eras</button>
         <select id="manufacturersEra" style="padding:6px 10px; border-radius:8px; background:#12151d; border:1px solid #2a2f40; color:#fff">
-          <option value="all">All 1960-2025</option>
+          <option value="all">All 1960 to 2026</option>
           <option value="1960s">1960s (Phillip Island → early Bathurst)</option>
           <option value="1970s">1970s</option>
           <option value="1980s">1980s (Pre-Chase)</option>
@@ -8306,7 +8306,7 @@ console.log('Fixes v4: duplicate ID removed, robots=index, OG path fixed, access
         <button onclick="navigator.clipboard.writeText(location.href).then(()=>alert('Link copied: '+location.href))">Copy deep link</button>
         <button onclick="document.getElementById('manufacturersEra').value='all'; renderMakes()">All eras</button>
         <select id="manufacturersEra" style="padding:6px 10px; border-radius:8px; background:#12151d; border:1px solid #2a2f40; color:#fff">
-          <option value="all">All 1960-2025</option>
+          <option value="all">All 1960 to 2026</option>
           <option value="1960s">1960s (Phillip Island → early Bathurst)</option>
           <option value="1970s">1970s</option>
           <option value="1980s">1980s (Pre-Chase)</option>
