@@ -7664,7 +7664,7 @@ console.log('Fixes v4: duplicate ID removed, robots=index, OG path fixed, access
       </div>
     </header>
     <div class="makes-grid" id="makesGrid"></div>
-    <div class="callout" style="margin-top:16px">✅ Verified from your data: Holden 36 wins (99 podiums), Ford 21 wins (62 podiums), Nissan 2, Chevrolet 2 (2023-24 Camaro), Morris 1 (1966), Jaguar 1 (1985). Data-driven from STATS_DATA when loaded, fallback uses verified counts 1963-2025.</div>
+    <div class="callout" style="margin-top:16px">✅ Verified from your data: Holden 36 wins (99 podiums), Ford 21 wins (62 podiums), Nissan 2, Chevrolet 2 (2023-24 Camaro), BMW 2 (1997 & 1999 Super Touring), Volvo 1 (1998 Super Touring), Morris 1 (1966), Jaguar 1 (1985). Data-driven from STATS_DATA + SUPER_TOURING_RESULTS when loaded (63 main + 3 ST = 66 total wins), fallback uses verified counts 1963-2025 + ST.</div>
     <div style="margin-top:18px">
       <h3 style="font-size:14px; text-transform:uppercase; letter-spacing:.08em; color:#9aa5bd">Rivalry Timeline</h3>
       <table class="sortable-table" id="rivalryTable">
@@ -7755,18 +7755,25 @@ console.log('Fixes v4: duplicate ID removed, robots=index, OG path fixed, access
     let entries = [];
     try{
       if(window.STATS_DATA && window.STATS_DATA.length){
-        entries = window.STATS_DATA.filter(e=> e.officialPos===1 && e.make && inEra(e.year, era));
+        const mainWins = window.STATS_DATA.filter(e=> e.officialPos===1 && e.make && inEra(e.year, era));
+        const superWins = (window.SUPER_TOURING_RESULTS||[]).filter(e=> e.officialPos===1 && e.make && inEra(e.year, era));
+        entries = [...mainWins, ...superWins];
+      } else if(window.SUPER_TOURING_RESULTS && window.SUPER_TOURING_RESULTS.length){
+        entries = window.SUPER_TOURING_RESULTS.filter(e=> e.officialPos===1 && e.make && inEra(e.year, era));
       }
     }catch(e){}
     let data;
     if(entries.length){
       const counts={}; const podCounts={};
       entries.forEach(e=>{ counts[e.make]=(counts[e.make]||0)+1; });
-      try{ window.STATS_DATA.filter(e=> e.officialPos>=1 && e.officialPos<=3 && e.make && inEra(e.year, era)).forEach(e=>{ podCounts[e.make]=(podCounts[e.make]||0)+1; }); }catch(e){}
+      try{ 
+        const allPod = [...(window.STATS_DATA||[]), ...(window.SUPER_TOURING_RESULTS||[])];
+        allPod.filter(e=> e.officialPos>=1 && e.officialPos<=3 && e.make && inEra(e.year, era)).forEach(e=>{ podCounts[e.make]=(podCounts[e.make]||0)+1; });
+      }catch(e){}
       const total = Object.values(counts).reduce((a,b)=>a+b,0) || 1;
       data = Object.entries(counts).sort((a,b)=>b[1]-a[1]).map(([make,wins])=>({
         make, wins, podiums: podCounts[make]||0,
-        color: make==='Holden'?'#e53935':make==='Ford'?'#2a5bd7':make==='Chevrolet'?'#ff9800':make==='Nissan'?'#4caf50':'#9c27b0',
+        color: make==='Holden'?'#e53935':make==='Ford'?'#2a5bd7':make==='Chevrolet'?'#ff9800':make==='Nissan'?'#4caf50':make==='BMW'?'#00a6ed':make==='Volvo'?'#0a3d62':make==='Morris'?'#8d6e63':make==='Jaguar'?'#607d8b':'#9c27b0',
         share: Math.round(wins/total*100)
       }));
     } else {
@@ -7775,6 +7782,8 @@ console.log('Fixes v4: duplicate ID removed, robots=index, OG path fixed, access
         {make:'Ford', wins:21, podiums:62, color:'#2a5bd7', years:[1963,1964,1965,1967,1970,1971,1973,1974,1977,1981,1988,1989,1994,1998,2006,2007,2008,2013,2014,2019,2025]},
         {make:'Nissan', wins:2, podiums:9, color:'#4caf50', years:[1991,1992]},
         {make:'Chevrolet', wins:2, podiums:7, color:'#ff9800', years:[2023,2024]},
+        {make:'BMW', wins:2, podiums:3, color:'#00a6ed', years:[1997,1999]},
+        {make:'Volvo', wins:1, podiums:2, color:'#0a3d62', years:[1998]},
         {make:'Morris', wins:1, podiums:4, color:'#8d6e63', years:[1966]},
         {make:'Jaguar', wins:1, podiums:2, color:'#607d8b', years:[1985]}
       ];
@@ -7796,11 +7805,18 @@ console.log('Fixes v4: duplicate ID removed, robots=index, OG path fixed, access
     if(body){
       try{
         let timelineEntries = [];
-        if(window.STATS_DATA){ timelineEntries = window.STATS_DATA.filter(e=> e.officialPos===1 && inEra(e.year, era)).sort((a,b)=> a.year-b.year).slice(-20); }
+        if(window.STATS_DATA || window.SUPER_TOURING_RESULTS){
+          const combined = [...(window.STATS_DATA||[]), ...(window.SUPER_TOURING_RESULTS||[])];
+          timelineEntries = combined.filter(e=> e.officialPos===1 && inEra(e.year, era)).sort((a,b)=> {
+            if(a.year!==b.year) return a.year-b.year;
+            return (a.yearKey||'').localeCompare(b.yearKey||'');
+          }).slice(-40);
+        }
         if(timelineEntries.length){
           body.innerHTML = timelineEntries.map(e=>{
             const drivers = (e.drivers||[]).map(d=> d.name||d).join(' / ');
-            return `<tr><td style="padding:8px;">${e.year}</td><td style="padding:8px;">${e.make||''}</td><td style="padding:8px;">${e.vehicle||''}</td><td style="padding:8px;">${drivers}</td></tr>`;
+            const raceLabel = e.yearKey && e.yearKey.includes('Super Touring') ? ` <span style="font-size:10px; padding:2px 5px; border-radius:999px; background:#00a6ed22; border:1px solid #00a6ed44; color:#00a6ed;">ST</span>` : '';
+            return `<tr><td style="padding:8px;">${e.year}${raceLabel}</td><td style="padding:8px;">${e.make||''}</td><td style="padding:8px;">${e.vehicle||''}</td><td style="padding:8px;">${drivers}</td></tr>`;
           }).join('');
         } else {
           body.innerHTML = `<tr><td colspan="4" style="padding:12px; color:#6b768f;">No wins in ${era} — showing sample. Select All eras.</td></tr>`;
@@ -8318,7 +8334,7 @@ console.log('Fixes v4: duplicate ID removed, robots=index, OG path fixed, access
       </div>
     </header>
     <div class="makes-grid" id="makesGrid"></div>
-    <div class="callout" style="margin-top:16px">✅ Verified from your data: Holden 36 wins (99 podiums), Ford 21 wins (62 podiums), Nissan 2, Chevrolet 2 (2023-24 Camaro), Morris 1 (1966), Jaguar 1 (1985). Data-driven from STATS_DATA when loaded, fallback uses verified counts 1963-2025.</div>
+    <div class="callout" style="margin-top:16px">✅ Verified from your data: Holden 36 wins (99 podiums), Ford 21 wins (62 podiums), Nissan 2, Chevrolet 2 (2023-24 Camaro), BMW 2 (1997 & 1999 Super Touring), Volvo 1 (1998 Super Touring), Morris 1 (1966), Jaguar 1 (1985). Data-driven from STATS_DATA + SUPER_TOURING_RESULTS when loaded (63 main + 3 ST = 66 total wins), fallback uses verified counts 1963-2025 + ST.</div>
     <div style="margin-top:18px">
       <h3 style="font-size:14px; text-transform:uppercase; letter-spacing:.08em; color:#9aa5bd">Rivalry Timeline</h3>
       <table class="sortable-table" id="rivalryTable">
@@ -8409,18 +8425,25 @@ console.log('Fixes v4: duplicate ID removed, robots=index, OG path fixed, access
     let entries = [];
     try{
       if(window.STATS_DATA && window.STATS_DATA.length){
-        entries = window.STATS_DATA.filter(e=> e.officialPos===1 && e.make && inEra(e.year, era));
+        const mainWins = window.STATS_DATA.filter(e=> e.officialPos===1 && e.make && inEra(e.year, era));
+        const superWins = (window.SUPER_TOURING_RESULTS||[]).filter(e=> e.officialPos===1 && e.make && inEra(e.year, era));
+        entries = [...mainWins, ...superWins];
+      } else if(window.SUPER_TOURING_RESULTS && window.SUPER_TOURING_RESULTS.length){
+        entries = window.SUPER_TOURING_RESULTS.filter(e=> e.officialPos===1 && e.make && inEra(e.year, era));
       }
     }catch(e){}
     let data;
     if(entries.length){
       const counts={}; const podCounts={};
       entries.forEach(e=>{ counts[e.make]=(counts[e.make]||0)+1; });
-      try{ window.STATS_DATA.filter(e=> e.officialPos>=1 && e.officialPos<=3 && e.make && inEra(e.year, era)).forEach(e=>{ podCounts[e.make]=(podCounts[e.make]||0)+1; }); }catch(e){}
+      try{ 
+        const allPod = [...(window.STATS_DATA||[]), ...(window.SUPER_TOURING_RESULTS||[])];
+        allPod.filter(e=> e.officialPos>=1 && e.officialPos<=3 && e.make && inEra(e.year, era)).forEach(e=>{ podCounts[e.make]=(podCounts[e.make]||0)+1; });
+      }catch(e){}
       const total = Object.values(counts).reduce((a,b)=>a+b,0) || 1;
       data = Object.entries(counts).sort((a,b)=>b[1]-a[1]).map(([make,wins])=>({
         make, wins, podiums: podCounts[make]||0,
-        color: make==='Holden'?'#e53935':make==='Ford'?'#2a5bd7':make==='Chevrolet'?'#ff9800':make==='Nissan'?'#4caf50':'#9c27b0',
+        color: make==='Holden'?'#e53935':make==='Ford'?'#2a5bd7':make==='Chevrolet'?'#ff9800':make==='Nissan'?'#4caf50':make==='BMW'?'#00a6ed':make==='Volvo'?'#0a3d62':make==='Morris'?'#8d6e63':make==='Jaguar'?'#607d8b':'#9c27b0',
         share: Math.round(wins/total*100)
       }));
     } else {
@@ -8429,6 +8452,8 @@ console.log('Fixes v4: duplicate ID removed, robots=index, OG path fixed, access
         {make:'Ford', wins:21, podiums:62, color:'#2a5bd7', years:[1963,1964,1965,1967,1970,1971,1973,1974,1977,1981,1988,1989,1994,1998,2006,2007,2008,2013,2014,2019,2025]},
         {make:'Nissan', wins:2, podiums:9, color:'#4caf50', years:[1991,1992]},
         {make:'Chevrolet', wins:2, podiums:7, color:'#ff9800', years:[2023,2024]},
+        {make:'BMW', wins:2, podiums:3, color:'#00a6ed', years:[1997,1999]},
+        {make:'Volvo', wins:1, podiums:2, color:'#0a3d62', years:[1998]},
         {make:'Morris', wins:1, podiums:4, color:'#8d6e63', years:[1966]},
         {make:'Jaguar', wins:1, podiums:2, color:'#607d8b', years:[1985]}
       ];
@@ -8450,11 +8475,18 @@ console.log('Fixes v4: duplicate ID removed, robots=index, OG path fixed, access
     if(body){
       try{
         let timelineEntries = [];
-        if(window.STATS_DATA){ timelineEntries = window.STATS_DATA.filter(e=> e.officialPos===1 && inEra(e.year, era)).sort((a,b)=> a.year-b.year).slice(-20); }
+        if(window.STATS_DATA || window.SUPER_TOURING_RESULTS){
+          const combined = [...(window.STATS_DATA||[]), ...(window.SUPER_TOURING_RESULTS||[])];
+          timelineEntries = combined.filter(e=> e.officialPos===1 && inEra(e.year, era)).sort((a,b)=> {
+            if(a.year!==b.year) return a.year-b.year;
+            return (a.yearKey||'').localeCompare(b.yearKey||'');
+          }).slice(-40);
+        }
         if(timelineEntries.length){
           body.innerHTML = timelineEntries.map(e=>{
             const drivers = (e.drivers||[]).map(d=> d.name||d).join(' / ');
-            return `<tr><td style="padding:8px;">${e.year}</td><td style="padding:8px;">${e.make||''}</td><td style="padding:8px;">${e.vehicle||''}</td><td style="padding:8px;">${drivers}</td></tr>`;
+            const raceLabel = e.yearKey && e.yearKey.includes('Super Touring') ? ` <span style="font-size:10px; padding:2px 5px; border-radius:999px; background:#00a6ed22; border:1px solid #00a6ed44; color:#00a6ed;">ST</span>` : '';
+            return `<tr><td style="padding:8px;">${e.year}${raceLabel}</td><td style="padding:8px;">${e.make||''}</td><td style="padding:8px;">${e.vehicle||''}</td><td style="padding:8px;">${drivers}</td></tr>`;
           }).join('');
         } else {
           body.innerHTML = `<tr><td colspan="4" style="padding:12px; color:#6b768f;">No wins in ${era} — showing sample. Select All eras.</td></tr>`;
