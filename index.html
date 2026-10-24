@@ -2077,7 +2077,7 @@ STATS_DATA.filter(entry => entry.year === 1977).forEach(entry => {
 
 function addResearchYears() {
   const entriesByYear = new Map();
-  STATS_DATA.forEach(entry => {
+  (window.STATS_DATA || []).forEach(entry => {
     if (entry.raceCategory === 'superTouring') return;
     const entries = entriesByYear.get(entry.year) || [];
     entries.push(entry);
@@ -2109,7 +2109,7 @@ function addResearchYears() {
   });
 
   const superTouringByYear = new Map();
-  SUPER_TOURING_RESULTS.forEach(entry => {
+  (window.SUPER_TOURING_RESULTS || []).forEach(entry => {
     const entries = superTouringByYear.get(entry.yearKey) || [];
     entries.push(entry);
     superTouringByYear.set(entry.yearKey, entries);
@@ -2172,7 +2172,7 @@ const MAKE_COLOR_OVERRIDES = {
   Toyota: '#EB0A1E',
   Chevrolet: '#D4AF37'
 };
-STATS_DATA.forEach(entry => {
+(window.STATS_DATA || []).forEach(entry => {
   if (MAKE_COLOR_OVERRIDES[entry.make]) entry.color = MAKE_COLOR_OVERRIDES[entry.make];
 });
 Object.values(ALL_YEARS).forEach(race => race.cars.forEach(car => {
@@ -4481,7 +4481,7 @@ function previousStatsData(year, car) {
 
 function existingMakeColors() {
   const colors = new Map();
-  STATS_DATA.forEach(entry => {
+  (window.STATS_DATA || []).forEach(entry => {
     if (entry.make && entry.color && !colors.has(entry.make)) colors.set(entry.make, entry.color);
   });
   Object.values(ALL_YEARS).forEach(race => race.cars.forEach(entry => {
@@ -5279,7 +5279,7 @@ restoreRememberedSpreadsheetDirectory();
     const driverIndex = new Map(); // normalized name -> {name, entries: []}
     const carNumberIndex = new Map(); // car number string -> entries
     
-    STATS_DATA.forEach(entry=>{
+    (window.STATS_DATA || []).forEach(entry=>{
       (entry.drivers||[]).forEach(d=>{
         const key = d.name.trim().toLowerCase();
         if(!driverIndex.has(key)) driverIndex.set(key, {name: d.name.trim(), entries: []});
@@ -6699,7 +6699,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     const drivers = {};
     const manufacturers = {};
     const startsByDecade = {};
-    STATS_DATA.forEach(e=>{
+    (window.STATS_DATA || []).forEach(e=>{
       const year = Number(e.year);
       if (!Number.isInteger(year)) return;
       const dec = Math.floor(year/10)*10;
@@ -6861,7 +6861,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     if(cDiv){
       const pairs=new Map();
       const seenPairStarts=new Set();
-      STATS_DATA.forEach(e=>{
+      (window.STATS_DATA || []).forEach(e=>{
         if(e.drivers && e.drivers.length===2){
           const names=e.drivers.map(driver=>String(driver.name||'').trim());
           if(names.some(name=>!name)) return;
@@ -6987,7 +6987,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
         addRaceEntry(entry, String(car.drivers || '').split(/\s*\/\s*/), yearKey, 'chart');
       });
     });
-    PRE_1963_RESULTS.forEach(entry => {
+    (window.PRE_1963_RESULTS || []).forEach(entry => {
       const driverNames = (entry.extraFields || [])
         .filter(field => /^driver \d+$/i.test(field.label))
         .map(field => field.value);
@@ -7002,7 +7002,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
         status: null
       }, driverNames, String(entry.year), 'results');
     });
-    STATS_DATA.forEach(entry => {
+    (window.STATS_DATA || []).forEach(entry => {
       const yearKey = entry.yearKey ||
         (entry.raceCategory === 'superTouring' ? `${entry.year} Super Touring` : String(entry.year));
       addRaceEntry(
@@ -7012,7 +7012,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
         'results'
       );
     });
-    SUPER_TOURING_RESULTS.forEach(entry => {
+    (window.SUPER_TOURING_RESULTS || []).forEach(entry => {
       addRaceEntry(
         entry,
         (entry.drivers || []).map(driver => driver.name),
@@ -7581,7 +7581,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
       if (window.STATS_DATA && window.STATS_DATA.length > 0) {
         // Build from real data
         const map = new Map();
-        window.STATS_DATA.forEach(e => {
+        window.(window.STATS_DATA || []).forEach(e => {
           (e.drivers||[]).forEach(d => {
             const name = (d.name||'').trim();
             if (!name) return;
@@ -8072,37 +8072,7 @@ console.log('Fixes v4: duplicate ID removed, robots=index, OG path fixed, access
 </script>
 
 </body>
-<script>
-// Fix: Ensure top 3 are highlighted by default, others faint
-(function() {
-  const origRender = window.render;
-  window.render = function(yearKey) {
-    const result = origRender ? origRender(yearKey) : null;
-    // After render, highlight top 3
-    setTimeout(() => {
-      const host = document.getElementById('chartHost');
-      if (!host) return;
-      const svg = host.querySelector('svg');
-      if (!svg) return;
-      const lines = svg.querySelectorAll('.carline');
-      const podium = (window.ALL_YEARS && window.ALL_YEARS[yearKey] && window.ALL_YEARS[yearKey].podium) || [];
-      const top3Cars = podium.slice(0,3).map(p => String(p.car));
-      
-      lines.forEach(line => {
-        const carNum = line.getAttribute('data-car') || line.getAttribute('data-car-number');
-        if (top3Cars.length && top3Cars.includes(String(carNum))) {
-          line.classList.add('top3', 'active');
-          line.classList.remove('faint', 'dimmed');
-        } else {
-          line.classList.add('faint');
-          line.classList.remove('active', 'top3');
-        }
-      });
-    }, 50);
-    return result;
-  };
-})();
-</script>
+
 
 
 <script>
@@ -8252,7 +8222,7 @@ console.log('Fixes v4: duplicate ID removed, robots=index, OG path fixed, access
       if (window.STATS_DATA && window.STATS_DATA.length > 0) {
         // Build from real data
         const map = new Map();
-        window.STATS_DATA.forEach(e => {
+        window.(window.STATS_DATA || []).forEach(e => {
           (e.drivers||[]).forEach(d => {
             const name = (d.name||'').trim();
             if (!name) return;
@@ -8907,89 +8877,6 @@ console.log('Fixes v4: duplicate ID removed, robots=index, OG path fixed, access
 })();
 </script>
 
-
-<script id="fix-tabs-v5">
-(function(){
-  function initTabs(){
-    const tabContainer=document.querySelector('.tabs');
-    if(!tabContainer) return;
-    const btns=Array.from(tabContainer.querySelectorAll('.tabbtn[data-tab]'));
-    if(!btns.length) return;
-    
-    function showTab(tabName){
-      // Hide all tab contents
-      const allTabs=document.querySelectorAll('.home-tab, .tabcontent, #statsTab, #chartTab, #earlyResultsTab, #driverStatsTab, #vsCompareTab, #manufacturersTab, #weatherTab, #programmeCoversTab, #homeTab');
-      allTabs.forEach(el=>{
-        if(el){
-          el.hidden=true;
-          el.style.display='none';
-        }
-      });
-      // Show target
-      let target=null;
-      if(tabName==='home'){
-        target=document.getElementById('homeTab');
-      } else {
-        target=document.getElementById(tabName+'Tab');
-        if(!target) target=document.querySelector('[id="'+tabName+'Tab"]');
-        if(!target && tabName==='stats') target=document.getElementById('statsTab');
-        if(!target && tabName==='chart') target=document.getElementById('chartTab');
-        if(!target && tabName==='earlyResults') target=document.getElementById('earlyResultsTab');
-        if(!target && tabName==='driverStats') target=document.getElementById('driverStatsTab');
-      }
-      if(target){
-        target.hidden=false;
-        target.style.display='block';
-      }
-      // Update active button
-      btns.forEach(b=>{
-        const isActive=(b.dataset.tab===tabName);
-        b.classList.toggle('active', isActive);
-        b.setAttribute('aria-selected', isActive?'true':'false');
-        b.setAttribute('tabindex', isActive?'0':'-1');
-      });
-      // Scroll to top
-      window.scrollTo({top:0, behavior:'smooth'});
-    }
-    
-    // Attach click handlers
-    btns.forEach(btn=>{
-      // Remove old listeners by cloning? Instead, add new listener that stops propagation after handling
-      btn.addEventListener('click', (e)=>{
-        e.preventDefault();
-        const tabName=btn.dataset.tab;
-        if(tabName){
-          showTab(tabName);
-          // Update hash for deep linking if helper exists
-          if(window.__updateDeepLink) window.__updateDeepLink(tabName);
-        }
-      });
-    });
-    
-    // Ensure home is visible on load if no hash
-    const params=new URLSearchParams(location.hash.slice(1));
-    const tabParam=params.get('tab');
-    if(tabParam){
-      const matchingBtn=btns.find(b=>b.dataset.tab===tabParam);
-      if(matchingBtn) matchingBtn.click();
-    } else {
-      // Show home by default
-      showTab('home');
-    }
-    
-    console.log('Fix-tabs-v5: initialized', btns.length, 'tabs');
-  }
-  
-  if(document.readyState==='loading'){
-    document.addEventListener('DOMContentLoaded', initTabs);
-  } else {
-    initTabs();
-  }
-  // Also run after a delay in case other scripts override
-  setTimeout(initTabs, 500);
-  setTimeout(initTabs, 1500);
-})();
-</script>
 
 </body>
 </html>
