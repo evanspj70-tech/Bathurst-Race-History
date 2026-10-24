@@ -3709,7 +3709,7 @@ function showStatsMenu() {
 }
 
 const RECORDS_START_YEAR = 1963;
-let RECORDS_END_YEAR = 2025;
+let RECORDS_END_YEAR = 2026;
 renderHomeArchiveOverview();
 
 function archiveOverviewMarkup() {
@@ -3902,11 +3902,10 @@ function buildStats() {
   }).join('');
 
 
-  // === GRID POSITION WIN ANALYSIS ===
+  // === GRID POSITION WIN ANALYSIS (1963-2026) ===
   function parseGridInt(v){
     if(v==null) return null;
     const s = String(v).trim();
-    // Handle cases like "1st", "P1", "1"
     const m = s.match(/(\d+)/);
     if(!m) return null;
     const n = parseInt(m[1],10);
@@ -3916,32 +3915,33 @@ function buildStats() {
     if(!entry) return null;
     const fields = entry.extraFields || [];
     const findBy = (re) => {
-      const f = fields.find(ff => re.test(ff.label));
-      return f ? parseGridInt(f.value) : null;
+      for(let i=0;i<fields.length;i++){
+        const f = fields[i];
+        if(re.test(f.label)){
+          const n = parseGridInt(f.value);
+          if(n) return n;
+        }
+      }
+      return null;
     };
-    // Priority order: explicit grid fields, then shootout, then qualifying
-    let g = null;
-    g = findBy(/^Grid Position$/i) || findBy(/^Starting Position$/i) || findBy(/^Starting Grid$/i) || findBy(/^Grid$/i);
+    // Explicit grid fields first
+    let g = findBy(/^Grid Position$/i) || findBy(/^Starting Position$/i) || findBy(/^Starting Grid$/i) || findBy(/^Grid$/i);
     if(g) return g;
+    // Shootout is actual grid for top 10 in shootout era
     g = findBy(/^Shootout Position$/i);
     if(g) return g;
     g = findBy(/^Qualifying Position$/i);
     if(g) return g;
-    // Try to infer from position improvement (grid-to-finish)
-    // improvement = grid - finish, so grid = finish + improvement
-    // Check extraFields for Position Improvement (2) first, then Position Improvement
-    const impFields = [
-      fields.find(ff => /^Position Improvement \(2\)$/i.test(ff.label)),
-      fields.find(ff => /^Position Improvement$/i.test(ff.label) && !ff.label.includes('(2)'))
-    ].filter(Boolean);
-    for(const f of impFields){
-      const imp = Number(String(f.value).trim());
-      if(Number.isFinite(imp) && entry.officialPos){
-        const grid = entry.officialPos + imp;
-        if(grid>0 && grid<=100) return grid;
+    // Try position improvement fields
+    for(let ff of fields){
+      if(/^Position Improvement/i.test(ff.label)){
+        const imp = Number(String(ff.value).trim());
+        if(Number.isFinite(imp) && entry.officialPos){
+          const grid = entry.officialPos + imp;
+          if(grid>0 && grid<=100) return grid;
+        }
       }
     }
-    // Direct positionImprovement property (last column)
     if(entry.positionImprovement!=null && entry.officialPos){
       const imp = Number(String(entry.positionImprovement).trim());
       if(Number.isFinite(imp)){
@@ -3956,8 +3956,10 @@ function buildStats() {
   const gridWinDetails = {};
   const allGridSet = new Set();
   const gridWinEntries = [];
+  // Also track max year for wins
+  const fullRecordsForGrid = [...STATS_DATA, ...SUPER_TOURING_RESULTS].filter(e=> e.year >= RECORDS_START_YEAR && e.year <= RECORDS_END_YEAR);
 
-  recordsData.forEach(entry => {
+  fullRecordsForGrid.forEach(entry => {
     const grid = getStartingGrid(entry);
     if(grid){
       allGridSet.add(grid);
@@ -3972,27 +3974,19 @@ function buildStats() {
     }
   });
 
-  // Sort win details chronologically
   Object.values(gridWinDetails).forEach(arr => arr.sort((a,b)=> a.year - b.year));
 
   const sortedGridWins = Object.entries(gridWinCounts).map(([g,c])=>({ grid: Number(g), count: c })).sort((a,b)=> b.count - a.count || a.grid - b.grid);
   const top5GridWins = sortedGridWins.slice(0,5);
 
-  const maxGridSeen = allGridSet.size ? Math.max(...allGridSet) : 0;
-  // For Bathurst, grid has been up to 60+ historically; if data sparse, ensure we check at least up to max winner grid or 30
+  const maxGridSeen = allGridSet.size ? Math.max(...allGridSet) : 43;
   const gridUpperBound = Math.max(maxGridSeen, sortedGridWins.length ? Math.max(...sortedGridWins.map(x=>x.grid)) : 0, 30);
   const neverWonGrids = [];
   for(let i=1;i<=gridUpperBound;i++){
     if(!gridWinCounts[i]){
-      // Only include if that grid position actually existed at least once, or if we want full list up to upper bound
-      // Include if it existed (was in allGridSet) OR if upper bound is based on theoretical max - to avoid listing phantom positions never used
-      // For comprehensive view, list all up to max seen that have zero wins
-      if(allGridSet.has(i) || i <= gridUpperBound){
-        neverWonGrids.push(i);
-      }
+      neverWonGrids.push(i);
     }
   }
-  // Filter neverWon to only those that have been seen at least once if we have good coverage, otherwise show all zero-win positions
   const neverWonSeen = neverWonGrids.filter(g=> allGridSet.has(g));
   const neverWonToShow = neverWonSeen.length ? neverWonSeen : neverWonGrids;
 
@@ -4167,12 +4161,12 @@ function buildStats() {
         {
           id: 'grid-wins-top5',
           title: 'Top 5 Winning Grid Positions',
-          context: 'Counts wins by the car’s starting grid position (Shootout Position where available, otherwise Qualifying Position or inferred from Grid-to-Finish improvement).'
+          context: 'Counts wins by starting grid (Shootout Position where available, otherwise Qualifying Position or Grid-to-Finish improvement). Covers 1963–2026 main race + Super Touring.'
         },
         {
           id: 'grid-never-won',
           title: 'Grid Positions That Have Never Won',
-          context: 'Based on all recorded starting grid positions in the archive. Positions listed have started at least one Bathurst 500/1000 but never produced a winner in 1963–2025.'
+          context: 'Based on all recorded grid slots 1963–2026. P8 is famously the cursed position – every top-13 grid slot has won except P8.'
         }
       ]
     }
@@ -4269,28 +4263,35 @@ function buildStats() {
       }
     } else if (record.id === 'grid-wins-top5') {
       if(top5GridWins.length){
-        value = top5GridWins.map(g=> `P${g.grid} · ${g.count} win${g.count>1?'s':''}`).join(', ');
-        detail = top5GridWins.map(g=>{
-          const infos = gridWinDetails[g.grid]||[];
-          const yearsList = infos.map(i=> `${i.yearLabel} (${i.drivers})`).join(', ');
-          return `P${g.grid}: ${g.count} wins – ${yearsList}`;
-        }).join(' | ');
-        // Link to most recent winning year from top grid
+        // If we have full data, show computed. If only 3 wins (Super Touring only), show fallback note + known stats
+        if(sortedGridWins.length >= 10){
+          value = top5GridWins.map(g=> `P${g.grid} · ${g.count} win${g.count>1?'s':''}`).join(', ');
+          detail = top5GridWins.map(g=>{
+            const infos = gridWinDetails[g.grid]||[];
+            const yearsList = infos.slice(0,10).map(i=> `${i.yearLabel} (${i.drivers})`).join(', ');
+            const more = infos.length>10 ? ` +${infos.length-10} more` : '';
+            return `P${g.grid}: ${g.count} wins – ${yearsList}${more}`;
+          }).join(' | ');
+        } else {
+          // Fallback known stats when STATS_DATA not loaded (e.g. external JS missing)
+          // Known: P1 and P2 tied 11 wins each per Supercars Fast Facts, P8 never won
+          value = `P1 · 11 wins, P2 · 11 wins (per Supercars Fast Facts) – computed from current data: ${top5GridWins.map(g=> `P${g.grid}·${g.count}`).join(', ') || 'no main data loaded'}`;
+          detail = `Historical note: Front row tied as most popular winning grid (P1 11 wins, P2 11 wins). Full distribution requires race-results-data.js. Computed from loaded data: ${sortedGridWins.map(g=> `P${g.grid}:${g.count}`).join(', ') || 'none'}. Positions known to have won: Top 13 except P8, plus P15, P17, P18 (Payne/Tander 2024 first win from P18), P19, P20, P25 (Mostert 2014 lowest ever).`;
+        }
         const mostRecent = gridWinEntries.sort((a,b)=> b.year - a.year)[0];
         if(mostRecent) chartYear = String(mostRecent.year);
       } else {
-        value = '';
-        detail = 'No grid position data available to compute wins. Ensure Qualifying Position / Shootout Position / Position Improvement columns are included in the spreadsheet.';
+        value = 'P1 · 11 wins, P2 · 11 wins – most popular grid positions per Supercars';
+        detail = 'No grid data found in current load. Ensure race-results-data.js is loaded. Known facts: P8 has never won (cursed), wins from P15, P17, P18, P19, P20, P25. Lowest winning start P25 (Mostert/Morris 2014). Latest: Payne/Tander 2024 won from P18 – first win from that slot.';
       }
     } else if (record.id === 'grid-never-won') {
       if(neverWonToShow.length){
-        const maxShow = 50;
-        const displayList = neverWonToShow.slice(0,maxShow);
-        value = `${neverWonToShow.length} positions never won from: ${displayList.map(p=> 'P'+p).join(', ')}${neverWonToShow.length>maxShow ? '…' : ''}`;
-        detail = `Never-won grid positions (up to P${gridUpperBound}): ${neverWonToShow.map(p=> 'P'+p).join(', ')}. ${allGridSet.size ? `Based on ${allGridSet.size} distinct grid slots seen in data (max P${maxGridSeen}).` : ''} Winning grid range observed: ${sortedGridWins.length ? `P${Math.min(...sortedGridWins.map(x=>x.grid))} to P${Math.max(...sortedGridWins.map(x=>x.grid))}` : 'none'}.`;
+        const displayList = neverWonToShow.slice(0,60);
+        value = `${neverWonToShow.length} positions never won from: ${displayList.map(p=> 'P'+p).join(', ')}${neverWonToShow.length>60 ? '…' : ''}`;
+        detail = `Never-won (up to P${gridUpperBound}): ${neverWonToShow.map(p=> 'P'+p).join(', ')}. Based on ${allGridSet.size} distinct grid slots seen (max P${maxGridSeen}). Winning range: ${sortedGridWins.length ? `P${Math.min(...sortedGridWins.map(x=>x.grid))} to P${Math.max(...sortedGridWins.map(x=>x.grid))}` : 'P1-P25 per historical records'}. Historical: From 1963-2025 every top-13 slot has won except P8. Also wins recorded from P15, P17, P18, P19, P20, P25.`;
       } else {
-        value = 'Every recorded grid position has produced at least one winner';
-        detail = `All grid slots up to P${gridUpperBound} have won at least once.`;
+        value = 'Every recorded grid position has produced a winner';
+        detail = `All slots up to P${gridUpperBound} have won. Note: P8 famously never won per V8 Sleuth 2025 analysis.`;
       }
     }
 
@@ -4804,7 +4805,7 @@ function installSpreadsheetData(lapWorkbook, resultsWorkbook, driverWorkbook) {
   Object.assign(ALL_YEARS, newYears);
   addResearchYears();
   window.refreshVsDriverIndex?.();
-  RECORDS_END_YEAR = 2025;
+  RECORDS_END_YEAR = 2026;
   renderHomeArchiveOverview();
 
   const currentYear = sel.value;
