@@ -4328,34 +4328,31 @@ function buildStats() {
         detail='No grid data. Known: P8 never won, wins from P15, P17, P18, P19, P20, P25. Lowest P25 Mostert/Morris 2014.';
       }
     } else if (record.id === 'grid-wins-chart') {
-      // Visual bar chart P1-P25
+      // Visual bar chart P1-P25 - fixed to avoid nested template literal issues
       const maxWins = Math.max(...gridChartData.map(d=>d.wins),1);
       const maxPod = Math.max(...gridChartData.map(d=>d.podiums),1);
-      const maxVal = Math.max(maxWins, maxPod);
-      const bars = gridChartData.map(d=>{
+      const maxVal = Math.max(maxWins, maxPod, 1);
+      let barsHtml = '';
+      for(let i=0;i<gridChartData.length;i++){
+        const d = gridChartData[i];
         const winH = d.wins ? (d.wins / maxVal * 100) : 0;
         const podH = d.podiums ? (d.podiums / maxVal * 100) : 0;
         const isNeverWon = d.wins===0;
-        return `<div class="grid-bar-group">
-          <div class="grid-bar-track">
-            ${d.podiums?`<div class="grid-bar podiums" style="height:${podH}%" title="P${d.grid}: ${d.podiums} podiums"></div>`:''}
-            <div class="grid-bar wins" style="height:${winH}%;${isNeverWon?'background:#2a2f40;opacity:0.3':''}" title="P${d.grid}: ${d.wins} wins, ${d.podiums} podiums from ${d.starts} starts"></div>
-            ${d.wins?`<div class="grid-bar-value">${d.wins}</div>`:''}
-          </div>
-          <div class="grid-bar-label" style="${isNeverWon?'color:#ff6b6b;font-weight:900':''}">P${d.grid}</div>
-        </div>`;
-      }).join('');
-      value = `Wins by grid P1-P25 — Most: P${sortedGridWins[0]?.grid||1} with ${sortedGridWins[0]?.count||0} wins`;
-      detail = `<div class="grid-wins-chart">
-        <h3>Wins (dark) vs Podiums (light) by Starting Grid P1-P25</h3>
-        <div class="grid-wins-bars">${bars}</div>
-        <div class="grid-chart-legend">
-          <span><i style="background:#2a5bd7"></i>Wins</span>
-          <span><i style="background:#4a7de0;opacity:0.6"></i>Podiums (Top 3)</span>
-          <span><i style="background:#2a2f40"></i>Never won from this grid</span>
-        </div>
-        <p style="margin-top:12px;font-size:11px;color:#6b768f;">Based on ${fullRecordsForGrid.length} entries with grid data. Max grid seen P${maxGridSeen}. P8 cursed never won. Lowest winning grid P25 (Mostert/Morris 2014).</p>
-      </div>`;
+        const podiumBar = d.podiums ? '<div class="grid-bar podiums" style="height:' + podH + '%" title="P' + d.grid + ': ' + d.podiums + ' podiums"></div>' : '';
+        const winBar = '<div class="grid-bar wins" style="height:' + winH + '%;' + (isNeverWon ? 'background:#2a2f40;opacity:0.3' : '') + '" title="P' + d.grid + ': ' + d.wins + ' wins, ' + d.podiums + ' podiums from ' + d.starts + ' starts"></div>';
+        const winVal = d.wins ? '<div class="grid-bar-value">' + d.wins + '</div>' : '';
+        const labelStyle = isNeverWon ? 'color:#ff6b6b;font-weight:900' : '';
+        barsHtml += '<div class="grid-bar-group"><div class="grid-bar-track">' + podiumBar + winBar + winVal + '</div><div class="grid-bar-label" style="' + labelStyle + '">P' + d.grid + '</div></div>';
+      }
+      const mostWin = sortedGridWins[0] || {grid:1, count:0};
+      value = 'Wins by grid P1-P25 — Most: P' + mostWin.grid + ' with ' + mostWin.count + ' wins';
+      detail = '<div class="grid-wins-chart">'
+        + '<h3>Wins (dark) vs Podiums (light) by Starting Grid P1-P25</h3>'
+        + '<div class="grid-wins-bars">' + barsHtml + '</div>'
+        + '<div class="grid-chart-legend"><span><i style="background:#2a5bd7"></i>Wins</span><span><i style="background:#4a7de0;opacity:0.6"></i>Podiums (Top 3)</span><span><i style="background:#2a2f40"></i>Never won</span></div>'
+        + '<p style="margin-top:12px;font-size:11px;color:#6b768f;">Based on ' + fullRecordsForGrid.length + ' entries with grid data. Max grid seen P' + maxGridSeen + '. P8 cursed never won (0 wins, ' + (gridPodiumCounts[8]||0) + ' podiums, ' + (gridStartCounts[8]||0) + ' starts). Lowest winning grid P26 (Mostert/Morris 2014 from P26, +25). Correct race data: P1=' + (gridWinCounts[1]||0) + ' wins, P2=' + (gridWinCounts[2]||0) + ' wins.</p>'
+        + '</div>';
+    }
     } else if (record.id === 'grid-never-won') {
       if(sortedGridWins.length>=20){
         const displayList=neverWonToShow.slice(0,60);
