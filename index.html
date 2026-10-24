@@ -1274,6 +1274,57 @@ html.light .vs-auto-item > small {
   display:block;
 }
 
+
+/* --- Global Search Bar --- */
+.global-search-wrap { position:sticky; top:0; z-index:100; background:#0a0c10; padding:12px 16px; border-bottom:1px solid #1e2332; display:flex; gap:12px; align-items:center; }
+.global-search-wrap input { flex:1; max-width:600px; padding:10px 14px 10px 36px; border-radius:10px; border:1px solid #2a2f40; background:#12151d url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="%239aa5bd" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>') no-repeat 10px center; color:#fff; font-size:14px; }
+.global-search-wrap input:focus { outline:none; border-color:#2a5bd7; box-shadow:0 0 0 2px rgba(42,91,215,0.2); }
+.global-search-results { position:absolute; top:100%; left:16px; right:16px; max-width:600px; background:#12151d; border:1px solid #2a2f40; border-radius:12px; margin-top:8px; max-height:400px; overflow-y:auto; display:none; box-shadow:0 8px 24px rgba(0,0,0,0.5); }
+.global-search-results.open { display:block; }
+.global-search-item { padding:10px 14px; cursor:pointer; border-bottom:1px solid #1e2332; display:flex; justify-content:space-between; align-items:center; }
+.global-search-item:hover { background:#1a1e2a; }
+.global-search-item .gs-label { color:#fff; font-weight:600; font-size:13px; }
+.global-search-item .gs-meta { color:#9aa5bd; font-size:11px; }
+
+/* --- Grid Wins Chart --- */
+.grid-wins-chart { background:#0e1016; border:1px solid #1e2332; border-radius:16px; padding:16px; margin:16px 0; overflow-x:auto; }
+.grid-wins-chart h3 { color:#fff; margin:0 0 12px 0; font-size:16px; }
+.grid-wins-bars { display:flex; align-items:flex-end; gap:4px; height:200px; padding-bottom:24px; min-width:600px; }
+.grid-bar-group { flex:1; display:flex; flex-direction:column; align-items:center; gap:4px; }
+.grid-bar-track { width:100%; display:flex; flex-direction:column; align-items:center; justify-content:flex-end; height:160px; gap:2px; }
+.grid-bar { width:100%; border-radius:4px 4px 0 0; transition:all 0.2s; cursor:pointer; }
+.grid-bar.wins { background:#2a5bd7; }
+.grid-bar.podiums { background:#4a7de0; opacity:0.6; }
+.grid-bar:hover { filter:brightness(1.2); }
+.grid-bar-label { font-size:10px; color:#9aa5bd; font-weight:700; }
+.grid-bar-value { font-size:9px; color:#fff; font-weight:800; margin-bottom:2px; }
+.grid-chart-legend { display:flex; gap:16px; margin-top:8px; font-size:11px; color:#9aa5bd; }
+.grid-chart-legend span { display:flex; align-items:center; gap:4px; }
+.grid-chart-legend i { width:12px; height:12px; border-radius:2px; display:inline-block; }
+
+/* --- Mobile Optimisation for Lap Charts --- */
+@media (max-width: 768px) {
+  .board { padding:8px; border-radius:12px; margin:8px 0; }
+  #chartHost { height:320px !important; }
+  .carline { stroke-width:1.4; }
+  .carline.active { stroke-width:2.5; }
+  .carlabel { font-size:9px; }
+  .podium { grid-template-columns:1fr; gap:8px; }
+  .makes { gap:6px; }
+  .mk { padding:5px 8px; font-size:11px; }
+  .tabs { grid-template-columns: repeat(2, 1fr) !important; grid-auto-flow:row !important; }
+  .hero-stats-strip { grid-template-columns:repeat(2,1fr); gap:8px; }
+  .global-search-wrap { padding:8px 12px; }
+  .global-search-wrap input { font-size:16px; /* Prevent zoom on iOS */ }
+  .record-category-grid { grid-template-columns:1fr !important; }
+  .grid-wins-bars { min-width:500px; height:160px; }
+  .grid-bar-track { height:120px; }
+}
+@media (max-width: 480px) {
+  #chartHost { height:280px !important; }
+  .board { padding:6px; }
+}
+
 </style>
 
 <!-- === ENHANCED FIXES v4 — hygiene + accessible tabs + deep linking + manufacturers + sortable record book === -->
@@ -1464,7 +1515,14 @@ html.light .vs-auto-item > small {
     <span class="loading-spinner" aria-hidden="true"></span>
     <span>Parsing race data and preparing the archive…</span>
   </div>
-  <div class="tabs" style="display:grid; grid-template-columns: repeat(5, minmax(0, 1fr)); grid-template-rows: repeat(2, auto); grid-auto-flow: column; gap:8px;">
+  
+<!-- Global Search Bar -->
+<div class="global-search-wrap" id="globalSearchWrap">
+  <input id="globalSearch" type="search" placeholder="Search drivers, teams, years... (e.g. Brock, Holden, 2014)" autocomplete="off" aria-label="Global search">
+  <div class="global-search-results" id="globalSearchResults"></div>
+</div>
+
+<div class="tabs" style="display:grid; grid-template-columns: repeat(5, minmax(0, 1fr)); grid-template-rows: repeat(2, auto); grid-auto-flow: column; gap:8px;">
     <button role="tab" tabindex="-1" class="tabbtn active" data-tab="home" data-grid-number="1" aria-controls="homeTab" aria-selected="true">1 Home</button>
     <button role="tab" tabindex="-1" class="tabbtn" data-tab="stats" data-grid-number="2" aria-controls="statsTab" aria-selected="false">2 The Record Book</button>
     <button role="tab" tabindex="-1" class="tabbtn" data-tab="earlyResults" data-grid-number="3" aria-controls="earlyResultsTab" aria-selected="false">3 Race Results 1960-1962</button>
@@ -3927,6 +3985,8 @@ function buildStats() {
   }
   const gridWinCounts={};
   const gridWinDetails={};
+  const gridPodiumCounts={};
+  const gridStartCounts={};
   const allGridSet=new Set();
   const gridWinEntries=[];
   const fullRecordsForGrid=[...STATS_DATA,...SUPER_TOURING_RESULTS].filter(e=> e.year>=RECORDS_START_YEAR&&e.year<=RECORDS_END_YEAR);
@@ -3934,6 +3994,10 @@ function buildStats() {
     const grid=getStartingGrid(entry);
     if(grid){
       allGridSet.add(grid);
+      gridStartCounts[grid]=(gridStartCounts[grid]||0)+1;
+      if(entry.officialPos>=1 && entry.officialPos<=3){
+        gridPodiumCounts[grid]=(gridPodiumCounts[grid]||0)+1;
+      }
       if(entry.officialPos===1){
         gridWinCounts[grid]=(gridWinCounts[grid]||0)+1;
         const yearLabel=entry.yearKey||(entry.raceCategory==='superTouring'?`${entry.year} Super Touring`:String(entry.year));
@@ -3952,6 +4016,20 @@ function buildStats() {
   const neverWonGrids=[];for(let i=1;i<=gridUpperBound;i++){if(!gridWinCounts[i]) neverWonGrids.push(i);}
   const neverWonSeen=neverWonGrids.filter(g=>allGridSet.has(g));
   const neverWonToShow=neverWonSeen.length?neverWonSeen:neverWonGrids;
+  
+  // Prepare chart data for P1-P25
+  const gridChartData=[];
+  for(let i=1;i<=25;i++){
+    gridChartData.push({
+      grid:i,
+      wins:gridWinCounts[i]||0,
+      podiums:gridPodiumCounts[i]||0,
+      starts:gridStartCounts[i]||0
+    });
+  }
+  const maxChartWins=Math.max(...gridChartData.map(d=>d.wins),1);
+  const maxChartPodiums=Math.max(...gridChartData.map(d=>d.podiums),1);
+  
 
   const recordBookCategories = [
 
@@ -4130,6 +4208,11 @@ function buildStats() {
           id: 'grid-never-won',
           title: 'Grid Positions That Have Never Won',
           context: 'Based on 1963–2026. P8 is the cursed position – every top-13 slot has won except P8.'
+        },
+        {
+          id: 'grid-wins-chart',
+          title: 'Visual Chart: Wins by Grid Slot (P1-P25)',
+          context: 'Bar chart showing wins (dark blue) vs podiums (light blue) for each starting grid position P1-P25. Covers 1963–2026.'
         }
       ]
     }
@@ -4244,6 +4327,35 @@ function buildStats() {
         value='P1 · 11 wins, P2 · 11 wins – most popular per Supercars';
         detail='No grid data. Known: P8 never won, wins from P15, P17, P18, P19, P20, P25. Lowest P25 Mostert/Morris 2014.';
       }
+    } else if (record.id === 'grid-wins-chart') {
+      // Visual bar chart P1-P25
+      const maxWins = Math.max(...gridChartData.map(d=>d.wins),1);
+      const maxPod = Math.max(...gridChartData.map(d=>d.podiums),1);
+      const maxVal = Math.max(maxWins, maxPod);
+      const bars = gridChartData.map(d=>{
+        const winH = d.wins ? (d.wins / maxVal * 100) : 0;
+        const podH = d.podiums ? (d.podiums / maxVal * 100) : 0;
+        const isNeverWon = d.wins===0;
+        return `<div class="grid-bar-group">
+          <div class="grid-bar-track">
+            ${d.podiums?`<div class="grid-bar podiums" style="height:${podH}%" title="P${d.grid}: ${d.podiums} podiums"></div>`:''}
+            <div class="grid-bar wins" style="height:${winH}%;${isNeverWon?'background:#2a2f40;opacity:0.3':''}" title="P${d.grid}: ${d.wins} wins, ${d.podiums} podiums from ${d.starts} starts"></div>
+            ${d.wins?`<div class="grid-bar-value">${d.wins}</div>`:''}
+          </div>
+          <div class="grid-bar-label" style="${isNeverWon?'color:#ff6b6b;font-weight:900':''}">P${d.grid}</div>
+        </div>`;
+      }).join('');
+      value = `Wins by grid P1-P25 — Most: P${sortedGridWins[0]?.grid||1} with ${sortedGridWins[0]?.count||0} wins`;
+      detail = `<div class="grid-wins-chart">
+        <h3>Wins (dark) vs Podiums (light) by Starting Grid P1-P25</h3>
+        <div class="grid-wins-bars">${bars}</div>
+        <div class="grid-chart-legend">
+          <span><i style="background:#2a5bd7"></i>Wins</span>
+          <span><i style="background:#4a7de0;opacity:0.6"></i>Podiums (Top 3)</span>
+          <span><i style="background:#2a2f40"></i>Never won from this grid</span>
+        </div>
+        <p style="margin-top:12px;font-size:11px;color:#6b768f;">Based on ${fullRecordsForGrid.length} entries with grid data. Max grid seen P${maxGridSeen}. P8 cursed never won. Lowest winning grid P25 (Mostert/Morris 2014).</p>
+      </div>`;
     } else if (record.id === 'grid-never-won') {
       if(sortedGridWins.length>=20){
         const displayList=neverWonToShow.slice(0,60);
@@ -8629,6 +8741,207 @@ console.log('Fixes v4: duplicate ID removed, robots=index, OG path fixed, access
   }
   setTimeout(initA11yTabs, 900);
   window.addEventListener('load', function(){ setTimeout(initA11yTabs, 1200); });
+})();
+</script>
+
+
+<script id="global-search-enhancement">
+(function(){
+  const input=document.getElementById('globalSearch');
+  const resultsBox=document.getElementById('globalSearchResults');
+  if(!input || !resultsBox) return;
+  
+  function escapeHtml(s){ return String(s).replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+  
+  function searchAll(query){
+    const q=query.toLowerCase().trim();
+    if(!q || q.length<2) return [];
+    const results=[];
+    
+    // Search years
+    const years=Object.keys(window.ALL_YEARS||{}).filter(y=> y.includes(q) || y.toLowerCase().includes(q));
+    years.slice(0,5).forEach(y=>{
+      results.push({label:`Year ${y}`, meta:`${(window.ALL_YEARS[y]?.cars?.length||0)} entries`, type:'year', value:y});
+    });
+    
+    // Search drivers, teams, makes from STATS_DATA
+    const seen=new Set();
+    (window.STATS_DATA||[]).forEach(entry=>{
+      const yearLabel=entry.yearKey||String(entry.year);
+      // Drivers
+      (entry.drivers||[]).forEach(d=>{
+        const name=d.name||'';
+        if(name.toLowerCase().includes(q) && !seen.has(name.toLowerCase())){
+          seen.add(name.toLowerCase());
+          if(results.length<20) results.push({label:name, meta:`Driver · ${yearLabel} · Car #${entry.car}`, type:'driver', value:name});
+        }
+      });
+      // Teams
+      const team=(entry.extraFields||[]).find(f=>/Team/i.test(f.label))?.value||'';
+      if(team && team.toLowerCase().includes(q) && !seen.has(team.toLowerCase())){
+        seen.add(team.toLowerCase());
+        if(results.length<20) results.push({label:team, meta:`Team · ${yearLabel}`, type:'team', value:team});
+      }
+      // Makes
+      if(entry.make && entry.make.toLowerCase().includes(q) && !seen.has('make:'+entry.make.toLowerCase())){
+        seen.add('make:'+entry.make.toLowerCase());
+        if(results.length<20) results.push({label:entry.make, meta:`Manufacturer`, type:'make', value:entry.make});
+      }
+    });
+    
+    return results.slice(0,15);
+  }
+  
+  function renderResults(items){
+    if(!items.length){
+      resultsBox.innerHTML='<div class="global-search-item"><span class="gs-label">No results</span></div>';
+      resultsBox.classList.add('open');
+      return;
+    }
+    resultsBox.innerHTML=items.map(item=>`
+      <div class="global-search-item" data-type="${item.type}" data-value="${escapeHtml(item.value)}">
+        <span class="gs-label">${escapeHtml(item.label)}</span>
+        <span class="gs-meta">${escapeHtml(item.meta)}</span>
+      </div>
+    `).join('');
+    resultsBox.classList.add('open');
+    
+    resultsBox.querySelectorAll('.global-search-item').forEach(el=>{
+      el.addEventListener('click', ()=>{
+        const type=el.dataset.type;
+        const value=el.dataset.value;
+        resultsBox.classList.remove('open');
+        input.value='';
+        
+        if(type==='year'){
+          const sel=document.getElementById('yearSel');
+          if(sel){
+            sel.value=value;
+            if(window.render) window.render(value);
+            document.querySelector('[data-tab="chart"]')?.click();
+            window.scrollTo({top:0, behavior:'smooth'});
+          }
+        } else if(type==='driver'){
+          // Open driver stats tab and filter
+          document.querySelector('[data-tab="driverStats"]')?.click();
+          setTimeout(()=>{
+            const driverSearch=document.getElementById('driverDirectorySearch');
+            if(driverSearch){
+              driverSearch.value=value;
+              driverSearch.dispatchEvent(new Event('input'));
+            }
+          },300);
+        } else {
+          // For team/make, go to driver stats and search
+          document.querySelector('[data-tab="driverStats"]')?.click();
+          setTimeout(()=>{
+            const driverSearch=document.getElementById('driverDirectorySearch');
+            if(driverSearch){
+              driverSearch.value=value;
+              driverSearch.dispatchEvent(new Event('input'));
+            }
+          },300);
+        }
+      });
+    });
+  }
+  
+  let debounce;
+  input.addEventListener('input', ()=>{
+    clearTimeout(debounce);
+    debounce=setTimeout(()=>{
+      const q=input.value;
+      if(q.length<2){
+        resultsBox.classList.remove('open');
+        return;
+      }
+      const res=searchAll(q);
+      renderResults(res);
+    },200);
+  });
+  
+  input.addEventListener('keydown', (e)=>{
+    if(e.key==='Escape'){
+      resultsBox.classList.remove('open');
+      input.blur();
+    }
+  });
+  
+  document.addEventListener('click', (e)=>{
+    if(!document.getElementById('globalSearchWrap').contains(e.target)){
+      resultsBox.classList.remove('open');
+    }
+  });
+  
+  // Focus shortcut: press '/' to focus search
+  document.addEventListener('keydown', (e)=>{
+    if(e.key==='/' && document.activeElement.tagName!=='INPUT' && document.activeElement.tagName!=='TEXTAREA'){
+      e.preventDefault();
+      input.focus();
+    }
+  });
+})();
+</script>
+<script id="mobile-chart-enhancement">
+(function(){
+  // Mobile optimisation for lap charts
+  function enhanceChartForMobile(){
+    const chartHost=document.getElementById('chartHost');
+    if(!chartHost) return;
+    
+    // Make SVG responsive
+    const svg=chartHost.querySelector('svg');
+    if(svg){
+      svg.setAttribute('preserveAspectRatio','xMidYMid meet');
+      // Ensure it scales
+      svg.style.width='100%';
+      svg.style.height='100%';
+      svg.style.maxWidth='100%';
+    }
+    
+    // Add touch handling for car lines
+    let touchTimeout;
+    chartHost.addEventListener('touchstart', (e)=>{
+      const target=e.target.closest('.carline');
+      if(target){
+        e.preventDefault();
+        // Remove active from all
+        chartHost.querySelectorAll('.carline.active').forEach(el=>el.classList.remove('active'));
+        target.classList.add('active');
+        clearTimeout(touchTimeout);
+        touchTimeout=setTimeout(()=>{
+          target.classList.remove('active');
+        },3000);
+      }
+    }, {passive:false});
+    
+    // Add horizontal scroll for small screens
+    if(window.innerWidth<=768){
+      const board=chartHost.closest('.board');
+      if(board){
+        board.style.overflowX='auto';
+        board.style.WebkitOverflowScrolling='touch';
+      }
+    }
+  }
+  
+  // Run on load and on resize
+  if(document.readyState==='loading'){
+    document.addEventListener('DOMContentLoaded', enhanceChartForMobile);
+  } else {
+    enhanceChartForMobile();
+  }
+  window.addEventListener('resize', enhanceChartForMobile);
+  
+  // Also enhance when year changes
+  const origRender=window.render;
+  if(origRender){
+    window.render=function(yearKey){
+      const result=origRender(yearKey);
+      setTimeout(enhanceChartForMobile, 100);
+      return result;
+    };
+  }
 })();
 </script>
 
