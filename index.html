@@ -3709,7 +3709,7 @@ function showStatsMenu() {
 }
 
 const RECORDS_START_YEAR = 1963;
-let RECORDS_END_YEAR = 2026;
+let RECORDS_END_YEAR = 2025;
 renderHomeArchiveOverview();
 
 function archiveOverviewMarkup() {
@@ -3901,60 +3901,7 @@ function buildStats() {
     </button>`;
   }).join('');
 
-
-  // === GRID POSITION WIN ANALYSIS (1963-2026) ===
-  function parseGridInt(v){
-    if(v==null) return null;
-    const s=String(v).trim();
-    const m=s.match(/(\d+)/);
-    if(!m) return null;
-    const n=parseInt(m[1],10);
-    return Number.isFinite(n)&&n>0&&n<=100?n:null;
-  }
-  function getStartingGrid(entry){
-    if(!entry) return null;
-    const fields=entry.extraFields||[];
-    const findBy=(re)=>{for(let i=0;i<fields.length;i++){const f=fields[i];if(re.test(f.label)){const n=parseGridInt(f.value);if(n) return n;}}return null;};
-    let g=findBy(/^Grid Position$/i)||findBy(/^Starting Position$/i)||findBy(/^Starting Grid$/i)||findBy(/^Grid$/i);
-    if(g) return g;
-    g=findBy(/^Shootout Position$/i);
-    if(g) return g;
-    g=findBy(/^Qualifying Position$/i);
-    if(g) return g;
-    for(let ff of fields){if(/^Position Improvement/i.test(ff.label)){const imp=Number(String(ff.value).trim());if(Number.isFinite(imp)&&entry.officialPos){const grid=entry.officialPos+imp;if(grid>0&&grid<=100) return grid;}}}
-    if(entry.positionImprovement!=null&&entry.officialPos){const imp=Number(String(entry.positionImprovement).trim());if(Number.isFinite(imp)){const grid=entry.officialPos+imp;if(grid>0&&grid<=100) return grid;}}
-    return null;
-  }
-  const gridWinCounts={};
-  const gridWinDetails={};
-  const allGridSet=new Set();
-  const gridWinEntries=[];
-  const fullRecordsForGrid=[...STATS_DATA,...SUPER_TOURING_RESULTS].filter(e=> e.year>=RECORDS_START_YEAR&&e.year<=RECORDS_END_YEAR);
-  fullRecordsForGrid.forEach(entry=>{
-    const grid=getStartingGrid(entry);
-    if(grid){
-      allGridSet.add(grid);
-      if(entry.officialPos===1){
-        gridWinCounts[grid]=(gridWinCounts[grid]||0)+1;
-        const yearLabel=entry.yearKey||(entry.raceCategory==='superTouring'?`${entry.year} Super Touring`:String(entry.year));
-        const drivers=(entry.drivers||[]).map(d=>d.name||d).filter(Boolean).join(' / ')||'Unknown';
-        if(!gridWinDetails[grid]) gridWinDetails[grid]=[];
-        gridWinDetails[grid].push({year:entry.year,yearLabel,drivers,car:entry.car});
-        gridWinEntries.push({grid,year:entry.year,yearLabel,drivers});
-      }
-    }
-  });
-  Object.values(gridWinDetails).forEach(arr=>arr.sort((a,b)=>a.year-b.year));
-  const sortedGridWins=Object.entries(gridWinCounts).map(([g,c])=>({grid:Number(g),count:c})).sort((a,b)=>b.count-a.count||a.grid-b.grid);
-  const top5GridWins=sortedGridWins.slice(0,5);
-  const maxGridSeen=allGridSet.size?Math.max(...allGridSet):43;
-  const gridUpperBound=Math.max(maxGridSeen,sortedGridWins.length?Math.max(...sortedGridWins.map(x=>x.grid)):0,30);
-  const neverWonGrids=[];for(let i=1;i<=gridUpperBound;i++){if(!gridWinCounts[i]) neverWonGrids.push(i);}
-  const neverWonSeen=neverWonGrids.filter(g=>allGridSet.has(g));
-  const neverWonToShow=neverWonSeen.length?neverWonSeen:neverWonGrids;
-
   const recordBookCategories = [
-
     {
       title: 'Driver Records',
       entries: [
@@ -4120,16 +4067,6 @@ function buildStats() {
           detail: 'Combined age: 94 years, 11 months and 11 days. Individual ages: 47 years and 2 days; 47 years, 11 months and 9 days. Frank Coad’s birth date is not recorded, so the 1960 crew cannot be compared.',
           year: '1990',
           context: 'This is the oldest winning combination with complete driver birth-date data in the results workbook. The 1960 winner Frank Coad has no birth date recorded, so an all-years claim cannot be confirmed until that date is researched.'
-        },
-        {
-          id: 'grid-wins-top5',
-          title: 'Top 5 Winning Grid Positions',
-          context: 'Counts wins by starting grid (Shootout Position where available, otherwise Qualifying Position or Grid-to-Finish). Covers 1963–2026.'
-        },
-        {
-          id: 'grid-never-won',
-          title: 'Grid Positions That Have Never Won',
-          context: 'Based on 1963–2026. P8 is the cursed position – every top-13 slot has won except P8.'
         }
       ]
     }
@@ -4223,35 +4160,6 @@ function buildStats() {
         const years = makeWinYears[leader[0]] || [];
         detail = `Winning years: ${years.join(', ')}`;
         chartYear = chartYearFrom(years);
-      }
-    } else if (record.id === 'grid-wins-top5') {
-      if(top5GridWins.length){
-        if(sortedGridWins.length>=10){
-          value=top5GridWins.map(g=>`P${g.grid} · ${g.count} win${g.count>1?'s':''}`).join(', ');
-          detail=top5GridWins.map(g=>{
-            const infos=gridWinDetails[g.grid]||[];
-            const yearsList=infos.slice(0,10).map(i=>`${i.yearLabel} (${i.drivers})`).join(', ');
-            const more=infos.length>10?` +${infos.length-10} more`:'';
-            return `P${g.grid}: ${g.count} wins – ${yearsList}${more}`;
-          }).join(' | ');
-        } else {
-          value=`Computed ${top5GridWins.map(g=>`P${g.grid}·${g.count}`).join(', ')} – full data not loaded, known: P1·11 wins, P2·11 wins (Supercars Fast Facts)`;
-          detail=`Historical: Front row tied most popular (P1 11, P2 11). Known winners from P15, P17, P18 (Payne/Tander 2024 first P18 win), P19, P20, P25 (Mostert 2014 lowest P25). Computed: ${sortedGridWins.map(g=>`P${g.grid}:${g.count}`).join(', ')||'none'}`;
-        }
-        const mostRecent=gridWinEntries.sort((a,b)=>b.year-a.year)[0];
-        if(mostRecent) chartYear=String(mostRecent.year);
-      } else {
-        value='P1 · 11 wins, P2 · 11 wins – most popular per Supercars';
-        detail='No grid data. Known: P8 never won, wins from P15, P17, P18, P19, P20, P25. Lowest P25 Mostert/Morris 2014.';
-      }
-    } else if (record.id === 'grid-never-won') {
-      if(sortedGridWins.length>=20){
-        const displayList=neverWonToShow.slice(0,60);
-        value=`${neverWonToShow.length} positions never won (computed): ${displayList.map(p=>'P'+p).join(', ')}${neverWonToShow.length>60?'…':''}`;
-        detail=`Computed up to P${gridUpperBound}: ${neverWonToShow.map(p=>'P'+p).join(', ')}. Based on ${allGridSet.size} slots (max P${maxGridSeen}). Verified: Top-13 except P8 have all won, plus P15, P17, P18 (first win Payne/Tander 2024), P19, P20, P25 (lowest P25).`;
-      } else {
-        value=`7 positions in top 25 never won: P8 (cursed), P14, P16, P21, P22, P23, P24 – plus P26+ never won (lowest win P25)`;
-        detail=`Verified 1963-2025: Every top-13 grid slot has won except P8. Winners also from P15, P17, P18 (Payne/Tander 2024 first from P18), P19, P20, P25 (Mostert/Morris 2014 lowest ever P25). Therefore never-won in top 25 are P8, P14, P16, P21, P22, P23, P24. No wins from P26+. Computed file shows only ${sortedGridWins.length} winning slots (${sortedGridWins.map(g=>'P'+g.grid).join(', ')||'none'}) – race-results-data.js not fully loaded.`;
       }
     }
 
@@ -4765,7 +4673,7 @@ function installSpreadsheetData(lapWorkbook, resultsWorkbook, driverWorkbook) {
   Object.assign(ALL_YEARS, newYears);
   addResearchYears();
   window.refreshVsDriverIndex?.();
-  RECORDS_END_YEAR = 2026;
+  RECORDS_END_YEAR = 2025;
   renderHomeArchiveOverview();
 
   const currentYear = sel.value;
